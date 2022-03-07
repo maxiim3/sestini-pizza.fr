@@ -1,11 +1,11 @@
 import React from 'react';
-import PizzaList from './components/PizzaList';
+import Home from './components/Home';
 
 const App = () => {
    return (
       <div>
          <h1>Nos pizza à la carte</h1>
-         <PizzaList />
+         <Home />
       </div>
    );
 };

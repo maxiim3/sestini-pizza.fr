@@ -1,0 +1,310 @@
+
+[
+   [
+      {
+         "id": 1,
+         "title": "LA MARGUERITA",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Basilic Frais, Filet d'Huile d'Olive",
+         "price": "9.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": "sans viande"
+      },
+      {
+         "id": 2,
+         "title": "LA PIZZA DE BUFFLONE",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Di Bufala, Basilic Frais, Filet d'Huile d'Olive",
+         "price": "11.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": "sans viande"
+      },
+      {
+         "id": 3,
+         "title": "LA PROSCUITTO",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Chiffonnade de jambon cuit, Filet d'Huile d'Olive",
+         "price": "10.00",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 4,
+         "title": "LA REGINA",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Chiffonnade de jambon cuit, Emincés De Champignons, Origan, Olives Noire",
+         "price": "11.00",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 5,
+         "title": "CALZONE DE SESTINI",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Chiffonnade de jambon cuit, Emincés De Champignons, Oeuf coulant",
+         "price": "11.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 6,
+         "title": "LA VEGETARIENNE",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Poivrons",
+         "price": "11.50",
+         "base": "base rouge",
+         "afterCook": "Après cuisson: Tomates Cerises, Roquette, Olives Noire, Filet d'Huile d'Olive",
+         "particularity": "sans viande"
+      },
+      {
+         "id": 7,
+         "title": "L'ITALIENNE",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozarella Di Bufala",
+         "price": 13.00,
+         "base": "base rouge",
+         "afterCook": "Après cuisson : Jambon de Parme, Parmigiano, Tomates Cerises, Sauce Basilic",
+         "particularity": ""
+      },
+      {
+         "id": 8,
+         "title": "LA PICCANTE",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozzarella Fior Di Latte, Spianata Calabrese, Oignons Rouge, Olives Noire",
+         "price": "11.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 9,
+         "title": "LA SALSICCIA E BUFALA",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozzarella Di Bufala, Chair à Saucisse, Persillade, Olives Noire",
+         "price": "12.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 10,
+         "title": "LA NAPOLETANA",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozzarella Fior Di Latte, Anchois, Capres, Olives Noires",
+         "price": "11.50",
+         "base": "base rouge",
+         "afterCook": null,
+         "particularity": "avec poisson"
+      },
+      {
+         "id": 11,
+         "title": "LA COPPA",
+         "img": "./img/pizza.jpg",
+         "ingredients": "Sauce Tomate, Mozzarella Fior Di Latte, Artichaut à la Romaine, Olives Noire",
+         "price": "12.00",
+         "base": "base rouge",
+         "afterCook": "Après Cuisson : Coppa, Parmigiano",
+         "particularity": ""
+      
+      },
+      {
+         "id": 12,
+         "title": "LA 4 FORMAGGI",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Chèvre, Gorgonzola, Parmigiano",
+         "price": "11.50",
+         "base": "base blanche",
+         "afterCook": null,
+         "particularity": "sans viande"
+      },
+      {
+         "id": 13,
+         "title": "LA BIQUETTE",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Chèvre",
+         "price": "10.50",
+         "base": "base blanche",
+         "afterCook": "Après Cuisson : Miel (Sur demande)",
+         "particularity": "sans viande"
+      },
+      {
+         "id": 14,
+         "title": "LA SALMONE",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Emincé De Champignons",
+         "price": "11.50",
+         "base": "base blanche",
+         "afterCook": "Après Cuisson : Saumon, Crème Balsamique",
+         "particularity": "avec poisson"
+      },
+      {
+         "id": 15,
+         "title": "LA CHARCUTIERE",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Gorgonzola",
+         "price": "13.00",
+         "base": "base blanche",
+         "afterCook": "Après Cuisson: Jambon de Parme, Spianata Calabrese, Parmigiano, Sauce Basilic",
+         "particularity": ""
+      },
+      {
+         "id": 16,
+         "title": "LA FORESTA",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Oignons Rouge, Emincés de Champignons, Lardons, Persillade",
+         "price": "11.50",
+         "base": "base blanche",
+         "afterCook": null,
+         "particularity": ""
+      },
+      {
+         "id": 17,
+         "title": "LA TONNO",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Crème Fraiche, Mozzarella Fior Di Latte, Oignons, Thon, Olives Noire",
+         "price": "11.50",
+         "base": "base blanche",
+         "afterCook": null,
+         "particularity": "avec poisson"
+      },
+      {
+         "id": 18,
+         "title": "LA ZUCCHINA",
+         "img": "./img/pizzaBlanche.jpg",
+         "ingredients": "Mozzarella Fior Di Latte, Courgettes",
+         "price": "13.50",
+         "base":  "base special",
+         "afterCook": "Après cuisson : Mozzarella Di Bufala, Tomate Cerise, Jambon de Parme, Sauce Basilic",
+         "particularity": "special"
+      }
+   ],
+   
+   [
+      {
+         "id": 1,
+         "title": "ICE TEA 33cl",
+         "base": "",
+         "price": "2.00",
+         "particularity": "soft"
+      },
+      {
+         "id": 2,
+         "title": "COCA COLA 33cl",
+         "base": "",
+         "price": "2.00",
+         "particularity": "soft"
+      },
+      {
+         "id": 3,
+         "title": "ICE TEA 33cl",
+         "base": "",
+         "price": "2.00",
+         "particularity": "soft"
+      },
+      {
+         "id": 4,
+         "title": "SAN PELLEGRINO 50cl",
+         "base": "",
+         "price": "2.00",
+         "particularity": "soft"
+      },
+      {
+         "id": 5,
+         "title": "SAN PELLEGRINO 1L",
+         "base": "",
+         "price": "2.50",
+         "particularity": "soft"
+      },
+      {
+         "id": 6,
+         "title": "EVIAN 50cl",
+         "base": "",
+         "price": "2.00",
+         "particularity": "soft"
+      },
+      {
+         "id": 7,
+         "title": "EVIAN 1L",
+         "base": "",
+         "price": "2.50",
+         "particularity": "soft"
+      },
+      {
+         "id": 8,
+         "title": "BIERE",
+         "base": "",
+         "price": "3.00",
+         "particularity": "alcool"
+      },
+      {
+         "id": 9,
+         "title": "VIN ROUGE",
+         "base": "",
+         "price": "9.00",
+         "particularity": "alcool"
+      },
+      {
+         "id": 10,
+         "title": "VIN ROSE",
+         "base": "",
+         "price": "9.00",
+         "particularity": "alcool"
+      }
+   ],
+   [
+      {
+         "id": 1,
+         "title": "TIRAMISU",
+         "base": "",
+         "price": "4.00",
+         "particularity": ""
+      },
+      {
+         "id": 2,
+         "title": "PANA",
+         "base": "",
+         "price": "3.00",
+         "particularity": ""
+      }
+      
+   ],
+   
+   [
+      {
+         "id": 1,
+         "title": "Artichaut",
+         "base": "",
+         "price": "1.00"
+      },
+      {
+         "id": 2,
+         "title": "Bufala",
+         "base": "",
+         "price": "2.50"
+      },
+      {
+         "id": 3,
+         "title": "Légumes",
+         "base": "",
+         "price": "0.50"
+      },
+      {
+         "id": 4,
+         "title": "Fromage,Charcuterie,Viande",
+         "base": "",
+         "price": "1.00"
+      },
+      {
+         "id": 5,
+         "title": "Poisson",
+         "base": "",
+         "price": "1.50"
+      }
+   ]
+
+] 
