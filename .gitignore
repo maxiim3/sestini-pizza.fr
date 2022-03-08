@@ -23,4 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #phpstorm
-.idea/*
+.idea/
+.idea/workspace.xml
+
