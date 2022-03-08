@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ItemsList from './ItemsList';
+import ItemsOfMonth from './ItemsOfMonth';
 
 const Home = () => {
 
@@ -32,7 +33,8 @@ const selectedButtonMenu = (e) => {
    return (
       <div>
          {buttonMenuList.map((btnMenu) => <button key={btnMenu} onClick={selectedButtonMenu} value={btnMenu}>{btnMenu}</button>)}
-         <ItemsList index={index}/>    
+         <ItemsList index={index}/>
+         <ItemsOfMonth />
       </div>
    );
 };

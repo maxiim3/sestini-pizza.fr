@@ -26,3 +26,5 @@ yarn-error.log*
 .idea/
 .idea/workspace.xml
 
+#json
+package-lock.json
