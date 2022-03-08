@@ -24,7 +24,8 @@ yarn-error.log*
 
 #phpstorm
 .idea/
+.idea/*
 .idea/workspace.xml
 
 #json
-package-lock.json
+./package-lock.json
