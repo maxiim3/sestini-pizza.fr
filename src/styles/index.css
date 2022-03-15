@@ -1,0 +1,15 @@
+.itemsCard {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 141.4%;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: -4px -5px 10px rgba(0, 0, 0, 0.25);
+}
+.itemsCard img {
+  width: 20%;
+}
+
+/*# sourceMappingURL=index.css.map */
