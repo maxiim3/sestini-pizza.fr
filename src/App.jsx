@@ -5,7 +5,7 @@ const App = () => {
    return (
       <div>
          <h1>Nos pizza à la carte</h1>
-         <Home />
+         <Home />`
       </div>
    );
 };
