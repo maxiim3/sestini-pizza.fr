@@ -2,70 +2,70 @@
   "pizzas": [
     {
       "_id": 1,
-      "nom": "LA MARGUERITA",
+      "nom": "La Margherita",
       "ingredients": [
         "Mozzarella FDL",
-        "Basilic Frais",
-        "Filet d'Huile d'Olive"
+        "Basilic frais",
+        "Filet d'huile d'olive"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": false,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/19/2010/01/21/pizzetta-margherita-pizza-su-x.jpg",
       "prix": "9.50"
     },
     {
       "_id": 2,
-      "nom": "LA PIZZA DE BUFFLONE",
+      "nom": "la Pizza de Bufflonne",
       "ingredients": [
-        "Mozzarella di Buffala",
-        "Basilic Frais",
-        "Filet d'Huile d'Olive"
+        "Mozzarella di Bufala",
+        "Basilic frais",
+        "Filet d'huile d'olive"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": false,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
-      "prix": "10.00"
+      "afterCook": null,
+      "url": "https://thumbs.dreamstime.com/b/delicious-italian-pizza-buffalo-mozzarella-tomato-sauce-basil-classic-napoli-food-italian-pizza-bufalina-103122067.jpg",
+      "prix": "11.50"
     },
     {
       "_id": 3,
-      "nom": "LA PROSCUITTO",
+      "nom": "La Prosciutto",
       "ingredients": [
         "Mozzarella FDL",
         "Chiffonnade de jambon cuit",
-        "Filet d'Huile d'Olive"
+        "Filet d'huile d'Olive"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://parmacrown.com/wp-content/uploads/2015/03/Pizza-4.jpg",
       "prix": "10.00"
     },
     {
       "_id": 4,
-      "nom": "LA REGINA",
+      "nom": "La Regina",
       "ingredients": [
         "Mozzarella FDL",
         "Chiffonnade de jambon cuit",
-        "Filet d'Huile d'Olive"
+        "Filet d'huile d'olive"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://i.pinimg.com/originals/c5/62/b3/c562b36428b8740aa0b4d6349b3c2200.jpg",
       "prix": "11.00"
     },
     {
@@ -74,53 +74,58 @@
       "ingredients": [
         "Mozzarella FDL",
         "Chiffonnade de jambon cuit",
-        "Filet d'Huile d'Olive",
+        "Filet d'huile d'olive",
         "Émincés de Champignons",
         "Oeuf coulant"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://celentano.ro/wp-content/uploads/2020/01/calzone_2-1080x960-1.jpg",
       "prix": "11.50"
     },
     {
       "_id": 6,
-      "nom": "LA VEGETARIENNE",
+      "nom": "La Végétarienne",
       "ingredients": [
         "Mozzarella FDL",
         "Poivrons"
       ],
-      "afterCook": null,
-      "avecViande": false,
-      "avecPoisson": false,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
-      "url": "./img/pizza.jpg",
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": [
+        "Tomate cerise",
+        "Roquette",
+        "Olives noires",
+        "Filet d'huile d'olive"
+      ],
+      "url": "https://img.cuisineaz.com/660x660/2018-09-26/i142888-pizza-vegetarienne-recette.jpeg",
       "prix": "11.50"
     },
     {
       "_id": 7,
       "nom": "L'Italienne",
       "ingredients": [
-        "Mozzarella di Buffala"
-      ],
-      "afterCook": [
-        "Jambon de Parme",
-        "Parmesan",
-        "Tomates Cerises",
-        "Sauce Basilic"
+        "Mozzarella di Bufala"
       ],
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
-      "avecViande": false,
+      "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": [
+        "Jambon de Parme",
+        "Parmesan",
+        "Tomates cerises",
+        "Sauce basilic"
+      ],
+      "url": "https://eat.portodimarecascais.com/wp-content/uploads/2020/09/parma-bufala.jpg",
       "prix": "13.00"
     },
     {
@@ -128,35 +133,35 @@
       "nom": "La Piccante",
       "ingredients": [
         "Mozzarella FDL",
-        "Spianata Calabrese",
-        "Oignons Rouge",
-        "Olives Noire"
+        "Spianata Calabrese Picante",
+        "Oignons rouges",
+        "Olives noire"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://www.chilirezept.de/wp-content/uploads/2019/02/Pizza-Calabria.jpg",
       "prix": "11.50"
     },
     {
       "_id": 9,
-      "nom": "La Salcicia e Bufala",
+      "nom": "La Salsiccia e Bufala",
       "ingredients": [
         "Mozzarella di Bufala",
-        "Chair à Saucisse",
+        "Chair à saucisse",
         "Persillade",
-        "Olives Noires"
+        "Olives noires"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://www.mydailydinner.nl/wp-content/uploads/2020/04/Pizza-Salsiccia-02-04-2020.jpg",
       "prix": "12.50"
     },
     {
@@ -166,15 +171,15 @@
         "Mozzarella FDL",
         "Anchois",
         "Câpres",
-        "Olives Noires"
+        "Olives noires"
       ],
-      "afterCook": null,
       "baseRouge": true,
       "baseBlanche": false,
       "sansBase": false,
       "avecViande": false,
       "avecPoisson": true,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-napolitaine_ok.jpg?fit=4898%2C3265&ssl=1",
       "prix": "11.50"
     },
     {
@@ -183,36 +188,36 @@
       "ingredients": [
         "Mozzarella FDL",
         "Artichaut à la Romaine",
-        "Olives Noires"
+        "Olives noires"
       ],
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": true,
+      "avecViande": true,
+      "avecPoisson": false,
       "afterCook": [
         "Coppa",
         "Parmesan"
       ],
-      "avecViande": false,
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": true,
-      "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "url": "https://www.foodette.fr/files/products/pizza-coppa-mozzarella-bufala-roquette-tomate-rucola-italie.jpg",
       "prix": "12.00"
     },
     {
       "_id": 12,
-      "nom": "La Quatre Fromages",
+      "nom": "La Quattro Formaggi",
       "ingredients": [
         "Mozzarella FDL",
         "Chèvre",
         "Gorgonzola",
         "Parmesan"
       ],
-      "afterCook": null,
-      "avecViande": true,
-      "sansBase": false,
       "baseRouge": false,
-      "baseBlanche": false,
+      "baseBlanche": true,
+      "sansBase": false,
+      "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/2981.jpg",
       "prix": "11.50"
     },
     {
@@ -222,15 +227,15 @@
         "Mozzarella FDL",
         "Chèvre"
       ],
+      "baseRouge": false,
+      "baseBlanche": true,
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": false,
       "afterCook": [
         "Miel (sur demande)"
       ],
-      "sansBase": false,
-      "baseRouge": false,
-      "baseBlanche": true,
-      "avecViande": false,
-      "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "url": "https://leloft-restaurant.com/wp-content/uploads/2020/05/PIZZA-CHEVRE-MIEL.jpg",
       "prix": "10.50"
     },
     {
@@ -240,13 +245,16 @@
         "Mozzarella FDL",
         "Émincés de Champignon"
       ],
-      "afterCook": null,
-      "avecViande": false,
-      "avecPoisson": true,
-      "sansBase": false,
       "baseRouge": false,
       "baseBlanche": true,
-      "url": "./img/pizza.jpg",
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": true,
+      "afterCook": [
+        "saumon",
+        "Crème balsamique"
+      ],
+      "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-salmone2_ok.jpg?fit=4898%2C3265&ssl=1",
       "prix": "11.50"
     },
     {
@@ -256,18 +264,18 @@
         "Mozzarella FDL",
         "Gorgonzola"
       ],
-      "afterCook": [
-        "Jambon de Parme",
-        "Sipanata Calabrese",
-        "Parmesan",
-        "Sauce Basilic"
-      ],
-      "avecViande": false,
-      "avecPoisson": true,
-      "sansBase": false,
       "baseRouge": true,
       "baseBlanche": false,
-      "url": "./img/pizza.jpg",
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": [
+        "Jambon de Parme",
+        "Spianata Calabrese Picante",
+        "Parmesan",
+        "Sauce basilic"
+      ],
+      "url": "https://wdwnt.com/wp-content/uploads/2021/04/craftsman-bar-grill-charcuterie-pizza-4-1711939-1200x900.jpg",
       "prix": "13.00"
     },
     {
@@ -275,18 +283,18 @@
       "nom": "La Foresta",
       "ingredients": [
         "Mozzarella FDL",
-        "Oignons Rouge",
+        "Oignons rouges",
         "Émincés de Champignons",
         "Lardons",
         "Persillade"
       ],
-      "afterCook": null,
       "baseRouge": false,
-      "sansBase": false,
       "baseBlanche": true,
+      "sansBase": false,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "https://recettes-gourmandes-de-joce.fr/wp-content/uploads/2019/10/PA190532.jpg",
       "prix": "11.50"
     },
     {
@@ -294,36 +302,38 @@
       "nom": "La Tonno",
       "ingredients": [
         "Mozzarella FDL",
-        "Oignons Rouge",
+        "Oignons rouges",
         "Thon",
-        "Olives Noires"
+        "Olives noires"
       ],
-      "afterCook": null,
-      "avecViande": true,
       "baseRouge": false,
+      "baseBlanche": true,
       "sansBase": false,
-      "baseBlanche": false,
+      "avecViande": false,
       "avecPoisson": true,
-      "url": "./img/pizza.jpg",
+      "afterCook": null,
+      "url": "url",
       "prix": "11.50"
     },
     {
       "_id": 18,
       "nom": "La Zucchina",
-      "base": "sans",
       "ingredients": [
         "Mozzarella FDL",
         "Courgettes"
       ],
-      "afterCook": [
-        "Mozzarella di Bufala",
-        "Tomates Cerises",
-        "Jambon de Parme",
-        "Sauce Basilic"
-      ],
+      "baseRouge": false,
+      "baseBlanche": false,
+      "sansBase": true,
       "avecViande": true,
       "avecPoisson": false,
-      "url": "./img/pizza.jpg",
+      "afterCook": [
+        "Mozzarella di Bufala",
+        "Tomates cerises",
+        "Jambon de Parme",
+        "Sauce basilic"
+      ],
+      "url": "url",
       "prix": "13.5"
     }
   ],
@@ -331,104 +341,136 @@
     {
       "_id": 1,
       "nom": "Ice Tea 33cl",
-      "price": "2.00",
-      "chaud": false,
-      "soft": true
+      "prix": "2.00",
+      "boissonChaudes": false,
+      "boissonAlcool" :false,
+      "boissonSoft": true
     },
     {
       "_id": 2,
       "nom": "Coca Cola 33cl",
-      "price": "2.00",
-      "chaud": false,
-      "soft": true
+      "prix": "2.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : false,
+      "boissonSoft": true
     },
     {
       "_id": 3,
-      "nom": "SAN PELLEGRINO 50cl",
-      "price": "2.00",
-      "chaud": false,
-      "soft": true
+      "nom": "San Pellegrino 50cl",
+      "prix": "2.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : false,
+      "boissonSoft": true
     },
     {
       "_id": 4,
-      "nom": "SAN PELLEGRINO 1L",
-      "price": "2.50",
-      "chaud": false,
-      "soft": true
+      "nom": "San Pellegrino 1L",
+      "prix": "2.50",
+      "boissonChaudes": false,
+      "boissonAlcool" : false,
+      "boissonSoft": true
     },
     {
       "_id": 5,
-      "nom": "EVIAN 50cl",
-      "price": "2.00",
-      "chaud": false,
-      "soft": true
+      "nom": "Evian 50cl",
+      "prix": "2.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : false,
+      "boissonSoft": true
     },
     {
       "_id": 6,
-      "nom": "EVIAN 1L",
-      "price": "2.50",
-      "chaud": false,
-      "soft": true
+      "nom": "Evian 1L",
+      "prix": "2.50",
+      "boissonChaudes": false,
+      "boissonAlcool" : false,
+      "boissonSoft": true
     },
     {
       "_id": 7,
-      "nom": "BIERE",
-      "price": "3.00",
-      "chaud": false,
-      "soft": false
+      "nom": "Bière Italienne",
+      "prix": "3.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : true,
+      "boissonSoft": false
     },
     {
       "_id": 8,
-      "nom": "VIN ROUGE",
-      "price": "9.00",
-      "chaud": false,
-      "soft": false
+      "nom": "Vin Rouge",
+      "prix": "9.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : true,
+      "boissonSoft": false
     },
     {
       "_id": 9,
-      "nom": "VIN ROSE",
-      "price": "9.00",
-      "chaud": false,
-      "soft": false
+      "nom": "Vin Rosé",
+      "prix": "9.00",
+      "boissonChaudes": false,
+      "boissonAlcool" : true,
+      "boissonSoft": false
+    },
+    {
+      "_id": 10,
+      "nom": "Expresso",
+      "prix": "1.00",
+      "boissonChaudes": true,
+      "boissonAlcool" : false,
+      "boissonSoft": false
+    },
+    {
+      "_id": 11,
+      "nom": "Capuccino",
+      "prix": "1.50",
+      "boissonChaudes": true,
+      "boissonAlcool" : false,
+      "boissonSoft": false
     }
   ],
   "desserts": [
     {
       "_id": 1,
       "nom": "TIRAMISU",
-      "price": "4.00"
+      "prix": "4.00",
+      "url": "https://www.chezpino.be/wp-content/uploads/2020/10/02b90d9d36145917dea77ecdb4af3613.jpg"
     },
     {
       "_id": 2,
       "nom": "PANA",
-      "price": "3.00"
+      "prix": "3.00",
+      "url": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/panna-cotta-thermomix-3644747/86259461-1-fre-FR/Panna-cotta-Thermomix.jpg"
     }
   ],
   "suppléments": [
     {
       "_id": 1,
       "nom": "Artichaut",
-      "price": "1.00"
+      "prix": "1.00"
     },
     {
       "_id": 2,
       "nom": "Bufala",
-      "price": "2.50"
+      "prix": "2.50"
     },
     {
       "_id": 3,
-      "nom": "Légumes",
-      "price": "0.50"
+      "nom": "Légume",
+      "prix": "0.50"
     },
     {
       "_id": 4,
-      "nom": "Fromage,Charcuterie,Viande",
-      "price": "1.00"
+      "nom": "Fromage/Charcuterie/Viande",
+      "prix": "1.00"
     },
     {
       "_id": 5,
       "nom": "Poisson",
-      "price": "1.50"
+      "prix": "1.50"
+    },
+    {
+      "_id": 6,
+      "nom": "Oeuf",
+      "prix": "1.00"
     }
   ]
 }

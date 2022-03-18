@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/informations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/informations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/laCarte.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarteApp/laCarte.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/findUsApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/pizzas/filter" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -80,17 +71,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/findUsApp" />
+      <recent name="$PROJECT_DIR$/src/components/pizzas/filter" />
+      <recent name="$PROJECT_DIR$/src/components/pizzas/products" />
       <recent name="$PROJECT_DIR$/public/icon" />
+      <recent name="$PROJECT_DIR$/src/components/findUsApp" />
       <recent name="$PROJECT_DIR$/src/styles/settings" />
-      <recent name="$PROJECT_DIR$/public/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pizzas/products" />
+      <recent name="$PROJECT_DIR$/src/components/pizzas/category" />
       <recent name="$PROJECT_DIR$/src/components/pizzas" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/src/components/findUsApp/MapsAPI" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,7 +99,9 @@
       <workItem from="1647436670652" duration="11885000" />
       <workItem from="1647514474622" duration="8595000" />
       <workItem from="1647535380873" duration="15887000" />
-      <workItem from="1647551989001" duration="1882000" />
+      <workItem from="1647551989001" duration="6374000" />
+      <workItem from="1647600525852" duration="5496000" />
+      <workItem from="1647606094011" duration="2734000" />
     </task>
     <servers />
   </component>
@@ -124,16 +118,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/commons/icons.jsx</url>
-          <line>307</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
