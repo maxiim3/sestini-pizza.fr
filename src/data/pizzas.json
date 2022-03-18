@@ -8,9 +8,12 @@
         "Basilic frais",
         "Filet d'huile d'olive"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": false,
       "avecPoisson": false,
       "afterCook": null,
@@ -25,9 +28,12 @@
         "Basilic frais",
         "Filet d'huile d'olive"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": false,
       "avecPoisson": false,
       "afterCook": null,
@@ -42,9 +48,12 @@
         "Chiffonnade de jambon cuit",
         "Filet d'huile d'Olive"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -59,9 +68,12 @@
         "Chiffonnade de jambon cuit",
         "Filet d'huile d'olive"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -78,9 +90,12 @@
         "Émincés de Champignons",
         "Oeuf coulant"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -94,9 +109,12 @@
         "Mozzarella FDL",
         "Poivrons"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": false,
       "avecPoisson": false,
       "afterCook": [
@@ -114,9 +132,12 @@
       "ingredients": [
         "Mozzarella di Bufala"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": [
@@ -137,9 +158,12 @@
         "Oignons rouges",
         "Olives noire"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -155,9 +179,12 @@
         "Persillade",
         "Olives noires"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -173,9 +200,12 @@
         "Câpres",
         "Olives noires"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": false,
       "avecPoisson": true,
       "afterCook": null,
@@ -190,9 +220,12 @@
         "Artichaut à la Romaine",
         "Olives noires"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": true,
+      "base": {
+        "label": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": [
@@ -211,10 +244,8 @@
         "Gorgonzola",
         "Parmesan"
       ],
-      "baseRouge": false,
-      "baseBlanche": true,
-      "sansBase": false,
-      "avecViande": true,
+      "base": {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
+      "avecViande": false,
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/2981.jpg",
@@ -227,9 +258,7 @@
         "Mozzarella FDL",
         "Chèvre"
       ],
-      "baseRouge": false,
-      "baseBlanche": true,
-      "sansBase": false,
+      "base":  {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
       "avecViande": false,
       "avecPoisson": false,
       "afterCook": [
@@ -245,9 +274,7 @@
         "Mozzarella FDL",
         "Émincés de Champignon"
       ],
-      "baseRouge": false,
-      "baseBlanche": true,
-      "sansBase": false,
+      "base":  {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
       "avecViande": false,
       "avecPoisson": true,
       "afterCook": [
@@ -264,9 +291,7 @@
         "Mozzarella FDL",
         "Gorgonzola"
       ],
-      "baseRouge": true,
-      "baseBlanche": false,
-      "sansBase": false,
+      "base":  {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": [
@@ -288,9 +313,7 @@
         "Lardons",
         "Persillade"
       ],
-      "baseRouge": false,
-      "baseBlanche": true,
-      "sansBase": false,
+      "base":  {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": null,
@@ -306,13 +329,11 @@
         "Thon",
         "Olives noires"
       ],
-      "baseRouge": false,
-      "baseBlanche": true,
-      "sansBase": false,
+      "base":  {"label": "Base Crème", "key": "baseBlanche", "state": "baseBlanche", "setState": "setBaseBlanche"},
       "avecViande": false,
       "avecPoisson": true,
       "afterCook": null,
-      "url": "url",
+      "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/10245.jpg",
       "prix": "11.50"
     },
     {
@@ -322,9 +343,7 @@
         "Mozzarella FDL",
         "Courgettes"
       ],
-      "baseRouge": false,
-      "baseBlanche": false,
-      "sansBase": true,
+      "base" : {"label": "Sans Base", "key": "sansBase", "state": "sansBase", "setState": "setSansBase"},
       "avecViande": true,
       "avecPoisson": false,
       "afterCook": [
@@ -333,7 +352,7 @@
         "Jambon de Parme",
         "Sauce basilic"
       ],
-      "url": "url",
+      "url": "https://therecipecritic.com/wp-content/uploads/2020/07/zucchini-pizza-4-667x1000.jpg",
       "prix": "13.5"
     }
   ],
@@ -343,7 +362,7 @@
       "nom": "Ice Tea 33cl",
       "prix": "2.00",
       "boissonChaudes": false,
-      "boissonAlcool" :false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -351,7 +370,7 @@
       "nom": "Coca Cola 33cl",
       "prix": "2.00",
       "boissonChaudes": false,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -359,7 +378,7 @@
       "nom": "San Pellegrino 50cl",
       "prix": "2.00",
       "boissonChaudes": false,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -367,7 +386,7 @@
       "nom": "San Pellegrino 1L",
       "prix": "2.50",
       "boissonChaudes": false,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -375,7 +394,7 @@
       "nom": "Evian 50cl",
       "prix": "2.00",
       "boissonChaudes": false,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -383,7 +402,7 @@
       "nom": "Evian 1L",
       "prix": "2.50",
       "boissonChaudes": false,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": true
     },
     {
@@ -391,7 +410,7 @@
       "nom": "Bière Italienne",
       "prix": "3.00",
       "boissonChaudes": false,
-      "boissonAlcool" : true,
+      "boissonAlcool": true,
       "boissonSoft": false
     },
     {
@@ -399,7 +418,7 @@
       "nom": "Vin Rouge",
       "prix": "9.00",
       "boissonChaudes": false,
-      "boissonAlcool" : true,
+      "boissonAlcool": true,
       "boissonSoft": false
     },
     {
@@ -407,7 +426,7 @@
       "nom": "Vin Rosé",
       "prix": "9.00",
       "boissonChaudes": false,
-      "boissonAlcool" : true,
+      "boissonAlcool": true,
       "boissonSoft": false
     },
     {
@@ -415,7 +434,7 @@
       "nom": "Expresso",
       "prix": "1.00",
       "boissonChaudes": true,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": false
     },
     {
@@ -423,7 +442,7 @@
       "nom": "Capuccino",
       "prix": "1.50",
       "boissonChaudes": true,
-      "boissonAlcool" : false,
+      "boissonAlcool": false,
       "boissonSoft": false
     }
   ],

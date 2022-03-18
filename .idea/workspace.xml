@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/categorySection/button.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/filterSection/renderFiltersSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/boissonCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/boissonCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/dessertCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/pizzaCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/products.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/renderProducts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +32,6 @@
   </component>
   <component name="ComposerSettings">
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-        <option value="tsconfig.json" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,9 +45,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/homeApp/home.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,31 +64,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/pizzas/filter" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/pizzas/filter" />
-      <recent name="$PROJECT_DIR$/src/components/pizzas/products" />
-      <recent name="$PROJECT_DIR$/public/icon" />
-      <recent name="$PROJECT_DIR$/src/components/findUsApp" />
-      <recent name="$PROJECT_DIR$/src/styles/settings" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/pizzas/products" />
-      <recent name="$PROJECT_DIR$/src/components/pizzas/category" />
-      <recent name="$PROJECT_DIR$/src/components/pizzas" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/laCarte/productSection/pizza" />
+      <recent name="$PROJECT_DIR$/src/components/laCarte/productSection/other" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,14 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646734454712</updated>
       <workItem from="1646734457182" duration="3821000" />
-      <workItem from="1647346949808" duration="15067000" />
-      <workItem from="1647434560603" duration="1053000" />
-      <workItem from="1647436670652" duration="11885000" />
-      <workItem from="1647514474622" duration="8595000" />
-      <workItem from="1647535380873" duration="15887000" />
-      <workItem from="1647551989001" duration="6374000" />
-      <workItem from="1647600525852" duration="5496000" />
-      <workItem from="1647606094011" duration="2734000" />
+      <workItem from="1647609833226" duration="24246000" />
     </task>
     <servers />
   </component>

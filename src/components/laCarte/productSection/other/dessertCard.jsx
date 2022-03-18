@@ -1,7 +1,6 @@
 import React from 'react';
 
-export const DessertCard = ({product}) => {
-    const {prix, nom, url} = product
+export const DessertCard = ({prix, nom, url}) => {
 
     return (
         <div className={'productCard'}>

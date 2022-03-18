@@ -1,7 +1,22 @@
 {
-   "id": 1,
-   "title": "LA PIZZA DU MOIS",
-   "img": "./img/pizza.jpg",
-   "ingredients": "Sauce Tomate, Mozarella Fior Di Latte, Basilic Frais, Filet d'Huile d'Olive",
-   "price": "9.50"
+  "_id": 100,
+  "nom": "La Pisello",
+  "ingredients": [
+    "Mozzarella FDL",
+    "Oignons rouges",
+    "Émincés de Champignons",
+    "Lardons",
+    "Persillade"
+  ],
+  "base": {
+    "label": "Base Petit Pois",
+    "key": "basePetitPois",
+    "state": "basePetitPois",
+    "setState": "setBasePetitPois"
+  },
+  "avecViande": true,
+  "avecPoisson": false,
+  "afterCook": null,
+  "url": "https://thumbs.dreamstime.com/b/pizza-affettata-del-pollo-con-salsa-al-pomodoro-formaggio-e-prezzemolo-32635535.jpg",
+  "prix": "12.00"
 }

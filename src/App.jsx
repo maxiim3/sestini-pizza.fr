@@ -7,7 +7,7 @@ import LaCarte from "./components/laCarteApp/laCarte";
 import Page404 from "./components/page404";
 import {Footer} from "./footer";
 import {MainLogoMinify} from "./components/commons/icons";
-import {Pizzas} from "./components/pizzas/pizzas";
+import {Pizzas} from "./components/laCarte/pizzas";
 
 const App = () => {
 
@@ -39,8 +39,7 @@ const App = () => {
                 {/*<Redirect from='/pizza:s?' to='/la-carte'/>*/}
                 {/*<Redirect from='/carte' to='/la-carte'/>*/}
                 {/*endregion*/}
-                <Route path='/la-carte' component={LaCarte}/>
-                <Route path='/pizzas' component={Pizzas}/>
+                <Route path='/la-carte' component={Pizzas}/>
                 <Route path='/page404' component={Page404}/>
                 {/*region homeRedirect*/}
                 {/*<Redirect from='/home' to='/bienvenus'/>*/}

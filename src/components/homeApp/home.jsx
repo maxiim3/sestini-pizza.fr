@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, NavLink, Route} from "react-router-dom";
+import PizzaDuMois from '../../data/pizzaOfMonth.json'
 import {
     MainLogo,
     MainLogoMinify,
@@ -11,6 +12,7 @@ import {
 } from '../commons/icons'
 import {Adresse, Email, PhoneNumber} from "../commons/informations";
 import {Footer} from "../../footer";
+import {PizzaCard} from "../laCarte/productSection/pizza/pizzaCard";
 
 const Home = () => {
 
@@ -38,18 +40,11 @@ const Home = () => {
             </section>
             <section id={'pizza-du-mois'} className="home-page home-page--section-pizza-du-mois">
                 <main className="card">
-                    <h2>La Maestrala</h2>
-                    <ul>
-                        <li>Sauce Tomate,</li>
-                        <li>Mozzarella Fleur de Lait,</li>
-                        <li>Basilic frais,</li>
-                        <li>Filet d’Huile d’olive</li>
-                    </ul>
-                    <img src={"./img/pizza.jpg"} alt="Photo de l'une de nos délicieuses pizza"/>
+                <PizzaCard
+                    product={PizzaDuMois}
+                />
                 </main>
-                <footer>
                     <button><a href={'#about'}>À Propos</a></button>
-                </footer>
             </section>
             <section id="about" className="home-page home-page-section-about">
                 <aside>
