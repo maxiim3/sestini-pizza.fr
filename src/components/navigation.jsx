@@ -1,29 +1,38 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import {
+    MainLogo,
+    IconFaceBook,
+    IconInstagram,
+    IconCloseNav,
+    IconNavLaCarte,
+    IconNavLocalisation
+} from './commons/icons';
+import {PhoneNumber} from './commons/informations'
 
-const Navigation = () => {
+const Navigation = ({navRef, onClose}) => {
+
+
     return (
-        // <ul>
-        //     <li><Link to="/bienvenus">Accueil</Link></li>
-        //     <li><Link to="/la-carte">La Carte</Link></li>
-        //     <li><Link to="/nous-trouver">Nous Trouver</Link></li>
-        // </ul>
-
-        <nav className="navbar navbar-expand-sm navbar-light bg-light">
-            <div className="container-fluid">
-                <NavLink className="navbar-brand" to={"/bienvenus"}>Sestini Pizza</NavLink>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <NavLink className="nav-link" aria-current="page" to={"/bienvenus"}>Accueil</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to={"/la-carte"}>La Carte</NavLink>
-                    </li>
-
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to={"/nous-trouver"}>Nous Trouver</NavLink>
-                    </li>
-                </ul>
+        <nav className="navigation" ref={navRef}>
+            <div className="navigationWrapper">
+                <NavLink onClick={onClose} className="navbar-brand" to={"/bienvenus"}><MainLogo/></NavLink>
+                <div onClick={onClose} className={'nav-btn-empty'}>
+                    <IconNavLocalisation/><NavLink className="" to={"/nous-trouver"}>Nous<br/>Trouver</NavLink>
+                </div>
+                <div onClick={onClose} className={'nav-btn-full'}>
+                    <IconNavLaCarte/><NavLink className="" to={"/la-carte"}>Notre<br/>Carte</NavLink>
+                </div>
+                <div onClick={onClose} className={'nav-btn-empty'}>
+                    <NavLink className="" aria-current="page" to={"/bienvenus"}>La Pizza<br/>Du
+                        Mois</NavLink>
+                </div>
+                <div onClick={onClose} onClick={() => onClose()}> <IconCloseNav/></div>
+                <div className="social-grid">
+                    <PhoneNumber/>
+                    <IconFaceBook beige={true}/>
+                    <IconInstagram beige={true}/>
+                </div>
             </div>
         </nav>
     );

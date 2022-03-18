@@ -1,33 +1,40 @@
-import React, {useEffect, useState} from 'react';
-import {Link, Route} from "react-router-dom";
-import {MainLogo, MainLogoMinify, Basilic, IconFaceBook, IconInstagram, IconLogoWithoutText} from '../commons/icons'
+import React from 'react';
+import {Link, NavLink, Route} from "react-router-dom";
+import {
+    MainLogo,
+    MainLogoMinify,
+    Basilic,
+    IconFaceBook,
+    IconInstagram,
+    IconLogoWithoutText,
+    IconNavLocalisation, IconNavLaCarte
+} from '../commons/icons'
 import {Adresse, Email, PhoneNumber} from "../commons/informations";
 import {Footer} from "../../footer";
 
 const Home = () => {
 
-
     return (
         <div className={'page home-page'}>
-
+            <Basilic/>
             <section className="home-page home-page--section-home">
-                <header>
-                    <MainLogoMinify beige={true}/>
-                    <MainLogo/>
-                    <Basilic/>
-                </header>
-                <main>
-                    <button><Link to={'/nous-trouver'}>Nous Trouver</Link></button>
-                    <button><Link to={'/la-carte'}>Notre Carte</Link></button>
-                    <button><a href={'#pizza-du-mois'}>La Pizza du Mois</a></button>
-                </main>
-                <footer>
+                <NavLink className="grid-heroTop" to={"/bienvenus"}><MainLogo/></NavLink>
+                <div className={'nav-btn-empty grid-btnLeft'}>
+                    <IconNavLocalisation/><NavLink className="" to={"/nous-trouver"}>Nous<br/>Trouver</NavLink>
+                </div>
+                <div className={'nav-btn-full grid-btnCenter'}>
+                    <IconNavLaCarte/><NavLink className="" to={"/la-carte"}>Notre<br/>Carte</NavLink>
+                </div>
+                <div className={'nav-btn-empty grid-btnRight'}>
+                    <NavLink className="" aria-current="page" to={"/bienvenus"}>La Pizza<br/>Du
+                        Mois</NavLink>
+                </div>
+                <div className={'social-grid'}>
                     <PhoneNumber/>
-                    <Email/>
                     <IconFaceBook beige={true}/>
                     <IconInstagram beige={true}/>
-                    <img src={"./img/pizza-half.png"} alt="Photo de l'une de nos délicieuses pizza"/>
-                </footer>
+                </div>
+                <img className={'home-static-pizza'} src={"./img/pizza-half.png"} alt="Photo de l'une de nos délicieuses pizza"/>
             </section>
             <section id={'pizza-du-mois'} className="home-page home-page--section-pizza-du-mois">
                 <main className="card">

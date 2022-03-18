@@ -1,100 +1,96 @@
+@use 'normalize.css';
+@use "settings" as var;
+@use "components" as comp;
 
-$police-main: 'Montserrat', sans-serif;
-$police-descriptive: 'Roboto', sans-serif;
-$police-seconde: 'Cinzel', serif;
-$police-seconde--alt: 'Cinzel Decorative', cursive;
-
-$fx-box-shadow-top: -4px -5px 10px rgba(0,0,0,0.250);
-
-// region Colors-Variable
-$color-beige: rgba(249, 240, 220, 1);
-$color-dark-grey: rgba(48, 54, 54, 1);
-$color-light-grey: rgba(158, 158, 158, 1);
-$color-dark-gray-90: rgba(48, 54, 54, 0.950);
-$color-orange: rgba(255, 129, 51, 1);
-$color-blanc: rgba(255, 255, 255, 1);
-$color-special-prim: rgba(29, 138, 203, 1);
-$color-special-sec: rgba(32, 43, 49, 1);
-$color-special-prim-60: rgba(32, 43, 49, 0.750);
-$color-special-third: rgba(0, 158, 208, 1);
-$color-gold: rgba(224, 170, 62, 1);
-$color-gold-90: rgba(224, 170, 62, 0.900);
-$color-gray-shadow-logo: rgba(68, 68, 68, 1);
-//endregion
-
-//region Mixins-Text-Style
-@mixin text-style-menu-titre {
-  font-size:1.625rem;
-  font-family: $police-seconde;
-  font-weight:normal;
-  font-style:normal;
-  text-decoration:none;
+:root {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
-@mixin text-style-menu-prix {
-  font-size:1rem;
-  font-family:$police-main;
-  font-weight:normal;
-  font-style:normal;
-  text-decoration:none;
-}
-@mixin text-style-menu-description {
-  font-size:1rem;
-  font-family:$police-main;
-  font-weight:normal;
-  font-style:italic;
-  text-decoration:none;
-}
-@mixin text-style-title {
-  font-size:1.562rem;
-  font-family:$police-main;
-  font-weight:bolder;
-  font-style:normal;
-  text-decoration:none;
-}
-@mixin text-style-sub-title {
-  font-size:1.125rem;
-  font-family:$police-main;
-  font-weight:bolder;
-  font-style:normal;
-  text-decoration:none;
-}
-@mixin text-style-menu-pizza-title {
-  font-size:1.062rem;
-  font-family:$police-main;
-  font-weight:bolder;
-  font-style:normal;
-  text-decoration:none;
-}
-@mixin text-style-menu-sub-title {
-  font-size:0.75rem;
-  font-family:$police-main;
-  font-weight:bold;
-  font-style:normal;
-  text-decoration:none;
-}
-@mixin text-style-menu-pizza-ingredients {
-  font-size:0.875rem;
-  font-family:$police-main;
-  font-weight:bold;
-  font-style:italic;
-  line-height:141.4%;
-  letter-spacing:0.02em;
-  text-decoration:none;
-}
-@mixin text-style-desktop-menu-nav-bar {
-  font-size:1.312rem;
-  font-family:$police-main;
-  font-weight:normal;
-  font-style:normal;
-  text-decoration:none;
-}
-//endregion
 
 
-.itemsCard{
-  @include text-style-menu-pizza-ingredients;
-  box-shadow: $fx-box-shadow-top;
-  img{
-    width: 20%;
+//region NAVIGATION-MOBILE
+.icon-logo-minify{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.nav-btn-full {
+  @include var.btn-nav--full;
+
+}
+
+.nav-btn-empty {
+  @include var.btn-nav--empty;
+}
+
+.navigation {
+  width: var.$fullWidth;
+  height: var.$fullHeight;
+  position: fixed;
+  margin:0;
+  padding: 0;
+  z-index: 50;
+
+  .navigationWrapper {
+  @include var.dark-home-page;
+
+    .social-grid {
+      @include var.social-grid-top(4.2rem);
+    }
   }
 }
+
+//endregion
+
+//region APP-HOME
+/**
+  === Section + Home ===
+ */
+.home-page {
+  height: auto;
+  width: var.$fullWidth;
+  background-color: var.$color-dark-grey;
+  z-index: -5;
+  .home-page--section-home {
+    height: var.$fullHeight;
+  }
+
+  .home-page--section-pizza-du-mois {
+    height: var.$fullHeight;
+    background-color: green;
+  }
+
+  .home-page-section-about {
+    height: var.$fullHeight;
+    background-color: yellow;
+  }
+}
+
+.home-page--section-home {
+  @include var.grid-home-page;
+  @include var.dark-home-page;
+
+  .social-grid {
+    @include var.social-grid-top(4.2rem);
+  }
+}
+
+.basilic {
+  position: absolute;
+  right: 0;
+  top: 30vh;
+
+}
+.home-static-pizza {
+  width: 55vw;
+  position: absolute;
+  left:0;
+  bottom: -30vw;
+}
+
+
+
+
+
+//endregion

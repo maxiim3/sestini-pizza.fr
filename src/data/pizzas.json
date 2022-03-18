@@ -1,0 +1,434 @@
+{
+  "pizzas": [
+    {
+      "_id": 1,
+      "nom": "LA MARGUERITA",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Basilic Frais",
+        "Filet d'Huile d'Olive"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "9.50"
+    },
+    {
+      "_id": 2,
+      "nom": "LA PIZZA DE BUFFLONE",
+      "ingredients": [
+        "Mozzarella di Buffala",
+        "Basilic Frais",
+        "Filet d'Huile d'Olive"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "10.00"
+    },
+    {
+      "_id": 3,
+      "nom": "LA PROSCUITTO",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Chiffonnade de jambon cuit",
+        "Filet d'Huile d'Olive"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "10.00"
+    },
+    {
+      "_id": 4,
+      "nom": "LA REGINA",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Chiffonnade de jambon cuit",
+        "Filet d'Huile d'Olive"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.00"
+    },
+    {
+      "_id": 5,
+      "nom": "Le Calzone de Sestini",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Chiffonnade de jambon cuit",
+        "Filet d'Huile d'Olive",
+        "Émincés de Champignons",
+        "Oeuf coulant"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 6,
+      "nom": "LA VEGETARIENNE",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Poivrons"
+      ],
+      "afterCook": null,
+      "avecViande": false,
+      "avecPoisson": false,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 7,
+      "nom": "L'Italienne",
+      "ingredients": [
+        "Mozzarella di Buffala"
+      ],
+      "afterCook": [
+        "Jambon de Parme",
+        "Parmesan",
+        "Tomates Cerises",
+        "Sauce Basilic"
+      ],
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "13.00"
+    },
+    {
+      "_id": 8,
+      "nom": "La Piccante",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Spianata Calabrese",
+        "Oignons Rouge",
+        "Olives Noire"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 9,
+      "nom": "La Salcicia e Bufala",
+      "ingredients": [
+        "Mozzarella di Bufala",
+        "Chair à Saucisse",
+        "Persillade",
+        "Olives Noires"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "12.50"
+    },
+    {
+      "_id": 10,
+      "nom": "La Napoletana",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Anchois",
+        "Câpres",
+        "Olives Noires"
+      ],
+      "afterCook": null,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": false,
+      "avecViande": false,
+      "avecPoisson": true,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 11,
+      "nom": "La Coppa",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Artichaut à la Romaine",
+        "Olives Noires"
+      ],
+      "afterCook": [
+        "Coppa",
+        "Parmesan"
+      ],
+      "avecViande": false,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "sansBase": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "12.00"
+    },
+    {
+      "_id": 12,
+      "nom": "La Quatre Fromages",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Chèvre",
+        "Gorgonzola",
+        "Parmesan"
+      ],
+      "afterCook": null,
+      "avecViande": true,
+      "sansBase": false,
+      "baseRouge": false,
+      "baseBlanche": false,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 13,
+      "nom": "La Biquette",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Chèvre"
+      ],
+      "afterCook": [
+        "Miel (sur demande)"
+      ],
+      "sansBase": false,
+      "baseRouge": false,
+      "baseBlanche": true,
+      "avecViande": false,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "10.50"
+    },
+    {
+      "_id": 14,
+      "nom": "La Salmone",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Émincés de Champignon"
+      ],
+      "afterCook": null,
+      "avecViande": false,
+      "avecPoisson": true,
+      "sansBase": false,
+      "baseRouge": false,
+      "baseBlanche": true,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 15,
+      "nom": "La Charcutière",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Gorgonzola"
+      ],
+      "afterCook": [
+        "Jambon de Parme",
+        "Sipanata Calabrese",
+        "Parmesan",
+        "Sauce Basilic"
+      ],
+      "avecViande": false,
+      "avecPoisson": true,
+      "sansBase": false,
+      "baseRouge": true,
+      "baseBlanche": false,
+      "url": "./img/pizza.jpg",
+      "prix": "13.00"
+    },
+    {
+      "_id": 16,
+      "nom": "La Foresta",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Oignons Rouge",
+        "Émincés de Champignons",
+        "Lardons",
+        "Persillade"
+      ],
+      "afterCook": null,
+      "baseRouge": false,
+      "sansBase": false,
+      "baseBlanche": true,
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 17,
+      "nom": "La Tonno",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Oignons Rouge",
+        "Thon",
+        "Olives Noires"
+      ],
+      "afterCook": null,
+      "avecViande": true,
+      "baseRouge": false,
+      "sansBase": false,
+      "baseBlanche": false,
+      "avecPoisson": true,
+      "url": "./img/pizza.jpg",
+      "prix": "11.50"
+    },
+    {
+      "_id": 18,
+      "nom": "La Zucchina",
+      "base": "sans",
+      "ingredients": [
+        "Mozzarella FDL",
+        "Courgettes"
+      ],
+      "afterCook": [
+        "Mozzarella di Bufala",
+        "Tomates Cerises",
+        "Jambon de Parme",
+        "Sauce Basilic"
+      ],
+      "avecViande": true,
+      "avecPoisson": false,
+      "url": "./img/pizza.jpg",
+      "prix": "13.5"
+    }
+  ],
+  "boissons": [
+    {
+      "_id": 1,
+      "nom": "Ice Tea 33cl",
+      "price": "2.00",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 2,
+      "nom": "Coca Cola 33cl",
+      "price": "2.00",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 3,
+      "nom": "SAN PELLEGRINO 50cl",
+      "price": "2.00",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 4,
+      "nom": "SAN PELLEGRINO 1L",
+      "price": "2.50",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 5,
+      "nom": "EVIAN 50cl",
+      "price": "2.00",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 6,
+      "nom": "EVIAN 1L",
+      "price": "2.50",
+      "chaud": false,
+      "soft": true
+    },
+    {
+      "_id": 7,
+      "nom": "BIERE",
+      "price": "3.00",
+      "chaud": false,
+      "soft": false
+    },
+    {
+      "_id": 8,
+      "nom": "VIN ROUGE",
+      "price": "9.00",
+      "chaud": false,
+      "soft": false
+    },
+    {
+      "_id": 9,
+      "nom": "VIN ROSE",
+      "price": "9.00",
+      "chaud": false,
+      "soft": false
+    }
+  ],
+  "desserts": [
+    {
+      "_id": 1,
+      "nom": "TIRAMISU",
+      "price": "4.00"
+    },
+    {
+      "_id": 2,
+      "nom": "PANA",
+      "price": "3.00"
+    }
+  ],
+  "suppléments": [
+    {
+      "_id": 1,
+      "nom": "Artichaut",
+      "price": "1.00"
+    },
+    {
+      "_id": 2,
+      "nom": "Bufala",
+      "price": "2.50"
+    },
+    {
+      "_id": 3,
+      "nom": "Légumes",
+      "price": "0.50"
+    },
+    {
+      "_id": 4,
+      "nom": "Fromage,Charcuterie,Viande",
+      "price": "1.00"
+    },
+    {
+      "_id": 5,
+      "nom": "Poisson",
+      "price": "1.50"
+    }
+  ]
+}

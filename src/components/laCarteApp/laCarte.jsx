@@ -28,9 +28,17 @@ const LaCarte = () => {
     }
     return (
         <div>
-            {buttonMenuList.map((btnMenu) => <button key={btnMenu} onClick={selectedButtonMenu} value={btnMenu}>{btnMenu}</button>)}
+            {buttonMenuList.map((btnMenu) =>
+                <button
+                    key={btnMenu}
+                    onClick={selectedButtonMenu}
+
+                    value={btnMenu}>
+                    {btnMenu}
+                </button>)
+            }
             <ItemsList index={index}/>
-            <ItemsOfMonth />
+            <ItemsOfMonth/>
         </div>
     );
 };
