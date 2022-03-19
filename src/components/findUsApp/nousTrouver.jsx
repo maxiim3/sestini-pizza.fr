@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Day from "./day";
 import {getDays} from "./jours";
-import {Carte} from "./carte";
 
 export const NousTrouver = ({location}) => {
     const index = new Date().getDay() - 1

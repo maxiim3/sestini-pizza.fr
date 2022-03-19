@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useStates} from 'react';
 import Data from "../../data/pizzas.json";
 import PizzaDuMois from "../../data/pizzaOfMonth.json";
 import {RenderButtons} from "./categorySection/renderButtons";

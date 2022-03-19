@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/categorySection/button.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/filterSection/renderFiltersSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/boissonCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/boissonCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/dessertCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/pizzaCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/products.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pizzas/products/renderProducts.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/api.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/maps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/stores.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/carte.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/filter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsOfMonth.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/laCarte.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1646734454712</updated>
       <workItem from="1646734457182" duration="3821000" />
-      <workItem from="1647609833226" duration="24246000" />
+      <workItem from="1647609833226" duration="24350000" />
+      <workItem from="1647691445482" duration="346000" />
     </task>
     <servers />
   </component>
