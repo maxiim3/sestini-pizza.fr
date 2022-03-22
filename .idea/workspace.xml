@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/api.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/maps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/stores.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/MapsAPI/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/carte.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/filter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/itemsOfMonth.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarteApp/laCarte.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +71,8 @@
       <updated>1646734454712</updated>
       <workItem from="1646734457182" duration="3821000" />
       <workItem from="1647609833226" duration="24350000" />
-      <workItem from="1647691445482" duration="346000" />
+      <workItem from="1647691445482" duration="400000" />
+      <workItem from="1647869366879" duration="482000" />
     </task>
     <servers />
   </component>
