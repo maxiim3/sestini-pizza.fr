@@ -18,7 +18,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/19/2010/01/21/pizzetta-margherita-pizza-su-x.jpg",
-      "prix": "9.50"
+      "prix": "9,50"
     },
     {
       "_id": 2,
@@ -38,7 +38,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://thumbs.dreamstime.com/b/delicious-italian-pizza-buffalo-mozzarella-tomato-sauce-basil-classic-napoli-food-italian-pizza-bufalina-103122067.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 3,
@@ -58,7 +58,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://parmacrown.com/wp-content/uploads/2015/03/Pizza-4.jpg",
-      "prix": "10.00"
+      "prix": "10,00"
     },
     {
       "_id": 4,
@@ -78,7 +78,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://i.pinimg.com/originals/c5/62/b3/c562b36428b8740aa0b4d6349b3c2200.jpg",
-      "prix": "11.00"
+      "prix": "11,00"
     },
     {
       "_id": 5,
@@ -100,7 +100,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://celentano.ro/wp-content/uploads/2020/01/calzone_2-1080x960-1.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 6,
@@ -124,7 +124,7 @@
         "Filet d'huile d'olive"
       ],
       "url": "https://img.cuisineaz.com/660x660/2018-09-26/i142888-pizza-vegetarienne-recette.jpeg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 7,
@@ -147,7 +147,7 @@
         "Sauce basilic"
       ],
       "url": "https://eat.portodimarecascais.com/wp-content/uploads/2020/09/parma-bufala.jpg",
-      "prix": "13.00"
+      "prix": "13,00"
     },
     {
       "_id": 8,
@@ -168,7 +168,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://www.chilirezept.de/wp-content/uploads/2019/02/Pizza-Calabria.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 9,
@@ -189,7 +189,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://www.mydailydinner.nl/wp-content/uploads/2020/04/Pizza-Salsiccia-02-04-2020.jpg",
-      "prix": "12.50"
+      "prix": "12,50"
     },
     {
       "_id": 10,
@@ -210,7 +210,7 @@
       "avecPoisson": true,
       "afterCook": null,
       "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-napolitaine_ok.jpg?fit=4898%2C3265&ssl=1",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 11,
@@ -233,7 +233,7 @@
         "Parmesan"
       ],
       "url": "https://www.foodette.fr/files/products/pizza-coppa-mozzarella-bufala-roquette-tomate-rucola-italie.jpg",
-      "prix": "12.00"
+      "prix": "12,00"
     },
     {
       "_id": 12,
@@ -249,7 +249,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/2981.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 13,
@@ -265,7 +265,7 @@
         "Miel (sur demande)"
       ],
       "url": "https://leloft-restaurant.com/wp-content/uploads/2020/05/PIZZA-CHEVRE-MIEL.jpg",
-      "prix": "10.50"
+      "prix": "10,50"
     },
     {
       "_id": 14,
@@ -282,7 +282,7 @@
         "Crème balsamique"
       ],
       "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-salmone2_ok.jpg?fit=4898%2C3265&ssl=1",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 15,
@@ -301,7 +301,7 @@
         "Sauce basilic"
       ],
       "url": "https://wdwnt.com/wp-content/uploads/2021/04/craftsman-bar-grill-charcuterie-pizza-4-1711939-1200x900.jpg",
-      "prix": "13.00"
+      "prix": "13,00"
     },
     {
       "_id": 16,
@@ -318,7 +318,7 @@
       "avecPoisson": false,
       "afterCook": null,
       "url": "https://recettes-gourmandes-de-joce.fr/wp-content/uploads/2019/10/PA190532.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 17,
@@ -334,7 +334,7 @@
       "avecPoisson": true,
       "afterCook": null,
       "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/10245.jpg",
-      "prix": "11.50"
+      "prix": "11,50"
     },
     {
       "_id": 18,
@@ -353,14 +353,14 @@
         "Sauce basilic"
       ],
       "url": "https://therecipecritic.com/wp-content/uploads/2020/07/zucchini-pizza-4-667x1000.jpg",
-      "prix": "13.5"
+      "prix": "13,5"
     }
   ],
   "boissons": [
     {
       "_id": 1,
       "nom": "Ice Tea 33cl",
-      "prix": "2.00",
+      "prix": "2,00",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -368,7 +368,7 @@
     {
       "_id": 2,
       "nom": "Coca Cola 33cl",
-      "prix": "2.00",
+      "prix": "2,00",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -376,7 +376,7 @@
     {
       "_id": 3,
       "nom": "San Pellegrino 50cl",
-      "prix": "2.00",
+      "prix": "2,00",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -384,7 +384,7 @@
     {
       "_id": 4,
       "nom": "San Pellegrino 1L",
-      "prix": "2.50",
+      "prix": "2,50",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -392,7 +392,7 @@
     {
       "_id": 5,
       "nom": "Evian 50cl",
-      "prix": "2.00",
+      "prix": "2,00",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -400,7 +400,7 @@
     {
       "_id": 6,
       "nom": "Evian 1L",
-      "prix": "2.50",
+      "prix": "2,50",
       "boissonChaudes": false,
       "boissonAlcool": false,
       "boissonSoft": true
@@ -408,7 +408,7 @@
     {
       "_id": 7,
       "nom": "Bière Italienne",
-      "prix": "3.00",
+      "prix": "3,00",
       "boissonChaudes": false,
       "boissonAlcool": true,
       "boissonSoft": false
@@ -416,7 +416,7 @@
     {
       "_id": 8,
       "nom": "Vin Rouge",
-      "prix": "9.00",
+      "prix": "9,00",
       "boissonChaudes": false,
       "boissonAlcool": true,
       "boissonSoft": false
@@ -424,7 +424,7 @@
     {
       "_id": 9,
       "nom": "Vin Rosé",
-      "prix": "9.00",
+      "prix": "9,00",
       "boissonChaudes": false,
       "boissonAlcool": true,
       "boissonSoft": false
@@ -432,7 +432,7 @@
     {
       "_id": 10,
       "nom": "Expresso",
-      "prix": "1.00",
+      "prix": "1,00",
       "boissonChaudes": true,
       "boissonAlcool": false,
       "boissonSoft": false
@@ -440,7 +440,7 @@
     {
       "_id": 11,
       "nom": "Capuccino",
-      "prix": "1.50",
+      "prix": "1,50",
       "boissonChaudes": true,
       "boissonAlcool": false,
       "boissonSoft": false
@@ -450,13 +450,13 @@
     {
       "_id": 1,
       "nom": "TIRAMISU",
-      "prix": "4.00",
+      "prix": "4,00",
       "url": "https://www.chezpino.be/wp-content/uploads/2020/10/02b90d9d36145917dea77ecdb4af3613.jpg"
     },
     {
       "_id": 2,
       "nom": "PANA",
-      "prix": "3.00",
+      "prix": "3,00",
       "url": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/panna-cotta-thermomix-3644747/86259461-1-fre-FR/Panna-cotta-Thermomix.jpg"
     }
   ],
@@ -464,32 +464,32 @@
     {
       "_id": 1,
       "nom": "Artichaut",
-      "prix": "1.00"
+      "prix": "1,00"
     },
     {
       "_id": 2,
       "nom": "Bufala",
-      "prix": "2.50"
+      "prix": "2,50"
     },
     {
       "_id": 3,
       "nom": "Légume",
-      "prix": "0.50"
+      "prix": "0,50"
     },
     {
       "_id": 4,
       "nom": "Fromage/Charcuterie/Viande",
-      "prix": "1.00"
+      "prix": "1,00"
     },
     {
       "_id": 5,
       "nom": "Poisson",
-      "prix": "1.50"
+      "prix": "1,50"
     },
     {
       "_id": 6,
       "nom": "Oeuf",
-      "prix": "1.00"
+      "prix": "1,00"
     }
   ]
 }

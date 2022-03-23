@@ -99,122 +99,277 @@
 
 //region LA-CARTE
 main.laCarte-page {
-  height: 100%;
+  height: 100vh;
+  @media (width > 750px) {
+    height: auto;
+  }
+  overflow-y: hidden;
   width: var.$fullWidth;
   background-color: var.$color-dark-grey;
   color: var.$color-beige;
 
-  section.app-title {
+  aside {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18vh;
+    transform: rotate(-90deg);
+    transform-origin: 10% 10%;
+    top: 18vh;
 
+    .iconTitle {
+      width: 16px;
+    }
+
+    .pageTitle {
+      font-size: var.$fs-carte-reg;
+      text-transform: uppercase;
+    }
   }
 
-  section.categories {
+  h2 {
+    font-size: var.$fs-carte-h1;
+    display: inline;
+    width: fit-content;
+    margin: 1ch 0;
+    padding: 0;
 
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      border-top: 0.5px solid var.$color-beige;
+      width: 4rem;
+      margin: 0 1rem;
+      transform: translateY(-0.5rem);
+    }
   }
 
-  section.filtres {
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 7rem;
+      height: 7.5rem;
+      padding-inline: 1rem;
+      border-radius: 15px;
+
+      border: 1px solid var.$color-beige;
+      background-color: rgba(255, 255, 255, 0);
+      color: var.$color-beige;
+
+      p {
+        font-size: var.$fs-carte-reg;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .btn-active {
+      border: none;
+      background-color: var.$color-beige;
+      color: var.$color-dark-grey;
+    }
+  }
+
+  .categories {
+    width: auto;
+    height: 18vh;
+  }
+
+  section.categories,
+  .filtres,
+  .app-main {
+    .app-sub-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      display: inline;
+    }
+
   }
 
   section.app-main {
 
-    .app-sub-title {
-      color: red;
-    }
-
     .pizzas {
 
       ul {
+        height: 40rem;
+        margin: 1rem 0 0;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        gap: 15vw;
+        gap: 10ch;
+        flex-flow: row nowrap;
 
-        .pizzaCard {
-          margin-block: 2rem;
-          width: 68vw;
+        @media (width > 750px) {
+          height: auto;
+          flex-flow: row wrap;
+        }
+        overflow-x: scroll;
+
+        .productCard {
+          width: 21rem;
+          height: 90%;
           background-color: var.$color-beige;
           color: var.$color-dark-grey;
-
           border-radius: 10px;
-          border: 1px solid var.$color-beige-light;
 
-          .productCard {
-            width: 68vw;
-            height: 58vh;
+          .card-header {
+            position: relative;
+            width: 100%;
+            height: 45%;
+            padding: 0;
+            z-index: 0;
 
-            .card-header {
-              position: relative;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 49%;
-              margin: 0;
-              padding: 0;
 
-              .title {
-                height: 32%;
-                width: 102%;
-                position: absolute;
-                top: -1px;
-                left: -2px;
+            .title {
+              height: 32%;
+              width: 102%;
+              padding-top: 1ch;
+              position: absolute;
+              top: -1px;
+              left: -2px;
 
-                font-size: var.$fs-carte-h1;
-                font-family: var.$police-seconde;
-                text-transform: uppercase;
-                color: var.$color-beige;
+              font-size: var.$fs-carte-desc;
+              font-family: var.$police-seconde;
+              text-transform: uppercase;
+              font-weight: 800;
+              letter-spacing: 0.1rem;
+              text-align: center;
+              color: var.$color-beige;
 
-                background-color: var.$color-dark-gray-light;
-                display: grid;
-                place-content: center;
-              }
-
-              img {
-                position: relative;
-                top: -1px;
-                left: -1px;
-                width: 100%;
-                height: 100%;
-              }
-
-              .price {
-                position: absolute;
-                bottom: 2px;
-                right: 2px;
-                width: 5rem;
-                height: 5rem;
-                border-radius: 100%;
-                background-color: var.$color-gold-90;
-                display: grid;
-                place-content: center;
-                p {
-                  color: var.$color-beige;
-                  font-size: var.$fs-carte-price;
-                  font-family: var.$police-seconde--alt;
-                }
-              }
+              background-color: var.$color-dark-gray-light;
+              display: grid;
+              place-content: center;
 
             }
-            .card-body {
-              position: relative;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 49%;
-              margin: 0;
-              padding: 0;
-              .description{
-                margin: 3rem 2rem;
 
-                p{
-                  font-size: var.$fs-carte-desc;
-                  letter-spacing: 0.1rem;
-                  line-height:180%;
-                }
+            img {
+              //position: relative;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 10px 10px 0 0;
+              top: -1px;
+              left: -1px;
+              width: 100%;
+              height: 100%;
+            }
+
+            .price {
+              position: absolute;
+              bottom: 2px;
+              right: 2px;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 100%;
+              background-color: var.$color-gold-90;
+              display: grid;
+              place-content: center;
+
+              p {
+                padding-top: 1ch;
+                font-weight: 600;
+                color: var.$color-beige;
+                font-size: var.$fs-carte-price;
+                font-family: var.$police-seconde--alt;
               }
             }
 
           }
+
+          .card-body {
+            position: relative;
+            height: 55%;
+            margin: 0;
+            padding: 0;
+
+            .description {
+              margin: 1.5rem 1rem 0;
+
+              p {
+                font-size: var.$fs-carte-desc;
+                letter-spacing: 0.1rem;
+                line-height: 180%;
+              }
+
+            }
+
+          }
+
+        }
+      }
+    }
+
+    .boissons {
+      li {
+        display: flex;
+        flex-flow: row nowrap;
+
+        p {
+          display: inline-block;
+        }
+
+        .left {
+          align-self: start;
+        }
+
+        .right {
+          align-self: end;
+        }
+
+        .center {
+          flex-grow: 5;
+          display: inline-block;
+          content: "";
+          border-top: 0.2px solid var.$color-beige;
+          width: max-content;
+          margin-inline: 1ch;
+          transform: translateY(0.5rem);
+        }
+      }
+    }
+
+    .desserts, .desserts * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .desserts {
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h3 {
+          font-family: var.$police-seconde;
+          font-size: var.$fs-carte-h1;
+          text-align: center;
+
+          .price {
+            font-size: var.$fs-carte-price;
+          }
+        }
+
+        .img {
+          width: 40vw;
+          height: 40vw;
+          object-fit: fill;
 
         }
       }

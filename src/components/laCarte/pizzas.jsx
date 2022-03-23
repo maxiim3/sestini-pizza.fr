@@ -1,8 +1,8 @@
-import React, {useStates} from 'react';
+import React, {useState} from 'react';
 import Data from "../../data/pizzas.json";
 import PizzaDuMois from "../../data/pizzaOfMonth.json";
 import {RenderButtons} from "./categorySection/renderButtons";
-import {IconHandClick, IconNavLaCarte, IconSwap} from "../commons/icons";
+import {IconHandClick, IconNavLaCarte, IconSwap, IconTitleLaCarte} from "../commons/icons";
 import {RenderProducts} from "./productSection/renderProducts";
 import {RenderFilterSection} from "./filterSection/renderFiltersSection";
 
@@ -21,6 +21,7 @@ export const Pizzas = () => {
 
         const [products] = useState(allDatas.pizzas)
         const [categories, setCategories] = useState('pizzas')
+        const [activeBase, setActiveBase] = useState();
         const [filteredProducts, setFilteredProducts] = useState(products);
         let [iteration, setIteration] = useState(0)
 
@@ -43,8 +44,8 @@ export const Pizzas = () => {
                     (p.base.key === id)
                 )
             )
+            setActiveBase(id)
             setFilteredProducts([...data])
-            console.log(id)
         }
 
         /**
@@ -57,18 +58,17 @@ export const Pizzas = () => {
 
         return (
             <main className={'page laCarte-page'}>
-                <section className="laCarte-page app-title">
-                    <h1>Notre Carte</h1>
-                    {/*Faire un title global dont la valeur change avec le routing*/}
-                    <IconNavLaCarte/>
-                </section>
+                <aside>
+                    <h1 className={"pageTitle"}>Notre Carte</h1>
+                    <span className="iconTitle"><IconTitleLaCarte/></span>
+                </aside>
+                {/*Faire un title global dont la valeur change avec le routing*/}
                 <section className="laCarte-page categories">
                     <div className="laCarte-page app-sub-title">
-                        <IconHandClick/> <span>------</span><h2>Catégories</h2><span>------</span>
+                        <IconHandClick/>
+                        <h2>Catégories</h2>
                     </div>
-                    <RenderButtons
-                        onChange={handleCategorize}
-                    />
+                    <RenderButtons activeCategory={categories} onChange={handleCategorize}/>
                 </section>
                 <section className="laCarte-page filtres">
                     <RenderFilterSection
@@ -77,12 +77,13 @@ export const Pizzas = () => {
                         data={allDatas}
                         onChangeType={handleIteration}
                         iteration={iteration}
+                        base={activeBase}
                     />
                 </section>
                 <section className="app-main">
                     <div className="app-sub-title">
-                        <IconSwap/> <span>------</span><h2>Nos {categories[0].toUpperCase() + categories.slice(1,)}</h2>
-                        <span>------</span>
+                        {categories === 'pizzas' ? <IconSwap/> : null} <h2>Nos {categories[0].toUpperCase() + categories.slice(1,)}</h2>
+
                     </div>
                     <RenderProducts
                         products={filteredProducts}

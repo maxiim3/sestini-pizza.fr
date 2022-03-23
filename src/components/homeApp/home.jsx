@@ -65,6 +65,7 @@ const Home = () => {
                     <button><a href={'#'}>Haut de la page</a></button>
                 </footer>
             </section>
+            <Footer/>
         </div>
 
     );

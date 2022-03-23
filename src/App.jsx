@@ -3,7 +3,6 @@ import {Redirect, Route, Switch} from "react-router-dom";
 import Home from './components/homeApp/home';
 import Navigation from "./components/navigation";
 import {NousTrouver} from "./components/findUsApp/nousTrouver";
-import LaCarte from "./components/laCarteApp/laCarte";
 import Page404 from "./components/page404";
 import {Footer} from "./footer";
 import {MainLogoMinify} from "./components/commons/icons";
@@ -50,7 +49,6 @@ const App = () => {
                 <Route path='/bienvenus' render={() => <Home iconNavRef={iconNav} onOpenNav={handleShowNav}/>}/>
                 <Redirect to='/page404'/>
             </Switch>
-            <Footer/>
         </React.StrictMode>
     )
         ;

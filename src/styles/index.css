@@ -1,3 +1,9 @@
+/* Montserrat          */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap");
+/* Cinzel & Czl. Deco. */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;800;900&display=swap");
+/* Roboto              */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -544,95 +550,228 @@ template {
 }
 
 main.laCarte-page {
-  height: 100%;
+  height: 100vh;
+  overflow-y: hidden;
   width: 100vw;
   background-color: #303636;
   color: #f9f0dc;
 }
-main.laCarte-page section.app-main .app-sub-title {
-  color: red;
+@media (width > 750px) {
+  main.laCarte-page {
+    height: auto;
+  }
 }
-main.laCarte-page section.app-main .pizzas ul {
+main.laCarte-page aside {
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  gap: 15vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 18vh;
+  transform: rotate(-90deg);
+  transform-origin: 10% 10%;
+  top: 18vh;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard {
-  margin-block: 2rem;
-  width: 68vw;
-  background-color: #f9f0dc;
-  color: #303636;
-  border-radius: 10px;
-  border: 1px solid rgba(249, 240, 220, 0.5);
+main.laCarte-page aside .iconTitle {
+  width: 16px;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard {
-  width: 68vw;
-  height: 58vh;
+main.laCarte-page aside .pageTitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 49%;
+main.laCarte-page h2 {
+  font-size: 1.8rem;
+  display: inline;
+  width: fit-content;
+  margin: 1ch 0;
+  padding: 0;
+}
+main.laCarte-page h2::before, main.laCarte-page h2::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.5px solid #f9f0dc;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-0.5rem);
+}
+main.laCarte-page .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main.laCarte-page .buttons .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7.5rem;
+  padding-inline: 1rem;
+  border-radius: 15px;
+  border: 1px solid #f9f0dc;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f9f0dc;
+}
+main.laCarte-page .buttons .button p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-header .title {
+main.laCarte-page .buttons .btn-active {
+  border: none;
+  background-color: #f9f0dc;
+  color: #303636;
+}
+main.laCarte-page .categories {
+  width: auto;
+  height: 18vh;
+}
+main.laCarte-page section.categories .app-sub-title,
+main.laCarte-page .filtres .app-sub-title,
+main.laCarte-page .app-main .app-sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.laCarte-page section.categories svg,
+main.laCarte-page .filtres svg,
+main.laCarte-page .app-main svg {
+  display: inline;
+}
+main.laCarte-page section.app-main .pizzas ul {
+  height: 40rem;
+  margin: 1rem 0 0;
+  display: flex;
+  gap: 10ch;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+@media (width > 750px) {
+  main.laCarte-page section.app-main .pizzas ul {
+    height: auto;
+    flex-flow: row wrap;
+  }
+}
+main.laCarte-page section.app-main .pizzas ul .productCard {
+  width: 21rem;
+  height: 90%;
+  background-color: #f9f0dc;
+  color: #303636;
+  border-radius: 10px;
+}
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header {
+  position: relative;
+  width: 100%;
+  height: 45%;
+  padding: 0;
+  z-index: 0;
+}
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .title {
   height: 32%;
   width: 102%;
+  padding-top: 1ch;
   position: absolute;
   top: -1px;
   left: -2px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: "Cinzel", serif;
   text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-align: center;
   color: #f9f0dc;
-  background-color: rgba(48, 54, 54, 0.65);
+  background-color: rgba(32, 43, 49, 0.7);
   display: grid;
   place-content: center;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-header img {
-  position: relative;
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
   top: -1px;
   left: -1px;
   width: 100%;
   height: 100%;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-header .price {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price {
   position: absolute;
   bottom: 2px;
   right: 2px;
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
-  background-color: rgba(224, 170, 62, 0.9);
+  background-color: rgba(224, 170, 62, 0.95);
   display: grid;
   place-content: center;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-header .price p {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price p {
+  padding-top: 1ch;
+  font-weight: 600;
   color: #f9f0dc;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: "Cinzel Decorative", cursive;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-body {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 49%;
+  height: 55%;
   margin: 0;
   padding: 0;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-body .description {
-  margin: 3rem 2rem;
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description {
+  margin: 1.5rem 1rem 0;
 }
-main.laCarte-page section.app-main .pizzas ul .pizzaCard .productCard .card-body .description p {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description p {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 180%;
+}
+main.laCarte-page section.app-main .boissons li {
+  display: flex;
+  flex-flow: row nowrap;
+}
+main.laCarte-page section.app-main .boissons li p {
+  display: inline-block;
+}
+main.laCarte-page section.app-main .boissons li .left {
+  align-self: start;
+}
+main.laCarte-page section.app-main .boissons li .right {
+  align-self: end;
+}
+main.laCarte-page section.app-main .boissons li .center {
+  flex-grow: 5;
+  display: inline-block;
+  content: "";
+  border-top: 0.2px solid #f9f0dc;
+  width: max-content;
+  margin-inline: 1ch;
+  transform: translateY(0.5rem);
+}
+main.laCarte-page section.app-main .desserts, main.laCarte-page section.app-main .desserts * {
+  margin: 0;
+  padding: 0;
+}
+main.laCarte-page section.app-main .desserts ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main.laCarte-page section.app-main .desserts ul h3 {
+  font-family: "Cinzel", serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+main.laCarte-page section.app-main .desserts ul h3 .price {
+  font-size: 1.5rem;
+}
+main.laCarte-page section.app-main .desserts ul .img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=index.css.map */
