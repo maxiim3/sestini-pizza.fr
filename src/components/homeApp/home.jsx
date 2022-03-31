@@ -34,40 +34,55 @@ const Home = () => {
           {/*<MainLogo />*/}
           <img src={"./img/logo-groupe.png"} alt="Logo Sestini Pizza" />
         </header>
-        <section className={'grid grid-col-6 gap-4'}>
-          <Button>
-            <div className={""}>
-              <IconNavLocalisation />
-              <NavLink className="" to={"/nous-trouver"}>
-                Nous
-                <br />
-                Trouver
-              </NavLink>
-            </div>
-          </Button>
-          <Button>
-            <div className={""}>
-              <IconNavLaCarte />
-              <NavLink className="" to={"/la-carte"}>
-                Notre
-                <br />
-                Carte
-              </NavLink>
-            </div>
-          </Button>
-          <div className={""}>
-            <Button>
+        <section className={"grid grid-cols-5 grid-rows-4 gap-y-4 px-3 md:flex justify-between md:max-w-3xl"}>
+          <div
+            className={
+              "col-start-1 col-end-3 row-start-1 justify-self-center self-center"
+            }
+          >
+            <Button nav={true}>
+                <IconNavLocalisation />
+                <NavLink className="" to={"/nous-trouver"}>
+                  <div className="text-xl text-yellow-100 uppercase font-semibold">Nous
+                    <br/>
+                    Trouver
+                  </div>
+                </NavLink>
+            </Button>
+          </div>
+          <div className="col-start-2 col-end-5 row-start-2 justify-self-center self-center md:row-start-1">
+            <Button nav={true} activeClass={true}>
+                <IconNavLaCarte />
+                <NavLink className="" to={"/la-carte"}>
+                  <div className="text-xl text-dark uppercase font-semibold">Notre
+                    <br/>
+                    Carte
+                  </div>
+                </NavLink>
+            </Button>
+          </div>
+          <div
+            className={
+              "col-start-4 col-end-6 row-start-3 justify-self-center self-center md:row-start-1"
+            }
+          >
+            <Button nav={true}>
               <NavLink className="" aria-current="page" to={"/bienvenus"}>
-                La Pizza
-                <br />
-                Du Mois
+                <div className="text-xl text-yellow-100 uppercase font-semibold">La Pizza
+                  <br/>
+                  Du Mois
+                </div>
               </NavLink>
             </Button>
           </div>
-          <div className={""}>
-            <PhoneNumber />
-            <IconFaceBook beige={true} />
-            <IconInstagram beige={true} />
+          <div
+            className={
+              "col-start-4 col-span-2 row-start-4 md:row-start-1 md:order-first justify-self-center self-center grid grid-cols-2 grid-rows-2 gap-y-px gap-x-px"
+            }
+          >
+            <div className="col-span-2 row-start-1 justify-self-center self-center text-yellow-100 text-xl"><PhoneNumber/></div>
+            <div className="col-span-1 row-start-2 justify-self-center self-center"><IconFaceBook beige={true}/></div>
+            <div className="col-span-1 row-start-2 justify-self-center self-center"> <IconInstagram beige={true}/></div>
           </div>
         </section>
       </article>

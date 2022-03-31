@@ -143,9 +143,6 @@ export const RenderButtons = ({ onChange, activeCategory }) => {
     },
   ];
 
-  const stateChange = (compare, isTrue, isFalse) => {
-    return activeCategory === compare ? isTrue : isFalse;
-  };
 
   return (
     <div className={"buttons"}>
@@ -160,10 +157,10 @@ export const RenderButtons = ({ onChange, activeCategory }) => {
         <Button
           key={btn._id}
           onClick={() => onChange(btn.text)}
-          activeClass={stateChange(btn.text, "btn-active", "")}
+          activeClass={activeCategory === btn.text}
         >
           <p>{btn.text.toUpperCase()}</p>
-          {stateChange(btn.text, btn.component.avec, btn.component.sans)}
+          {activeCategory === btn.text ? btn.component.avec : btn.component.sans}
         </Button>
       ))}
     </div>

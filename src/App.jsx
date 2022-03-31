@@ -4,7 +4,6 @@ import Home from './components/homeApp/home';
 import Navigation from "./components/navigation";
 import {NousTrouver} from "./components/findUsApp/nousTrouver";
 import Page404 from "./components/page404";
-import {Footer} from "./footer";
 import {MainLogoMinify} from "./components/commons/icons";
 import {Pizzas} from "./components/laCarte/pizzas";
 

@@ -33,30 +33,30 @@
 
 //region Buttons
 @mixin btn-nav {
-  width: 15.6rem;
-  height: 6.8rem;
-  box-sizing: border-box;
-  border-radius: 37.5px;
+  //width: 15.6rem;
+  //height: 6.8rem;
+  //box-sizing: border-box;
+  //border-radius: 37.5px;
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  //display: flex;
+  //justify-content: space-evenly;
+  //align-items: center;
 }
 
 @mixin btn-nav--empty($fs: font.$fs-home-reg) {
   @include btn-nav;
-  border: 2px solid col.$color-beige;
-  background-color: col.$color-dark-grey;
-  color: col.$color-beige;
-  font-size: $fs;
+  //border: 2px solid col.$color-beige;
+  //background-color: col.$color-dark-grey;
+  //color: col.$color-beige;
+  //font-size: $fs;
 }
 
 @mixin btn-nav--full($fs: font.$fs-home-reg) {
-  @include btn-nav;
-  border: none;
-  background-color: col.$color-beige;
-  color: col.$color-dark-grey;
-  font-size: $fs;
+  //@include btn-nav;
+  //border: none;
+  //background-color: col.$color-beige;
+  //color: col.$color-dark-grey;
+  //font-size: $fs;
 }
 
 //endregion

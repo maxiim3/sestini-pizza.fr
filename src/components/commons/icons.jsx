@@ -461,7 +461,7 @@ export const MainLogoMinify = ({onClick, beige, refLogo}) => {
         )
     }
     return (
-        <div ref={refLogo} onClick={() => onClick()} className="icon icon-logo-minify">
+        <div ref={refLogo} onClick={() => onClick()} className="icon icon-logo-minify z-20">
             {getIcon()}
         </div>
     )

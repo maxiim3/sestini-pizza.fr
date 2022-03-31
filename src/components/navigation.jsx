@@ -9,24 +9,25 @@ import {
     IconNavLocalisation
 } from './commons/icons';
 import {PhoneNumber} from './commons/informations'
+import {Button} from "./commons/button";
 
 const Navigation = ({navRef, onClose}) => {
 
 
     return (
-        <nav className="navigation" ref={navRef}>
+        <nav className="navigation z-20" ref={navRef}>
             <div className="navigationWrapper">
                 <NavLink onClick={onClose} className="navbar-brand" to={"/bienvenus"}><MainLogo/></NavLink>
-                <div onClick={onClose} className={'nav-btn-empty'}>
+                <Button onClick={onClose} nav ={true} activeClass={false}>
                     <IconNavLocalisation/><NavLink className="" to={"/nous-trouver"}>Nous<br/>Trouver</NavLink>
-                </div>
-                <div onClick={onClose} className={'nav-btn-full'}>
+                </Button>
+                <Button onClick={onClose} nav={true} activeClass={true}>
                     <IconNavLaCarte/><NavLink className="" to={"/la-carte"}>Notre<br/>Carte</NavLink>
-                </div>
-                <div onClick={onClose} className={'nav-btn-empty'}>
+                </Button>
+                <Button onClick={onClose} nav={true} activeClass={false}>
                     <NavLink className="" aria-current="page" to={"/bienvenus"}>La Pizza<br/>Du
                         Mois</NavLink>
-                </div>
+                </Button>
                 <div onClick={onClose} onClick={() => onClose()}> <IconCloseNav/></div>
                 <div className="social-grid">
                     <PhoneNumber/>

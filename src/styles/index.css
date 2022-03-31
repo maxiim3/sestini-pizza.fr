@@ -380,34 +380,6 @@ template {
   cursor: pointer;
 }
 
-.nav-btn-full {
-  width: 15.6rem;
-  height: 6.8rem;
-  box-sizing: border-box;
-  border-radius: 37.5px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: none;
-  background-color: #f9f0dc;
-  color: #303636;
-  font-size: 1.6rem;
-}
-
-.nav-btn-empty {
-  width: 15.6rem;
-  height: 6.8rem;
-  box-sizing: border-box;
-  border-radius: 37.5px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 2px solid #f9f0dc;
-  background-color: #303636;
-  color: #f9f0dc;
-  font-size: 1.6rem;
-}
-
 .navigation {
   width: 100vw;
   height: 100vh;
@@ -517,35 +489,6 @@ main.nousTrouver-page .buttons {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
-main.laCarte-page .buttons .button,
-main.nousTrouver-page .buttons .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 7rem;
-  height: 7.5rem;
-  padding-inline: 1rem;
-  border-radius: 15px;
-  border: 1px solid #f9f0dc;
-  background-color: rgba(255, 255, 255, 0);
-  color: #f9f0dc;
-}
-main.laCarte-page .buttons .button p,
-main.nousTrouver-page .buttons .button p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-main.laCarte-page .buttons .btn-active,
-main.nousTrouver-page .buttons .btn-active {
-  border: none;
-  background-color: #f9f0dc;
-  color: #303636;
 }
 main.laCarte-page .categories,
 main.nousTrouver-page .categories {
