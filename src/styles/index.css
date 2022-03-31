@@ -377,6 +377,7 @@ template {
   position: fixed;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .nav-btn-full {
@@ -456,100 +457,8 @@ template {
 /**
   === Section + Home ===
  */
-.home-page {
-  height: auto;
-  width: 100vw;
-  background-color: #303636;
-  z-index: -5;
-}
-.home-page .home-page--section-home {
-  height: 100vh;
-}
-.home-page .home-page--section-pizza-du-mois {
-  height: 100vh;
-  background-color: green;
-}
-.home-page .home-page-section-about {
-  height: 100vh;
-  background-color: yellow;
-}
-
-.home-page--section-home {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 1.8rem;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-content: space-evenly;
-  justify-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #303636;
-  color: #f9f0dc;
-}
-.home-page--section-home .grid-heroTop {
-  z-index: 5;
-  grid-area: 1/1/3/6;
-}
-.home-page--section-home .grid-btnLeft {
-  z-index: 5;
-  grid-area: 3/1/4/4;
-}
-.home-page--section-home .grid-btnCenter {
-  z-index: 5;
-  grid-area: 4/2/5/5;
-}
-.home-page--section-home .grid-btnRight {
-  z-index: 5;
-  grid-area: 5/3/6/6;
-}
-.home-page--section-home .social-grid {
-  z-index: 5;
-  grid-area: 6/4/7/6;
-}
-.home-page--section-home .social-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 1.5rem;
-  height: min-content;
-  grid-template-areas: "top        top" "bottom-left bottom-right";
-}
-.home-page--section-home .social-grid .info-tel {
-  grid-area: top;
-  align-self: end;
-  text-align: center;
-  height: fit-content;
-  font-size: 1.2rem;
-}
-.home-page--section-home .social-grid .icon-facebook {
-  grid-area: bottom-left;
-}
-.home-page--section-home .social-grid .icon-instagram {
-  grid-area: bottom-right;
-}
-.home-page--section-home .social-grid .icon svg {
-  width: 4.2rem;
-  height: 4.2rem;
-}
-
-.basilic {
-  position: absolute;
-  right: 0;
-  top: 30vh;
-}
-
-.home-static-pizza {
-  width: 55vw;
-  position: absolute;
-  left: 0;
-  bottom: -30vw;
-}
-
-main.laCarte-page {
+main.laCarte-page,
+main.nousTrouver-page {
   height: 100vh;
   overflow-y: hidden;
   width: 100vw;
@@ -557,35 +466,43 @@ main.laCarte-page {
   color: #f9f0dc;
 }
 @media (width > 750px) {
-  main.laCarte-page {
+  main.laCarte-page,
+main.nousTrouver-page {
     height: auto;
   }
 }
-main.laCarte-page aside {
+main.laCarte-page aside,
+main.nousTrouver-page aside {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18vh;
+  width: 25ch;
   transform: rotate(-90deg);
   transform-origin: 10% 10%;
-  top: 18vh;
+  top: 27ch;
 }
-main.laCarte-page aside .iconTitle {
+main.laCarte-page aside .iconTitle,
+main.nousTrouver-page aside .iconTitle {
   width: 16px;
+  padding-left: 3ch;
 }
-main.laCarte-page aside .pageTitle {
+main.laCarte-page aside .pageTitle,
+main.nousTrouver-page aside .pageTitle {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
-main.laCarte-page h2 {
+main.laCarte-page h2,
+main.nousTrouver-page h2 {
   font-size: 1.8rem;
   display: inline;
   width: fit-content;
   margin: 1ch 0;
   padding: 0;
 }
-main.laCarte-page h2::before, main.laCarte-page h2::after {
+main.laCarte-page h2::before, main.laCarte-page h2::after,
+main.nousTrouver-page h2::before,
+main.nousTrouver-page h2::after {
   display: inline-block;
   content: "";
   border-top: 0.5px solid #f9f0dc;
@@ -593,18 +510,21 @@ main.laCarte-page h2::before, main.laCarte-page h2::after {
   margin: 0 1rem;
   transform: translateY(-0.5rem);
 }
-main.laCarte-page .buttons {
+main.laCarte-page .buttons,
+main.nousTrouver-page .buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
-main.laCarte-page .buttons .button {
+main.laCarte-page .buttons .button,
+main.nousTrouver-page .buttons .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   width: 7rem;
   height: 7.5rem;
   padding-inline: 1rem;
@@ -613,35 +533,94 @@ main.laCarte-page .buttons .button {
   background-color: rgba(255, 255, 255, 0);
   color: #f9f0dc;
 }
-main.laCarte-page .buttons .button p {
+main.laCarte-page .buttons .button p,
+main.nousTrouver-page .buttons .button p {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-main.laCarte-page .buttons .btn-active {
+main.laCarte-page .buttons .btn-active,
+main.nousTrouver-page .buttons .btn-active {
   border: none;
   background-color: #f9f0dc;
   color: #303636;
 }
-main.laCarte-page .categories {
+main.laCarte-page .categories,
+main.nousTrouver-page .categories {
   width: auto;
-  height: 18vh;
+  height: auto;
 }
 main.laCarte-page section.categories .app-sub-title,
 main.laCarte-page .filtres .app-sub-title,
-main.laCarte-page .app-main .app-sub-title {
+main.laCarte-page .app-main .app-sub-title,
+main.nousTrouver-page section.categories .app-sub-title,
+main.nousTrouver-page .filtres .app-sub-title,
+main.nousTrouver-page .app-main .app-sub-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main.laCarte-page section.categories svg,
 main.laCarte-page .filtres svg,
-main.laCarte-page .app-main svg {
+main.laCarte-page .app-main svg,
+main.nousTrouver-page section.categories svg,
+main.nousTrouver-page .filtres svg,
+main.nousTrouver-page .app-main svg {
   display: inline;
 }
-main.laCarte-page section.app-main .pizzas ul {
+main.laCarte-page section.categories .nousTrouver-page.categories,
+main.laCarte-page section.categories .NousTrouver--app-sub-title,
+main.laCarte-page .filtres .nousTrouver-page.categories,
+main.laCarte-page .filtres .NousTrouver--app-sub-title,
+main.laCarte-page .app-main .nousTrouver-page.categories,
+main.laCarte-page .app-main .NousTrouver--app-sub-title,
+main.nousTrouver-page section.categories .nousTrouver-page.categories,
+main.nousTrouver-page section.categories .NousTrouver--app-sub-title,
+main.nousTrouver-page .filtres .nousTrouver-page.categories,
+main.nousTrouver-page .filtres .NousTrouver--app-sub-title,
+main.nousTrouver-page .app-main .nousTrouver-page.categories,
+main.nousTrouver-page .app-main .NousTrouver--app-sub-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.laCarte-page section.categories .nousTrouver-page.categories h2,
+main.laCarte-page section.categories .NousTrouver--app-sub-title h2,
+main.laCarte-page .filtres .nousTrouver-page.categories h2,
+main.laCarte-page .filtres .NousTrouver--app-sub-title h2,
+main.laCarte-page .app-main .nousTrouver-page.categories h2,
+main.laCarte-page .app-main .NousTrouver--app-sub-title h2,
+main.nousTrouver-page section.categories .nousTrouver-page.categories h2,
+main.nousTrouver-page section.categories .NousTrouver--app-sub-title h2,
+main.nousTrouver-page .filtres .nousTrouver-page.categories h2,
+main.nousTrouver-page .filtres .NousTrouver--app-sub-title h2,
+main.nousTrouver-page .app-main .nousTrouver-page.categories h2,
+main.nousTrouver-page .app-main .NousTrouver--app-sub-title h2 {
+  font-size: 1.2rem;
+}
+main.laCarte-page section.categories .nousTrouver-page.categories.horloge,
+main.laCarte-page .filtres .nousTrouver-page.categories.horloge,
+main.laCarte-page .app-main .nousTrouver-page.categories.horloge,
+main.nousTrouver-page section.categories .nousTrouver-page.categories.horloge,
+main.nousTrouver-page .filtres .nousTrouver-page.categories.horloge,
+main.nousTrouver-page .app-main .nousTrouver-page.categories.horloge {
+  display: block;
+  background-color: pink;
+  align-self: center;
+}
+main.laCarte-page section.categories .NousTrouver--app-sub-title.img,
+main.laCarte-page .filtres .NousTrouver--app-sub-title.img,
+main.laCarte-page .app-main .NousTrouver--app-sub-title.img,
+main.nousTrouver-page section.categories .NousTrouver--app-sub-title.img,
+main.nousTrouver-page .filtres .NousTrouver--app-sub-title.img,
+main.nousTrouver-page .app-main .NousTrouver--app-sub-title.img {
+  width: 100vw;
+}
+main.laCarte-page section.app-main .pizzas ul,
+main.nousTrouver-page section.app-main .pizzas ul {
   height: 40rem;
   margin: 1rem 0 0;
   display: flex;
@@ -650,26 +629,30 @@ main.laCarte-page section.app-main .pizzas ul {
   overflow-x: scroll;
 }
 @media (width > 750px) {
-  main.laCarte-page section.app-main .pizzas ul {
+  main.laCarte-page section.app-main .pizzas ul,
+main.nousTrouver-page section.app-main .pizzas ul {
     height: auto;
     flex-flow: row wrap;
   }
 }
-main.laCarte-page section.app-main .pizzas ul .productCard {
+main.laCarte-page section.app-main .pizzas ul .productCard,
+main.nousTrouver-page section.app-main .pizzas ul .productCard {
   width: 21rem;
   height: 90%;
   background-color: #f9f0dc;
   color: #303636;
   border-radius: 10px;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-header {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-header {
   position: relative;
   width: 100%;
   height: 45%;
   padding: 0;
   z-index: 0;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-header .title {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .title,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-header .title {
   height: 32%;
   width: 102%;
   padding-top: 1ch;
@@ -687,7 +670,8 @@ main.laCarte-page section.app-main .pizzas ul .productCard .card-header .title {
   display: grid;
   place-content: center;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-header img {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header img,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-header img {
   object-fit: cover;
   object-position: center;
   border-radius: 10px 10px 0 0;
@@ -696,7 +680,8 @@ main.laCarte-page section.app-main .pizzas ul .productCard .card-header img {
   width: 100%;
   height: 100%;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-header .price {
   position: absolute;
   bottom: 2px;
   right: 2px;
@@ -707,41 +692,50 @@ main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price {
   display: grid;
   place-content: center;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price p {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-header .price p,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-header .price p {
   padding-top: 1ch;
   font-weight: 600;
   color: #f9f0dc;
   font-size: 1.5rem;
   font-family: "Cinzel Decorative", cursive;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-body {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-body {
   position: relative;
   height: 55%;
   margin: 0;
   padding: 0;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-body .description {
   margin: 1.5rem 1rem 0;
 }
-main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description p {
+main.laCarte-page section.app-main .pizzas ul .productCard .card-body .description p,
+main.nousTrouver-page section.app-main .pizzas ul .productCard .card-body .description p {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 180%;
 }
-main.laCarte-page section.app-main .boissons li {
+main.laCarte-page section.app-main .boissons li,
+main.nousTrouver-page section.app-main .boissons li {
   display: flex;
   flex-flow: row nowrap;
 }
-main.laCarte-page section.app-main .boissons li p {
+main.laCarte-page section.app-main .boissons li p,
+main.nousTrouver-page section.app-main .boissons li p {
   display: inline-block;
 }
-main.laCarte-page section.app-main .boissons li .left {
+main.laCarte-page section.app-main .boissons li .left,
+main.nousTrouver-page section.app-main .boissons li .left {
   align-self: start;
 }
-main.laCarte-page section.app-main .boissons li .right {
+main.laCarte-page section.app-main .boissons li .right,
+main.nousTrouver-page section.app-main .boissons li .right {
   align-self: end;
 }
-main.laCarte-page section.app-main .boissons li .center {
+main.laCarte-page section.app-main .boissons li .center,
+main.nousTrouver-page section.app-main .boissons li .center {
   flex-grow: 5;
   display: inline-block;
   content: "";
@@ -750,28 +744,53 @@ main.laCarte-page section.app-main .boissons li .center {
   margin-inline: 1ch;
   transform: translateY(0.5rem);
 }
-main.laCarte-page section.app-main .desserts, main.laCarte-page section.app-main .desserts * {
+main.laCarte-page section.app-main .desserts,
+main.laCarte-page section.app-main .desserts *,
+main.nousTrouver-page section.app-main .desserts,
+main.nousTrouver-page section.app-main .desserts * {
   margin: 0;
   padding: 0;
 }
-main.laCarte-page section.app-main .desserts ul {
+main.laCarte-page section.app-main .desserts ul,
+main.nousTrouver-page section.app-main .desserts ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
 }
-main.laCarte-page section.app-main .desserts ul h3 {
+main.laCarte-page section.app-main .desserts ul h3,
+main.nousTrouver-page section.app-main .desserts ul h3 {
   font-family: "Cinzel", serif;
   font-size: 1.8rem;
   text-align: center;
 }
-main.laCarte-page section.app-main .desserts ul h3 .price {
+main.laCarte-page section.app-main .desserts ul h3 .price,
+main.nousTrouver-page section.app-main .desserts ul h3 .price {
   font-size: 1.5rem;
 }
-main.laCarte-page section.app-main .desserts ul .img {
+main.laCarte-page section.app-main .desserts ul .img,
+main.nousTrouver-page section.app-main .desserts ul .img {
   width: 40vw;
   height: 40vw;
   object-fit: fill;
 }
+
+.text-small {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.text-large {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*# sourceMappingURL=index.css.map */

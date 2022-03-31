@@ -1,74 +1,187 @@
-import React from 'react';
-import {Link, NavLink, Route} from "react-router-dom";
-import PizzaDuMois from '../../data/pizzaOfMonth.json'
+import React from "react";
+import { Link, NavLink, Route } from "react-router-dom";
+import PizzaDuMois from "../../data/pizzaOfMonth.json";
+import EvaluateTailwindFunctions from "tailwindcss/lib/lib/evaluateTailwindFunctions";
 import {
-    MainLogo,
-    MainLogoMinify,
-    Basilic,
-    IconFaceBook,
-    IconInstagram,
-    IconLogoWithoutText,
-    IconNavLocalisation, IconNavLaCarte
-} from '../commons/icons'
-import {Adresse, Email, PhoneNumber} from "../commons/informations";
-import {Footer} from "../../footer";
-import {PizzaCard} from "../laCarte/productSection/pizza/pizzaCard";
+  MainLogo,
+  MainLogoMinify,
+  Basilic,
+  IconFaceBook,
+  IconInstagram,
+  IconLogoWithoutText,
+  IconNavLocalisation,
+  IconNavLaCarte,
+} from "../commons/icons";
+import { Adresse, Email, PhoneNumber } from "../commons/informations";
+import { Footer } from "../../footer";
+import { PizzaCard } from "../laCarte/productSection/pizza/pizzaCard";
+import { RenderPizza } from "../laCarte/productSection/pizza/renderPizza";
+import { Button } from "../commons/button";
 
 const Home = () => {
-
-    return (
-        <div className={'page home-page'}>
-            <Basilic/>
-            <section className="home-page home-page--section-home">
-                <NavLink className="grid-heroTop" to={"/bienvenus"}><MainLogo/></NavLink>
-                <div className={'nav-btn-empty grid-btnLeft'}>
-                    <IconNavLocalisation/><NavLink className="" to={"/nous-trouver"}>Nous<br/>Trouver</NavLink>
-                </div>
-                <div className={'nav-btn-full grid-btnCenter'}>
-                    <IconNavLaCarte/><NavLink className="" to={"/la-carte"}>Notre<br/>Carte</NavLink>
-                </div>
-                <div className={'nav-btn-empty grid-btnRight'}>
-                    <NavLink className="" aria-current="page" to={"/bienvenus"}>La Pizza<br/>Du
-                        Mois</NavLink>
-                </div>
-                <div className={'social-grid'}>
-                    <PhoneNumber/>
-                    <IconFaceBook beige={true}/>
-                    <IconInstagram beige={true}/>
-                </div>
-                <img className={'home-static-pizza'} src={"./img/pizza-half.png"} alt="Photo de l'une de nos délicieuses pizza"/>
-            </section>
-            <section id={'pizza-du-mois'} className="home-page home-page--section-pizza-du-mois">
-                <main className="card">
-                <PizzaCard
-                    product={PizzaDuMois}
-                />
-                </main>
-                    <button><a href={'#about'}>À Propos</a></button>
-            </section>
-            <section id="about" className="home-page home-page-section-about">
-                <aside>
-                    <ul>
-                        <li>La pizza,</li>
-                        <li>Un art,</li>
-                        <li>Un savoir-faire,</li>
-                        <li>Une passion</li>
-                    </ul>
-                </aside>
-                <main>
-                    <img src={"./img/pizzaiolo-devant-four.png"} alt="Photo de l'une de nos délicieuses pizza"/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt netus nunc lectus congue sed
-                        posuere. Accumsan vulputate tincidunt pharetra facilisis. Varius fermentum duis morbi quis felis
-                        turpis ante in. Vel donec nulla at sit non justo convallis eu.</p>
-                </main>
-                <footer>
-                    <button><a href={'#'}>Haut de la page</a></button>
-                </footer>
-            </section>
-            <Footer/>
+  return (
+    <main
+      className={
+        "flex flex-column flex-wrap justify-between items-center overflow-x-hidden m-0 p-0 bg-dark"
+      }
+    >
+      <Basilic />
+      <article className="h-screen w-screen z-10">
+        <header
+          className="col-span-full h-96 grid place-content-center"
+          to={"/bienvenus"}
+        >
+          {/*<MainLogo />*/}
+          <img src={"./img/logo-groupe.png"} alt="Logo Sestini Pizza" />
+        </header>
+        <section className={'grid grid-col-6 gap-4'}>
+          <Button>
+            <div className={""}>
+              <IconNavLocalisation />
+              <NavLink className="" to={"/nous-trouver"}>
+                Nous
+                <br />
+                Trouver
+              </NavLink>
+            </div>
+          </Button>
+          <Button>
+            <div className={""}>
+              <IconNavLaCarte />
+              <NavLink className="" to={"/la-carte"}>
+                Notre
+                <br />
+                Carte
+              </NavLink>
+            </div>
+          </Button>
+          <div className={""}>
+            <Button>
+              <NavLink className="" aria-current="page" to={"/bienvenus"}>
+                La Pizza
+                <br />
+                Du Mois
+              </NavLink>
+            </Button>
+          </div>
+          <div className={""}>
+            <PhoneNumber />
+            <IconFaceBook beige={true} />
+            <IconInstagram beige={true} />
+          </div>
+        </section>
+      </article>
+      <img
+        className={"absolute -bottom-96 left-0"}
+        src={"./img/pizza-half.png"}
+        alt="Photo de l'une de nos délicieuses pizza"
+      />
+      <article id={"pizza-du-mois"} className="z-10">
+        <div className="">
+          <div className="title">
+            <h3>{PizzaDuMois.nom}</h3>
+          </div>
+          <div className="">
+            <p>
+              <strong>Ingrédients: </strong>
+              {PizzaDuMois.base.label} {PizzaDuMois.ingredients.join(", ")}
+            </p>
+            {PizzaDuMois.afterCook !== null ? (
+              <p>
+                <strong>Après Cuisson</strong>:{" "}
+                {PizzaDuMois.afterCook.join(", ")}
+              </p>
+            ) : null}
+          </div>
+          <div
+            className={
+              ""
+              // "flex flex-wrap justify-center"
+            }
+          >
+            <img
+              className={
+                ""
+                // "max-w-screen-sm h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl"
+              }
+              src={PizzaDuMois.url}
+              alt={`Photo de notre pizza ${PizzaDuMois.nom}`}
+            />
+          </div>
+          <div className="price font-extrabold text-3xl accent-blue-50">
+            <p>{PizzaDuMois.prix}€</p>
+          </div>
         </div>
+        <div className=""></div>
 
-    );
+        <button>
+          <a href={"#about"}>À Propos</a>
+        </button>
+      </article>
+      <article id="about" className="">
+        <aside>
+          <ul>
+            <li>La pizza,</li>
+            <li>Un art,</li>
+            <li>Un savoir-faire,</li>
+            <li>Une passion</li>
+          </ul>
+        </aside>
+        <div
+          className={
+            ""
+            // "md:grid grid-cols-12 gap-5"
+          }
+        >
+          <img
+            className={
+              "" +
+              // "hidden sm:block md:block md:col-start-6 md:col-span-5 rounded-xl " +
+              ""
+            }
+            src={
+              "https://images.unsplash.com/photo-1631540223537-8f2d49a4ad9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            }
+            alt="Photo de l'une de nos délicieuses pizza"
+          />{" "}
+          <img
+            className={
+              "" +
+              // 'w-full max-w-xl col-start-1 col-end-3 rounded-xl' +
+              ""
+            }
+            src={
+              "https://images.unsplash.com/photo-1537734796389-e1fc293cf856?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80"
+            }
+            alt="Photo de l'une de nos délicieuses pizza"
+          />{" "}
+          <p className={"col-start-5 col-span-4"}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+            netus nunc lectus congue sed posuere. Accumsan vulputate tincidunt
+            pharetra facilisis. Varius fermentum duis morbi quis felis turpis
+            ante in. Vel donec nulla at sit non justo convallis eu.
+          </p>
+          <img
+            className={
+              "" +
+              // 'col-start-7 col-end-12 rounded-xl' +
+              ""
+            }
+            src={
+              "https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+            }
+            alt="Photo de l'une de nos délicieuses pizza"
+          />
+        </div>
+        <footer>
+          <button>
+            <a href={"#"}>Haut de la page</a>
+          </button>
+        </footer>
+      </article>
+      <Footer />
+    </main>
+  );
 };
 
 export default Home;

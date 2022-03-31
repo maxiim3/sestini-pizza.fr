@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icon/Horloge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icon/Horloge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icon/Horloge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/styles/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/styles/index.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/day.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/day.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/boissonCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_fonts.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/icon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -81,6 +81,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

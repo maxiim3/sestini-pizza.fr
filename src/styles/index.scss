@@ -1,6 +1,7 @@
-@use 'normalize.css';
+@use "normalize.css";
 @use "settings" as var;
 @use "components" as comp;
+
 
 :root {
   font-size: 62.5%;
@@ -11,17 +12,16 @@
   }
 }
 
-
 //region NAVIGATION-MOBILE
 .icon-logo-minify {
   position: fixed;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .nav-btn-full {
   @include var.btn-nav--full;
-
 }
 
 .nav-btn-empty {
@@ -51,54 +51,54 @@
 /**
   === Section + Home ===
  */
-.home-page {
-  height: auto;
-  width: var.$fullWidth;
-  background-color: var.$color-dark-grey;
-  z-index: -5;
-
-  .home-page--section-home {
-    height: var.$fullHeight;
-  }
-
-  .home-page--section-pizza-du-mois {
-    height: var.$fullHeight;
-    background-color: green;
-  }
-
-  .home-page-section-about {
-    height: var.$fullHeight;
-    background-color: yellow;
-  }
-}
-
-.home-page--section-home {
-  @include var.grid-home-page;
-  @include var.dark-home-page;
-
-  .social-grid {
-    @include var.social-grid-top(4.2rem);
-  }
-}
-
-.basilic {
-  position: absolute;
-  right: 0;
-  top: 30vh;
-
-}
-
-.home-static-pizza {
-  width: 55vw;
-  position: absolute;
-  left: 0;
-  bottom: -30vw;
-}
+//.home-page {
+//  width: var.$fullWidth;
+//  background-color: var.$color-dark-grey;
+//  z-index: -5;
+//
+//  .home-page--section-home {
+//    height: var.$fullHeight;
+//  }
+//
+//  .home-page--section-pizza-du-mois {
+//    padding-top: 20vw;
+//    height: var.$fullHeight;
+//  }
+//
+//  .home-page-section-about {
+//    height: var.$fullHeight;
+//    background-color: yellow;
+//  }
+//}
+//
+//.home-page--section-home {
+//  @include var.grid-home-page;
+//  @include var.dark-home-page;
+//
+//  .social-grid {
+//    @include var.social-grid-top(4.2rem);
+//  }
+//}
+//
+//.basilic {
+//  position: absolute;
+//  right: 0;
+//  top: 30vh;
+//}
+//
+//.home-static-pizza {
+//  width: 55vw;
+//  max-width: 300px;
+//  position: absolute;
+//  left: 0;
+//  bottom: -30vw;
+//}
 
 //endregion
 
 //region LA-CARTE
-main.laCarte-page {
+main.laCarte-page,
+main.nousTrouver-page {
   height: 100vh;
   @media (width > 750px) {
     height: auto;
@@ -113,13 +113,14 @@ main.laCarte-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18vh;
+    width: 25ch;
     transform: rotate(-90deg);
     transform-origin: 10% 10%;
-    top: 18vh;
+    top: 27ch;
 
     .iconTitle {
       width: 16px;
+      padding-left: 3ch;
     }
 
     .pageTitle {
@@ -159,6 +160,7 @@ main.laCarte-page {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       width: 7rem;
       height: 7.5rem;
@@ -187,7 +189,7 @@ main.laCarte-page {
 
   .categories {
     width: auto;
-    height: 18vh;
+    height: auto;
   }
 
   section.categories,
@@ -202,13 +204,27 @@ main.laCarte-page {
     svg {
       display: inline;
     }
-
+    .nousTrouver-page.categories,
+    .NousTrouver--app-sub-title {
+      h2 {
+        font-size: var.$fs-home-sm;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nousTrouver-page.categories.horloge {
+      display: block;
+      background-color: pink;
+      align-self: center;
+    }
+    .NousTrouver--app-sub-title.img {
+      width: 100vw;
+    }
   }
-
   section.app-main {
-
     .pizzas {
-
       ul {
         height: 40rem;
         margin: 1rem 0 0;
@@ -236,7 +252,6 @@ main.laCarte-page {
             padding: 0;
             z-index: 0;
 
-
             .title {
               height: 32%;
               width: 102%;
@@ -256,7 +271,6 @@ main.laCarte-page {
               background-color: var.$color-dark-gray-light;
               display: grid;
               place-content: center;
-
             }
 
             img {
@@ -289,7 +303,6 @@ main.laCarte-page {
                 font-family: var.$police-seconde--alt;
               }
             }
-
           }
 
           .card-body {
@@ -306,11 +319,8 @@ main.laCarte-page {
                 letter-spacing: 0.1rem;
                 line-height: 180%;
               }
-
             }
-
           }
-
         }
       }
     }
@@ -344,7 +354,8 @@ main.laCarte-page {
       }
     }
 
-    .desserts, .desserts * {
+    .desserts,
+    .desserts * {
       margin: 0;
       padding: 0;
     }
@@ -370,11 +381,26 @@ main.laCarte-page {
           width: 40vw;
           height: 40vw;
           object-fit: fill;
-
         }
       }
     }
   }
 }
 
+.text-small {
+  font-size: var.$fs-nav-aside;
+  font-weight: 100;
+}
+
+.text-large {
+  font-size: var.$fs-carte-h1;
+  font-weight: 100;
+}
+.text-align-center {
+  text-align: center;
+}
 //endregion
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
