@@ -145,15 +145,8 @@ export const RenderButtons = ({ onChange, activeCategory }) => {
 
 
   return (
-    <div className={"buttons"}>
+    <div className={ ' my-6 flex justify-content-center align-center gap-x-8 gap-y-4 flex-wrap w-4/5'}>
       {buttons.map((btn) => (
-        // <Button
-        //     key={btn._id}
-        //     onClick={() => onChange(btn.text)}
-        //     text={`Nos ${btn.text}`}
-        //     activeClass ={stateChange(btn.text, "btn-active", "")}
-        //     icon={stateChange(btn.text, btn.component.avec, btn.component.sans)}
-        // />
         <Button
           key={btn._id}
           onClick={() => onChange(btn.text)}

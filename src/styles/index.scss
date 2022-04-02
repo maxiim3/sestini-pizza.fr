@@ -1,407 +1,51 @@
-@use "normalize.css";
-@use "settings" as var;
-@use "components" as comp;
-
+@use 'normalize.css';
+@use 'settings' as var;
+@use 'components' as comp;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  font-size: 62.5%;
-  overflow-x: hidden;
+   font-size: 62.5%;
+   overflow-x: hidden;
 
-  li {
-    list-style: none;
-  }
+   li {
+      list-style: none;
+   }
 }
 
 //region NAVIGATION-MOBILE
 .icon-logo-minify {
-  position: fixed;
-  right: 0;
-  top: 0;
-  cursor: pointer;
+   position: fixed;
+   right: 0;
+   top: 0;
+   cursor: pointer;
 }
 
 .nav-btn-full {
-  @include var.btn-nav--full;
+   @include var.btn-nav--full;
 }
 
 .nav-btn-empty {
-  @include var.btn-nav--empty;
+   @include var.btn-nav--empty;
 }
 
 .navigation {
-  width: var.$fullWidth;
-  height: var.$fullHeight;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  z-index: 50;
+   width: var.$fullWidth;
+   height: var.$fullHeight;
+   position: fixed;
+   margin: 0;
+   padding: 0;
+   z-index: 50;
 
-  .navigationWrapper {
-    @include var.dark-home-page;
+   .navigationWrapper {
+      @include var.dark-home-page;
 
-    .social-grid {
-      @include var.social-grid-top(4.2rem);
-    }
-  }
+      .social-grid {
+         @include var.social-grid-top(4.2rem);
+      }
+   }
 }
 
 //endregion
 
-//region APP-HOME
-/**
-  === Section + Home ===
- */
-//.home-page {
-//  width: var.$fullWidth;
-//  background-color: var.$color-dark-grey;
-//  z-index: -5;
-//
-//  .home-page--section-home {
-//    height: var.$fullHeight;
-//  }
-//
-//  .home-page--section-pizza-du-mois {
-//    padding-top: 20vw;
-//    height: var.$fullHeight;
-//  }
-//
-//  .home-page-section-about {
-//    height: var.$fullHeight;
-//    background-color: yellow;
-//  }
-//}
-//
-//.home-page--section-home {
-//  @include var.grid-home-page;
-//  @include var.dark-home-page;
-//
-//  .social-grid {
-//    @include var.social-grid-top(4.2rem);
-//  }
-//}
-//
-//.basilic {
-//  position: absolute;
-//  right: 0;
-//  top: 30vh;
-//}
-//
-//.home-static-pizza {
-//  width: 55vw;
-//  max-width: 300px;
-//  position: absolute;
-//  left: 0;
-//  bottom: -30vw;
-//}
-
-//endregion
-
-//region LA-CARTE
-main.laCarte-page,
-main.nousTrouver-page {
-  height: 100vh;
-  @media (width > 750px) {
-    height: auto;
-  }
-  overflow-y: hidden;
-  width: var.$fullWidth;
-  background-color: var.$color-dark-grey;
-  color: var.$color-beige;
-
-  aside {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25ch;
-    transform: rotate(-90deg);
-    transform-origin: 10% 10%;
-    top: 27ch;
-
-    .iconTitle {
-      width: 16px;
-      padding-left: 3ch;
-    }
-
-    .pageTitle {
-      font-size: var.$fs-carte-reg;
-      text-transform: uppercase;
-    }
-  }
-
-  h2 {
-    font-size: var.$fs-carte-h1;
-    display: inline;
-    width: fit-content;
-    margin: 1ch 0;
-    padding: 0;
-
-    &::before,
-    &::after {
-      display: inline-block;
-      content: "";
-      border-top: 0.5px solid var.$color-beige;
-      width: 4rem;
-      margin: 0 1rem;
-      transform: translateY(-0.5rem);
-    }
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.5rem;
-
-  }
-
-  .categories {
-    width: auto;
-    height: auto;
-  }
-
-  section.categories,
-  .filtres,
-  .app-main {
-    .app-sub-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    svg {
-      display: inline;
-    }
-    .nousTrouver-page.categories,
-    .NousTrouver--app-sub-title {
-      h2 {
-        font-size: var.$fs-home-sm;
-      }
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .nousTrouver-page.categories.horloge {
-      display: block;
-      background-color: pink;
-      align-self: center;
-    }
-    .NousTrouver--app-sub-title.img {
-      width: 100vw;
-    }
-  }
-  section.app-main {
-    .pizzas {
-      ul {
-        height: 40rem;
-        margin: 1rem 0 0;
-        display: flex;
-        gap: 10ch;
-        flex-flow: row nowrap;
-
-        @media (width > 750px) {
-          height: auto;
-          flex-flow: row wrap;
-        }
-        overflow-x: scroll;
-
-        .productCard {
-          width: 21rem;
-          height: 90%;
-          background-color: var.$color-beige;
-          color: var.$color-dark-grey;
-          border-radius: 10px;
-
-          .card-header {
-            position: relative;
-            width: 100%;
-            height: 45%;
-            padding: 0;
-            z-index: 0;
-
-            .title {
-              height: 32%;
-              width: 102%;
-              padding-top: 1ch;
-              position: absolute;
-              top: -1px;
-              left: -2px;
-
-              font-size: var.$fs-carte-desc;
-              font-family: var.$police-seconde;
-              text-transform: uppercase;
-              font-weight: 800;
-              letter-spacing: 0.1rem;
-              text-align: center;
-              color: var.$color-beige;
-
-              background-color: var.$color-dark-gray-light;
-              display: grid;
-              place-content: center;
-            }
-
-            img {
-              //position: relative;
-              object-fit: cover;
-              object-position: center;
-              border-radius: 10px 10px 0 0;
-              top: -1px;
-              left: -1px;
-              width: 100%;
-              height: 100%;
-            }
-
-            .price {
-              position: absolute;
-              bottom: 2px;
-              right: 2px;
-              width: 5rem;
-              height: 5rem;
-              border-radius: 100%;
-              background-color: var.$color-gold-90;
-              display: grid;
-              place-content: center;
-
-              p {
-                padding-top: 1ch;
-                font-weight: 600;
-                color: var.$color-beige;
-                font-size: var.$fs-carte-price;
-                font-family: var.$police-seconde--alt;
-              }
-            }
-          }
-
-          .card-body {
-            position: relative;
-            height: 55%;
-            margin: 0;
-            padding: 0;
-
-            .description {
-              margin: 1.5rem 1rem 0;
-
-              p {
-                font-size: var.$fs-carte-desc;
-                letter-spacing: 0.1rem;
-                line-height: 180%;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .boissons {
-      li {
-        display: flex;
-        flex-flow: row nowrap;
-
-        p {
-          display: inline-block;
-        }
-
-        .left {
-          align-self: start;
-        }
-
-        .right {
-          align-self: end;
-        }
-
-        .center {
-          flex-grow: 5;
-          display: inline-block;
-          content: "";
-          border-top: 0.2px solid var.$color-beige;
-          width: max-content;
-          margin-inline: 1ch;
-          transform: translateY(0.5rem);
-        }
-      }
-    }
-
-    .desserts,
-    .desserts * {
-      margin: 0;
-      padding: 0;
-    }
-
-    .desserts {
-      ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        h3 {
-          font-family: var.$police-seconde;
-          font-size: var.$fs-carte-h1;
-          text-align: center;
-
-          .price {
-            font-size: var.$fs-carte-price;
-          }
-        }
-
-        .img {
-          width: 40vw;
-          height: 40vw;
-          object-fit: fill;
-        }
-      }
-    }
-  }
-}
-
-.text-small {
-  font-size: var.$fs-nav-aside;
-  font-weight: 100;
-}
-
-.text-large {
-  font-size: var.$fs-carte-h1;
-  font-weight: 100;
-}
-.text-align-center {
-  text-align: center;
-}
-//endregion
-
-//.button {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//  cursor: pointer;
-//
-//  width: 7rem;
-//  height: 7.5rem;
-//  padding-inline: 1rem;
-//  border-radius: 15px;
-//
-//  border: 1px solid var.$color-beige;
-//  background-color: rgba(255, 255, 255, 0);
-//  color: var.$color-beige;
-//
-//  p {
-//    font-size: var.$fs-carte-reg;
-//    font-weight: 600;
-//    text-align: center;
-//    margin: 0;
-//    padding: 0;
-//  }
-//}
-//
-//.btn-active {
-//  border: none;
-//  background-color: var.$color-beige;
-//  color: var.$color-dark-grey;
-//}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

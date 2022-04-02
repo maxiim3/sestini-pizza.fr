@@ -1,3 +1,6 @@
+/**
+ * @type {[{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: string, num: string, cp: string, lat: string}, _id: number, estOuvert: boolean, url: string},{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: number, num: string, cp: string, lat: number}, _id: number, estOuvert: boolean, url: string},{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: number, num: string, cp: string, lat: number}, _id: number, estOuvert: boolean, url: string},{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: number, num: string, cp: string, lat: number}, _id: number, estOuvert: boolean, url: string},{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: number, num: string, cp: string, lat: number}, _id: number, estOuvert: boolean, url: string},null,null]}
+ */
 const jours = [
     {
         _id: 0,
