@@ -6,17 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +36,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -107,6 +98,8 @@
       <workItem from="1647869366879" duration="482000" />
       <workItem from="1647966949644" duration="12869000" />
       <workItem from="1648034214238" duration="12833000" />
+      <workItem from="1648818078369" duration="168000" />
+      <workItem from="1648907066592" duration="106000" />
     </task>
     <servers />
   </component>
