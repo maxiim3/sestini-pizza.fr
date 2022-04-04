@@ -343,28 +343,6 @@ template {
   display: none;
 }
 
-.itemsCard {
-  font-size: 0.875rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 141.4%;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  box-shadow: -4px -5px 10px rgba(48, 54, 54, 0.95);
-}
-.itemsCard img {
-  width: 20%;
-}
-
-.navbar .navbar-brand {
-  font-size: 1.062rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  text-decoration: none;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

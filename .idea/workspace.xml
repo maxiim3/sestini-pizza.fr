@@ -6,6 +6,86 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/avec--btn-creme.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/avec--btn-sans-base.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/avec--btn-tomato.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-carnivore.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-poisson.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-sans--Icon Pizza.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-sans--desserts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-sans--drinks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/btn-vegetarien.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/icon-avec--Icon Pizza.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/icon-avec--desserts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/icon-avec--drinks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/sans--btn-creme.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/sans--btn-sans-base.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/buttons/sans--btn-tomato.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/Basilic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/CarteIcon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/Horloge-beige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/Horloge.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/Horloge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/Horloge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/filtre.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/hand-click.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/hand-swap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-fb--beige.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-fb--gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-insta--beige.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-insta--gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-laCarte-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-logo-gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-logo-text-beige.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/icon-logo-text-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/main-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/nav-close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/pizza-half.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/basilic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo-groupe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/map1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/map2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza-half.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizzaBlanche.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizzaiolo-devant-four.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cgu.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/informations.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/day.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/jours.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderDesserts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizza.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page404.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/items.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_laCarte.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_navigation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +115,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
