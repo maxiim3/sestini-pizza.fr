@@ -6,25 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/jours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/jours.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/pizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderDesserts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderDesserts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizza.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizza.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +98,8 @@
       <workItem from="1647966949644" duration="12869000" />
       <workItem from="1648034214238" duration="12833000" />
       <workItem from="1648818078369" duration="168000" />
-      <workItem from="1648907066592" duration="18342000" />
+      <workItem from="1648907066592" duration="18460000" />
+      <workItem from="1649086108705" duration="455000" />
     </task>
     <servers />
   </component>
