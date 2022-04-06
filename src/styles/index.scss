@@ -12,8 +12,22 @@
    li {
       list-style: none;
    }
+
+   scroll-behavior: smooth;
+}
+.neoMorphism{
+   box-shadow: -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
+   2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+
+   &:focus, &:active{
+      box-shadow:inset -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
+      inset 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+   }
 }
 
+.borderTop{
+   box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
 //region NAVIGATION-MOBILE
 .icon-logo-minify {
    position: fixed;

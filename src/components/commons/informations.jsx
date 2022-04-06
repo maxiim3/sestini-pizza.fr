@@ -1,19 +1,20 @@
 import React from 'react';
+import info from "../../data/informations.json"
 
 export const PhoneNumber = () => {
     return (
-        <span className={'info-tel'}>07 88 52 91 78</span>
+        <span className={'info-tel'}>{info[0].phoneNumber}</span>
     );
 };
 
 export const Email = () => {
     return(
-        <span className={'info-mail'}>sestini.pizza@gmail.com</span>
+        <span className={'info-mail'}>{info[0].mail}</span>
     )
 }
 
 export const Adresse = () => {
     return (
-        <span className={'info-address'}>2 rue de la plage</span>
+        <span className={'info-address'}>{info[0].adresse}</span>
     )
 }

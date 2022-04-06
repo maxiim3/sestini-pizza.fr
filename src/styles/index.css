@@ -371,9 +371,21 @@ template {
 :root {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 :root li {
   list-style: none;
+}
+
+.neoMorphism {
+  box-shadow: -2px -2px 3px 0px rgba(158, 158, 158, 0.5), 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.neoMorphism:focus, .neoMorphism:active {
+  box-shadow: inset -2px -2px 3px 0px rgba(158, 158, 158, 0.5), inset 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.borderTop {
+  box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
 .icon-logo-minify {

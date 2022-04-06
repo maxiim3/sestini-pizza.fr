@@ -2,6 +2,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+      "main" : ['Montserrat', 'sans-serif'],
+      "describe" : ['Roboto', 'sans-serif'],
+      "accent" : ['Cinzel', 'serif'],
+      "decorative" : ['Cinzel\\ Decorative', 'cursive']
+    },
     colors: {
       'beige': 'rgba(249, 240, 220, 1)',
       'beige-light': 'rgba(249, 240, 220, 0.5)',
