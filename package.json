@@ -1,6 +1,7 @@
 {
   "name": "sestini-pizza",
   "version": "0.1.0",
+  "homepage": "http://test.sestini-pizza.fr",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.5.0",
