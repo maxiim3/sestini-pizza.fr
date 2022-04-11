@@ -69,7 +69,7 @@ export const LandingPage = () => {
                <Animate animation={'animate__fadeInDown'}><Animate animation={'animate__flash animate__delay-2s'}>
                   <div className={'text-beige text-5xl mx-auto'}>
                      <h2>Ouverture le 4 mai</h2>
-                     <div className={'w-96 border-b '} />
+                     {/*<div className={'w-96 border-b '} />*/}
                   </div>
                </Animate></Animate>
                <Animate animation={'animate__fadeIn animate__slow animate__delay-3s'}>

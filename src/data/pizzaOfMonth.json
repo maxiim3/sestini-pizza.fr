@@ -2,21 +2,17 @@
   "_id": 100,
   "nom": "La Pisello",
   "ingredients": [
-    "Mozzarella FDL",
-    "Oignons rouges",
-    "Émincés de Champignons",
-    "Lardons",
-    "Persillade"
+    "Chiffonnade de Jambon Blanc"
   ],
   "base": {
-    "label": "Base Petit Pois",
-    "key": "basePetitPois",
-    "state": "basePetitPois",
-    "setState": "setBasePetitPois"
+    "label": "Base Mozzarella FDL",
+    "key": "baseMozza",
+    "state": "baseMozza",
+    "setState": "setBaseMozza"
   },
   "avecViande": true,
   "avecPoisson": false,
-  "afterCook": null,
+  "afterCook": ["Tomate cerises", "Tapenade d'olives noires", "Roquette", "Parmesan", "Filet d'huile d'olive"],
   "url": "https://thumbs.dreamstime.com/b/pizza-affettata-del-pollo-con-salsa-al-pomodoro-formaggio-e-prezzemolo-32635535.jpg",
-  "prix": "12,00"
+  "prix": "14,00"
 }

@@ -33,22 +33,22 @@ const App = () => {
             {/*<Navigation navRef={navMobile} onClose={handleShowNav}/>*/}
             {/*<MainLogoMinify refLogo={iconNav} onClick={handleShowNav} beige={true}/>*/}
             <Switch>
-                <Route path='/nous-trouver' component={NousTrouver}/>
+                {/*<Route path='/nous-trouver' component={NousTrouver}/>*/}{/*// remettre*/}
                 {/*region LaCarteRedirect*/}
                 {/*<Redirect from='/pizza:s?' to='/la-carte'/>*/}
                 {/*<Redirect from='/carte' to='/la-carte'/>*/}
                 {/*endregion*/}
-                <Route path='/la-carte' component={Products}/>
-                <Route path='/oups' component={Page404}/>
+                {/*<Route path='/la-carte' component={Products}/>*/}{/*// remettre*/}
+                {/*<Route path='/oups' component={Page404}/>*/}{/*// remettre*/}
                 {/*region homeRedirect*/}
-                {/*<Redirect from='/home' to='/bienvenus'/>*/}
-                {/*<Redirect from='/accueil' to='/bienvenus'/>*/}
-                <Redirect from='/' exact to='/bienvenus'/>
+                {/*<Redirect from='/home' to='/bienvenus'/>*/}{/*// remettre*/}
+                {/*<Redirect from='/accueil' to='/bienvenus'/>*/}{/*// remettre*/}
+                {/*<Redirect from='/' exact to='/bienvenus'/>*/}{/*// remettre*/}
                 {/*endregion*/}
                 {/*<Route path='/accueil' render={() => <Home iconNavRef={iconNav} onOpenNav={handleShowNav}/>}/>*/}
-                <Route path='/site-en-construction' component={LandingPage}/>
-                <Redirect from='/*' to={'/site-en-construction'}/>
-                <Redirect to='/oups'/>
+                <Route path='/' component={LandingPage}/>
+                <Redirect from='*' to={'/'}/>
+                {/*<Redirect to='/oups'/>*/}{/*// remettre*/}
             </Switch>
         </React.StrictMode>
     )

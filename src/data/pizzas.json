@@ -107,7 +107,8 @@
       "nom": "La Végétarienne",
       "ingredients": [
         "Mozzarella FDL",
-        "Poivrons"
+        "Poivrons",
+        "Courgettes"
       ],
       "base": {
         "label": "Base Tomate",
@@ -428,22 +429,6 @@
       "boissonChaudes": false,
       "boissonAlcool": true,
       "boissonSoft": false
-    },
-    {
-      "_id": 10,
-      "nom": "Expresso",
-      "prix": "1,00",
-      "boissonChaudes": true,
-      "boissonAlcool": false,
-      "boissonSoft": false
-    },
-    {
-      "_id": 11,
-      "nom": "Capuccino",
-      "prix": "1,50",
-      "boissonChaudes": true,
-      "boissonAlcool": false,
-      "boissonSoft": false
     }
   ],
   "desserts": [
@@ -456,7 +441,7 @@
     {
       "_id": 2,
       "nom": "PANA",
-      "prix": "3,00",
+      "prix": "3,50",
       "url": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/panna-cotta-thermomix-3644747/86259461-1-fre-FR/Panna-cotta-Thermomix.jpg"
     }
   ],
@@ -489,7 +474,7 @@
     {
       "_id": 6,
       "nom": "Oeuf",
-      "prix": "1,00"
+      "prix": "0,50"
     }
   ]
 }
