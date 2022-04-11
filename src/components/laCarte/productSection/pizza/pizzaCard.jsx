@@ -27,7 +27,7 @@ export const PizzaCard = ({product}) => {
             <div className="relative h-full m-o p-4">
                 <desc className="text-2xl font-semi-bold leading-relaxed tracking-widest">
                     <p className={''}><strong className={'font-extrabold'}>Ingrédients: </strong>{base.label} {ingredients.join(', ')}</p>
-                    {getAfterCook()}
+                    {/*{(aftercook) ? <p className={"mt-1"}><strong className={"font-extrabold"}>Après Cuisson</strong>:  {afterCook.join(', ')}</p> : null}*/}
                 </desc>
             </div>
 

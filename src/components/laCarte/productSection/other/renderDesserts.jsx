@@ -1,12 +1,8 @@
-import React from 'react';
-import {DessertCard} from "./dessertCard";
+import React from 'react'
+import { RenderProductsLayout } from '../renderProducts'
 
-export const RenderDesserts = ({desserts}) => {
-    return (
-        desserts.map(dessert =>
-            <li className={""} key={`${dessert._id}_${dessert.nom}`}>
-             <DessertCard prix={dessert.prix} nom={dessert.nom} url={dessert.url}/>
-            </li>
-        )
-    );
-};
+export const RenderDesserts = ({ desserts }) => {
+   return desserts.map(dessert => (
+      <RenderProductsLayout product={dessert}/>
+   ))
+}

@@ -30,7 +30,7 @@ export const RenderFilterSection = ({
    base,
 }) => {
    /**
-    * Retourne les Labels et key des bases Pizzas
+    * Retourne les Labels et key des bases Products
     * @param key
     * @return {*[]}
     */
@@ -214,9 +214,9 @@ export const RenderFilterSection = ({
                      {iteration === 0
                         ? 'Toutes les pizzas'
                         : iteration === 1
-                        ? 'Pizzas Végétariennes'
+                        ? 'Products Végétariennes'
                         : iteration === 2
-                        ? 'Pizzas avec Poisson'
+                        ? 'Products avec Poisson'
                         : '100% Viande'.toUpperCase()}
                   </p>
                   {iteration === 0 ? (
