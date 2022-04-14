@@ -68,7 +68,7 @@ export const Products = () => {
          </section>
 
          <section className="w-auto h-max flex flex-column  gap-2 justify-center align-items-center">
-            <Header title={`Nos ${categories[0].toUpperCase() + categories.slice(1)}`}></Header>
+            <Header title={`Nos ${categories[0].toUpperCase() + categories.slice(1)}`}/>
             <div className={'h-full w-full animate__animated animate__fadeIn'}>
                <article className={'flex flex-column align-items-center gap-y-6 m-12'}>
                   {categories === 'pizzas' ? <RenderPizzas pizzas={filteredProducts} /> : null}
