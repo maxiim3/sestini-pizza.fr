@@ -6,24 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/informations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/informations.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-pdm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-pdm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +77,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/video" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -98,8 +91,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/video" />
       <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/video" />
       <recent name="$PROJECT_DIR$/public/icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -137,7 +130,7 @@
       <workItem from="1650034118623" duration="2287000" />
       <workItem from="1650363717880" duration="593000" />
       <workItem from="1650626162218" duration="4309000" />
-      <workItem from="1650715587237" duration="187000" />
+      <workItem from="1650715587237" duration="18994000" />
     </task>
     <servers />
   </component>
@@ -158,11 +151,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx</url>
           <line>7</line>

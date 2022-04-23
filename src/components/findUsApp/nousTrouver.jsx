@@ -6,11 +6,10 @@ import { Layout } from '../commons/layout'
 import { Header } from '../commons/header'
 
 /**
- * @param location
  * @return {JSX.Element}
  * @constructor
  */
-export const NousTrouver = ({ location }) => {
+export const NousTrouver = () => {
    const index = new Date().getDay() - 1
    const defaultDay = getDays()[index]
    const [activeDay, setActiveDay] = useState(defaultDay)
@@ -21,56 +20,93 @@ export const NousTrouver = ({ location }) => {
 
    return (
       <Layout title={'Nos Emplacements'} Component={<IconTitleLaCarte />}>
-         <section className="w-auto h-auto flex flex-col  gap-4 justify-center items-center">
+         <section className="flex h-auto w-auto flex-col  items-center justify-center gap-8">
             <Header title={'Horaires'} />
-            <div className={'text-3xl text-center tracking-wide leading-relaxed'}>
+            <div className={'text-center text-2xl font-normal leading-relaxed tracking-wide'}>
                <p>Nous sommes ouverts</p>
-               <p>de 18h à 21h30</p>
-               <p>du mardi au samedi</p>
+               <p>à partir de 18h</p>
+               <p>du mercredi au samedi</p>
             </div>
             <div className={''}>
-               <img src="./icon/Horloge-beige.png" alt="" className={'w-8'} />
+               <span>
+                  <svg
+                     className={'w-12 text-beige'}
+                     width="18"
+                     height="18"
+                     viewBox="0 0 18 18"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M9 3C12.3082 3 15 5.69175 15 9C15 12.3082 12.3082 15 9 15C5.69175 15 3 12.3082 3 9C3 5.69175 5.69175 3 9 3ZM9 1.5C4.85775 1.5 1.5 4.85775 1.5 9C1.5 13.1422 4.85775 16.5 9 16.5C13.1422 16.5 16.5 13.1422 16.5 9C16.5 4.85775 13.1422 1.5 9 1.5ZM11.85 11.55L9.75 8.75025V5.25H8.25V9.24975L10.65 12.4492L11.85 11.55Z"
+                        fill="#F9F0DC"
+                     />
+                  </svg>
+               </span>
             </div>
             <bottom>
-               <p className={'text-small text-center font-thin tracking-wide'}>
+               <p className={'text-small text-center font-thin tracking-wider'}>
                   Sélectionnez un jour pour visualiser sur la carte nos emplacements
                </p>
             </bottom>
          </section>
-         <section className="flex flex-wrap align-items-center justify-center gap-1 text-beige">
-            <ul>
-               <li
-                  className={
-                     ' my-6 flex justify-content-center align-center gap-x-8 gap-y-4 flex-wrap w-4/5'
-                  }>
-                  {getDays()
-                     .filter(j => j.estOuvert)
-                     .map(j => (
+         <section>
+            <ul className="flex w-full flex-row flex-wrap items-center justify-center gap-x-8 text-beige">
+               {getDays()
+                  .filter(j => j.estOuvert)
+                  .map(j => (
+                     <li className={'my-6 font-main text-2xl font-bold uppercase tracking-wide'}>
                         <Button
                            key={j._id}
                            activeClass={j.jour === getActiveDay('jour')}
-                           height={12}
-                           onClick={() => setActiveDay(j)}
-                           >
+                           height={20}
+                           onClick={() => setActiveDay(j)}>
                            {j.jour}
                         </Button>
-                     ))}
-               </li>
+                     </li>
+                  ))}
             </ul>
          </section>
 
-         <section className="w-auto h-max flex flex-col  gap-2 justify-center items-center">
-            <article className={'h-full w-full animate__animated animate__fadeIn'}>
-               <ul className={'flex flex-col align-items-center gap-y-6 m-12'}>
+         <section className="flex h-max w-auto flex-col  items-center justify-center gap-2">
+            <article className={'animate__animated animate__fadeIn h-full w-full'}>
+               <dl
+                  className={
+                     'mx-auto flex max-w-5xl flex-col items-center justify-center  gap-y-6'
+                  }>
                   {getDays()
                      .filter(j => j._id === getActiveDay('_id'))
                      .map(jour => (
-                        <li as={'div'} className={'text-center '} key={jour._id + 10}>
-                           <h2>Nous sommes {jour.estOuvert ? "ouvert" : "fermé"} le {jour.jour}</h2>
-                           <h3>{jour.horaires}</h3>
+                        <dt className={'text-center '} key={jour._id + 10}>
+                           <div
+                              className={
+                                 'flex w-full items-center justify-center border-t border-b border-beige px-6 py-8'
+                              }>
+                              <div className={'grid w-max place-content-center'}>
+                                 <svg
+                                    width="13"
+                                    height="20"
+                                    viewBox="0 0 13 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       fill-rule="evenodd"
+                                       clip-rule="evenodd"
+                                       d="M5.31074 0.102785C2.17098 0.763088 -0.0227903 3.66073 0.000178674 7.11709C0.0148861 9.32421 1.50424 12.5904 4.51871 17.0261C5.65772 18.7022 5.86399 18.9454 6.24947 19.0673C6.78629 19.2371 7.07227 19.0184 7.93755 17.7768C9.63817 15.3367 11.5337 12.0396 12.2814 10.221C12.6633 9.29238 13.0019 7.7882 13 7.02921C12.9933 4.42193 11.5744 1.93766 9.40085 0.727555C8.2701 0.0979802 6.56904 -0.161857 5.31074 0.102785ZM7.38258 5.00196C8.75227 5.72382 9.07438 7.69652 8.00909 8.83906C7.53982 9.34232 7.13382 9.51989 6.46491 9.51468C5.4461 9.50667 4.7002 8.876 4.40814 7.77559C4.00268 6.248 5.14959 4.68987 6.60109 4.79617C6.85075 4.81439 7.20236 4.90707 7.38258 5.00196Z"
+                                       fill={'#F9F0DC'}
+                                    />
+                                 </svg>
+                              </div>
+                              <div className={'mx-auto w-fit text-2xl uppercase tracking-wide'}>
+                                 <p className={'w-fit text-center '}>
+                                    {jour.adresse.num} {jour.adresse.rue}
+                                    <br />
+                                    {jour.adresse.cp} {jour.adresse.ville}
+                                 </p>
+                              </div>
+                           </div>
                            <p
                               className={
-                                 'text-small text-align-center font-thin tracking-wide leading-relaxed mb-6'
+                                 'text-small text-center font-thin tracking-wider text-beige-light'
                               }>
                               Cliquez sur la carte pour ouvrir dans Google Maps
                            </p>
@@ -78,12 +114,12 @@ export const NousTrouver = ({ location }) => {
                               src={jour.url}
                               alt="Carte de nos emplacements"
                               className={
-                                 'h-full object-cover cursor-pointer transform hover:scale-105'
+                                 'h-full transform cursor-pointer object-cover hover:scale-105'
                               }
                            />
-                        </li>
+                        </dt>
                      ))}
-               </ul>
+               </dl>
             </article>
          </section>
       </Layout>

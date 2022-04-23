@@ -56,17 +56,17 @@ export const Hero = () => {
             </div>
             <img
                className={
-                  'col-start-4 col-end-6 row-start-1 translate-x-6 transform justify-self-end md:absolute md:right-4'
+                  'col-start-4 col-end-6 row-start-1 translate-x-6 transform justify-self-end md:hidden'
                }
                src={'./img/basilic.png'}
-               alt="feuilles de basilic"
+               aria-hidden={true}
             />
             <img
                className={
-                  'left-0 col-start-1 col-end-4 row-start-3 row-end-6 -translate-x-12 transform md:absolute md:top-3/4'
+                  'left-0 col-start-1 col-end-4 row-start-3 row-end-6 -translate-x-12 transform md:hidden'
                }
                src={'./img/pizza-half.png'}
-               alt="Photo de l'une de nos délicieuses pizza"
+               aria-hidden={true}
             />
             <div
                className={

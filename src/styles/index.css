@@ -388,13 +388,6 @@ template {
   box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
-.icon-logo-minify {
-  position: fixed;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
-
 .navigation {
   width: 100vw;
   height: 100vh;
@@ -439,6 +432,23 @@ template {
 .navigation .navigationWrapper .social-grid .icon svg {
   width: 4.2rem;
   height: 4.2rem;
+}
+
+.scroll-icon {
+  animation-name: scrollY;
+  animation-duration: 750ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
