@@ -24,7 +24,6 @@ const App = () => {
 
    const handleShowNav = () => {
        navIsHidden ? setNavIsHidden(false) : setNavIsHidden(true)
-       console.log(!navIsHidden)
    }
 
    return (
@@ -47,7 +46,7 @@ const App = () => {
             {/*<Route path='/' component={LandingPage}/>*/}
             {/*<Redirect from="*" to={'/'} />*/}
             {/*endregion*/}
-            <Redirect to="/oups" />
+            {/*<Redirect to="/oups" />*/}
          </Switch>
       </React.StrictMode>
    )

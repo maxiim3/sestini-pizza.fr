@@ -1,7 +1,6 @@
 import React from 'react'
-import { PizzaCard } from './pizzaCard'
 
-export const RenderPizzas = ({ pizzas, iteration }) => {
+export const RenderPizzas = ({ pizzas }) => {
    const getData = () => {
       const array = []
       pizzas.forEach(({ base }) => array.push(base['label']))
@@ -21,7 +20,7 @@ export const RenderPizzas = ({ pizzas, iteration }) => {
                      <span className="flex-grow-1 content-[''] border-t-[0.5px] border-beige/40 w-max mx-4 transform translate-y-4" />
                      <p className={'inline-block align-self-end text-2xl'}> {pizza.prix}€</p>
                   </li>
-                  <p className={'w-fullfont-describe text-light-grey tracking-wider font-normal text-3xl leading-relaxed '}>
+                  <p className={'w-full font-describe text-light-grey tracking-wider font-normal text-3xl leading-relaxed '}>
                      {pizza.base.label}, {pizza.ingredients.join(', ')}
                   </p>
                   {pizza.afterCook ? (

@@ -56,25 +56,28 @@ export const Products = () => {
    //    iteration++
    //    setIteration(iteration % 4)
    // }
-   //endregion
+   //endregioni
 
    return (
       <Layout title={'Notre Carte'} Component={<IconTitleLaCarte />}>
-         <section className="w-auto h-auto flex flex-column  gap-4 justify-center align-items-center">
+         <section className="flex h-auto w-auto flex-col  items-center justify-center gap-4">
             <Header title={'Horaires'}>
                <IconHandClick />
             </Header>
             <RenderButtons activeCategory={categories} onChange={handleCategorize} />
          </section>
 
-         <section className="w-auto h-max flex flex-column  gap-2 justify-center align-items-center">
-            <Header title={`Nos ${categories[0].toUpperCase() + categories.slice(1)}`}/>
-            <div className={'h-full w-full animate__animated animate__fadeIn'}>
-               <article className={'flex flex-column align-items-center gap-y-6 m-12'}>
+         <section className="flex h-max w-auto flex-col  items-center justify-center gap-2">
+            <Header title={`Nos ${categories[0].toUpperCase() + categories.slice(1)}`} />
+            <div className={'animate__animated animate__fadeIn h-full w-full'}>
+               <article className={'align-items-center m-12 flex flex-col gap-y-6'}>
                   {categories === 'pizzas' ? <RenderPizzas pizzas={filteredProducts} /> : null}
-                  {categories === 'boissons' ? <RenderBoissons boissons={filteredProducts} /> : null}
-                  {categories === 'desserts' ? <RenderDesserts desserts={filteredProducts} /> : null}
-
+                  {categories === 'boissons' ? (
+                     <RenderBoissons boissons={filteredProducts} />
+                  ) : null}
+                  {categories === 'desserts' ? (
+                     <RenderDesserts desserts={filteredProducts} />
+                  ) : null}
                </article>
             </div>
          </section>

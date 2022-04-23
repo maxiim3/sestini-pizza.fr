@@ -59,13 +59,6 @@ export const LandingPage = () => {
 
             <section
                className={'w-full h-3/6 flex flex-column justify-around  align-items-center '}>
-               {/*<img*/}
-               {/*   className={*/}
-               {/*      'col-start-4 row-start-1 col-end-6 justify-self-end transform translate-x-6'*/}
-               {/*   }*/}
-               {/*   src={'./img/basilic.png'}*/}
-               {/*   alt="feuilles de basilic"*/}
-               {/*/>*/}
                <Animate animation={'animate__fadeInDown'}><Animate animation={'animate__flash animate__delay-2s'}>
                   <div className={'text-beige text-5xl mx-auto'}>
                      <h2>Ouverture le 4 mai</h2>

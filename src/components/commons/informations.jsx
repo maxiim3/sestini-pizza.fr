@@ -3,7 +3,7 @@ import info from "../../data/informations.json"
 
 export const PhoneNumber = () => {
     return (
-        <span className={'info-tel'}>{info[0].phoneNumber}</span>
+        <a href={`tel:${info[0].phoneNumber}`} className={'info-tel'}>{info[0].phoneNumber}</a>
     );
 };
 

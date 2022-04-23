@@ -9,7 +9,7 @@ function NeoMorphismBTN({ children, link }) {
    return (
       <div
          className={
-            ' neoMorphism w-max h-24 rounded-full grid place-content-center text-beige uppercase text-2xl font-main  cursor-pointer'
+            ' neoMorphism grid h-24 w-max cursor-pointer place-content-center rounded-full font-main text-2xl uppercase text-beige'
          }>
          <a className={'p-8'} href={link}>
             {children}
@@ -22,11 +22,21 @@ NeoMorphismBTN.propTypes = {
    children: PropTypes.node,
 }
 
+export const LayoutHomePage = ({ children }) => {
+   return (
+      <article className="z-10 h-full w-screen text-beige md:mx-auto md:h-full md:max-w-7xl">
+         {children}
+      </article>
+   )
+}
+
 const Home = () => {
    return (
       <>
-         <header className={'hidden md:block '}>
+         <header
+            className={'hidden bg-dark-grey  md:block md:grid md:w-full md:place-content-center'}>
             <video
+               className={'hover:cursor-pointer active:cursor-grabbing xl:rounded-3xl'}
                src={'./video/pexels-denys-gromov-6176588.mp4'}
                controls={true}
                controlsList={'nodownload nofullscreen noremotreplayback'}
@@ -37,22 +47,22 @@ const Home = () => {
          </header>
          <main
             className={
-               'flex flex-column flex-wrap justify-between items-center overflow-x-hidden m-0 p-0 bg-dark-grey'
+               'flex-column flex flex-wrap items-center justify-between overflow-x-hidden bg-dark-grey md:gap-72'
             }>
             {/*Scrolling Component*/}
-            <article className="h-full w-screen z-10">
+            <LayoutHomePage>
                <Hero />
-            </article>
-            <article className="h-full w-screen z-10 text-beige text-2xl">
-               <PdM />
-            </article>
-            <div className={'mt-48 mb-80'}>
+            </LayoutHomePage>
+            {/*<LayoutHomePage>*/}
+            <PdM />
+            {/*</LayoutHomePage>*/}
+            <div className={'mx-auto mt-48 mb-80'}>
                <NeoMorphismBTN link={'#about'}>Plus d'informations</NeoMorphismBTN>
             </div>
-            <article className="h-full w-screen z-10 bg-beige text-dark-grey">
+            <article className="z-10 h-full w-screen bg-beige text-dark-grey">
                <About />
             </article>
-            <div className={'my-24'}>
+            <div className={'my-24 mx-auto'}>
                <NeoMorphismBTN link={'#'}>Haut de la page</NeoMorphismBTN>{' '}
             </div>
             <Footer />

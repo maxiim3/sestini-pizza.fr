@@ -145,7 +145,7 @@ export const RenderButtons = ({ onChange, activeCategory }) => {
 
 
   return (
-    <div className={ ' my-6 flex justify-content-center align-center gap-x-8 gap-y-4 flex-wrap w-4/5'}>
+    <div className={ ' my-6 flex justify-center items-center gap-x-8 gap-y-4 flex-wrap w-4/5'}>
       {buttons.map((btn) => (
         <Button
           key={btn._id}

@@ -16,7 +16,7 @@ const Navigation = ({ navRef, onClose }) => {
    return (
       <nav className="navigation z-20" ref={navRef}>
          <div className="navigationWrapper">
-            <NavLink onClick={onClose} className="navbar-brand" to={'/bienvenus'}>
+            <NavLink onClick={onClose} className="navbar-brand" to={'/accueil'}>
                <MainLogo />
             </NavLink>
             <Button onClick={onClose} nav={true} activeClass={false}>
@@ -36,7 +36,7 @@ const Navigation = ({ navRef, onClose }) => {
                </NavLink>
             </Button>
             <Button onClick={onClose} nav={true} activeClass={false}>
-               <NavLink className="" aria-current="page" to={'/bienvenus'}>
+               <NavLink className="" aria-current="page" to={'/accueil'}>
                   La Pizza
                   <br />
                   Du Mois

@@ -36,7 +36,7 @@ export const Button = ({ children, activeClass, onClick, key, nav = false, heigh
    return (
       <div
          key={key}
-         className={`${getClasses().layoutProps} ${getClasses().boxProps} ${
+         className={`cursor-pointer ${getClasses().layoutProps} ${getClasses().boxProps} ${
             getClasses().borderProps
          } ${getClasses().textProps} ${activeClass ? colors.isActive : colors.isNotActive}`}
          onClick={onClick}>
