@@ -36,13 +36,13 @@ const Navigation = ({ navRef, onClose }) => {
                </NavLink>
             </Button>
             <Button onClick={onClose} nav={true} activeClass={false}>
-               <NavLink className="" aria-current="page" to={'/accueil'}>
+               <NavLink className="" aria-current="page" to={'/accueil#pizza-du-mois'}>
                   La Pizza
                   <br />
                   Du Mois
                </NavLink>
             </Button>
-            <div className={"cursor-pointer"} onClick={onClose} onClick={() => onClose()}>
+            <div className={'cursor-pointer'} onClick={onClose} onClick={() => onClose()}>
                <IconCloseNav />
             </div>
             <div className="social-grid">

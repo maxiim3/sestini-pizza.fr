@@ -30,12 +30,12 @@ export const LayoutHomePage = ({ children }) => {
    )
 }
 
-const Home = () => {
+const Home = ({ refPDM, handleScroll }) => {
    return (
       <>
          <main
             className={
-               'relative flex flex-col flex-wrap items-center justify-between overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
+               'relative flex flex-col flex-wrap items-center justify-between gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
             }>
             <header
                className={
@@ -87,17 +87,15 @@ const Home = () => {
                </svg>
             </div>
             <LayoutHomePage>
-               <Hero />
+               <Hero handleScroll={handleScroll} />
             </LayoutHomePage>
             <LayoutHomePage>
-               <PdM />
+               <PdM refPDM={refPDM} />
             </LayoutHomePage>
             <div className={'mx-auto mb-24'}>
                <NeoMorphismBTN link={'#about'}>À PROPOS</NeoMorphismBTN>
             </div>
-            <article className="z-10 h-full w-screen bg-beige text-dark-grey">
-               <About />
-            </article>
+            <About />
             <div className={'my-24 mx-auto'}>
                <NeoMorphismBTN link={'#'}>Haut de la page</NeoMorphismBTN>{' '}
             </div>

@@ -1,17 +1,38 @@
 import React from 'react'
 
-export const RenderProductsLayout = ({product }) => {
-    return (
-       <div className={'ml-1 mr-0 min-w-full sm:max-w-screen-sm'}>
-          <ul className={'my-4'}>
-             <li className={'flex flex-row flex-nowrap gap-x-8'} key={`${product._id}_${product.nom}`}>
-                <h3 className={'inline-block align-self-start text-3xl font-semibold pb-1'}>
-                   {product.nom}
-                </h3>
-                <span className="flex-grow-1 content-[''] border-t-2 border-beige/40 w-max mx-4 transform translate-y-4" />
-                <p className={'inline-block align-self-end text-2xl'}> {product.prix}€</p>
-             </li>
-          </ul>
-       </div>
-    )
+export const RenderProductsLayout = ({ product }) => {
+   return (
+      <li className={'my-8 w-full text-2xl'} key={`${product._id}_${product.nom}`}>
+         <dl className={'flex flex-row flex-nowrap items-center gap-x-8'}>
+            <dt className={'hidden'}>Nom du Produit</dt>
+            <dd className={"block font-['Cinzel'] font-bold uppercase"}>
+               {product['Pizza du mois'] && (
+                  <span className={'underline underline-offset-2'}>Pizza du Mois:</span>
+               )}{' '}
+               {product.nom}
+            </dd>
+            <dt className={'hidden'}>Prix du produit</dt>
+            <div className="mx-4 block w-max flex-1 border-t border-dark-gray-light" />
+            <dd className={'block text-2xl'}> {product.prix}€</dd>
+         </dl>
+         {product.base ?? product.ingredients ? (
+            <dl>
+               <dt className={'hidden'}>Liste des ingrédients</dt>
+               <dd className={'w-full pr-3 font-describe leading-relaxed tracking-wider '}>
+                  {product.base.label}, {product.ingredients.join(', ')}
+               </dd>
+               {product.afterCook ? (
+                  <dl>
+                     <dt className={'hidden'}>Ingrédients ajoutés après-cuisson</dt>
+                     <dd
+                        className={'pr-3 font-describe font-normal leading-relaxed tracking-wider'}>
+                        <strong className={'mr-2 font-bold'}>Après Cuisson :</strong>
+                        {product.afterCook.join(', ')}
+                     </dd>
+                  </dl>
+               ) : null}
+            </dl>
+         ) : null}
+      </li>
+   )
 }

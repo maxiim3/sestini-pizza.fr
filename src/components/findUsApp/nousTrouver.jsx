@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { getDays } from './jours'
-import { IconTitleLaCarte } from '../commons/icons'
 import { Button } from '../commons/button'
 import { Layout } from '../commons/layout'
 import { Header } from '../commons/header'
+import Map from 'maplibre-gl'
 
 /**
  * @return {JSX.Element}
@@ -11,7 +11,7 @@ import { Header } from '../commons/header'
  */
 export const NousTrouver = () => {
    const index = new Date().getDay() - 1
-   const defaultDay = getDays()[index]
+   const defaultDay = getDays()[index === 0 || 1 || 6 ? 2 : index]
    const [activeDay, setActiveDay] = useState(defaultDay)
 
    const getActiveDay = key => {
@@ -19,7 +19,7 @@ export const NousTrouver = () => {
    }
 
    return (
-      <Layout title={'Nos Emplacements'} Component={<IconTitleLaCarte />}>
+      <Layout title={'Nos Emplacements'}>
          <section className="flex h-auto w-auto flex-col  items-center justify-center gap-8">
             <Header title={'Horaires'} />
             <div className={'text-center text-2xl font-normal leading-relaxed tracking-wide'}>
@@ -98,6 +98,8 @@ export const NousTrouver = () => {
                               </div>
                               <div className={'mx-auto w-fit text-2xl uppercase tracking-wide'}>
                                  <p className={'w-fit text-center '}>
+                                    {jour.adresse.lieuDit}
+                                    <br />
                                     {jour.adresse.num} {jour.adresse.rue}
                                     <br />
                                     {jour.adresse.cp} {jour.adresse.ville}
@@ -110,13 +112,15 @@ export const NousTrouver = () => {
                               }>
                               Cliquez sur la carte pour ouvrir dans Google Maps
                            </p>
-                           <img
-                              src={jour.url}
-                              alt="Carte de nos emplacements"
-                              className={
-                                 'h-full transform cursor-pointer object-cover hover:scale-105'
-                              }
-                           />
+                           <a target="_blank" rel="noopener" href={jour.adresse.googleMaps}>
+                              <img
+                                 src={jour.url}
+                                 alt="Carte de nos emplacements"
+                                 className={
+                                    'h-full transform cursor-pointer object-cover hover:scale-105'
+                                 }
+                              />
+                           </a>
                         </dt>
                      ))}
                </dl>

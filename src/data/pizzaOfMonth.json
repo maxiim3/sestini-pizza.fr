@@ -1,5 +1,6 @@
 {
   "_id": 100,
+  "Pizza du mois" : true,
   "nom": "La Pisello",
   "ingredients": [
     "Chiffonnade de Jambon Blanc"

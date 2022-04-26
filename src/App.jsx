@@ -9,7 +9,7 @@ import { MainLogoMinify } from './components/commons/icons'
 import { Products } from './components/laCarte/products'
 import { LandingPage } from './components/landing'
 
-const App = () => {
+const App = ({ location }) => {
    const [navIsHidden, setNavIsHidden] = useState(false)
    useEffect(() => {
       if (navIsHidden) {
@@ -20,8 +20,29 @@ const App = () => {
          iconNav.current.hidden = false
       }
    })
+
+   const getHash = () => {
+      return '' || window.location.hash
+   }
+   const [hash, setHash] = useState(getHash())
+   useEffect(() => {
+      if (hash === '#pizza-du-mois') {
+         handleScrollToPDM(350)
+      }
+      window.addEventListener('hashchange', () => setHash(getHash()))
+      return () => window.removeEventListener('hashchange', () => setHash(getHash()))
+   })
+
    const iconNav = React.createRef()
    const navMobile = React.createRef()
+   const pizzaDuMois = React.createRef()
+
+   const handleScrollToPDM = time => {
+      setTimeout(() => {
+         pizzaDuMois.current.scrollIntoView({ behavior: 'smooth' })
+      }, time)
+      clearTimeout()
+   }
 
    const handleShowNav = () => {
       navIsHidden ? setNavIsHidden(false) : setNavIsHidden(true)
@@ -42,7 +63,14 @@ const App = () => {
             {/*endregion*/}
             <Route
                path="/accueil"
-               render={() => <Home iconNavRef={iconNav} onOpenNav={handleShowNav} />}
+               render={() => (
+                  <Home
+                     iconNavRef={iconNav}
+                     onOpenNav={handleShowNav}
+                     refPDM={pizzaDuMois}
+                     handleScroll={handleScrollToPDM}
+                  />
+               )}
             />
             {/*region LandingRouter*/}
             {/*<Route path='/' component={LandingPage}/>*/}

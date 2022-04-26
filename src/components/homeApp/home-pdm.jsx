@@ -5,7 +5,7 @@ export const TextGold = ({ children }) => {
    return <span className={' text-gold'}>{children}</span>
 }
 
-export const PdM = () => {
+export const PdM = ({ refPDM }) => {
    const capitalizeFirstLetter = txt => {
       return txt.split(' ').map(word => (
          <>
@@ -32,6 +32,7 @@ export const PdM = () => {
 
          <article
             id={'pizza-du-mois'}
+            ref={refPDM}
             className={
                'mx-auto mt-24 mb-12 flex flex-col items-center justify-between text-center text-3xl text-beige'
             }>

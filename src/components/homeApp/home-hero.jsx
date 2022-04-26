@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { PhoneNumber } from '../commons/informations'
 import info from '../../data/informations.json'
 
-export const Hero = () => {
+export const Hero = ({ handleScroll }) => {
    return (
       <>
          <header className="col-span-full grid h-96 place-content-center" to={'/bienvenus'}>
@@ -45,12 +45,14 @@ export const Hero = () => {
                   'col-start-4 col-end-6 row-start-3 self-center justify-self-center md:row-start-1'
                }>
                <Button nav={true}>
-                  <div className="text-yellow-100 text-xl font-semibold uppercase">
-                     <a href={'#pizza-du-mois'}>
+                  <div
+                     className="text-yellow-100 text-xl font-semibold uppercase"
+                     onClick={() => handleScroll(150)}>
+                     <span>
                         La Pizza
                         <br />
                         Du Mois
-                     </a>
+                     </span>
                   </div>
                </Button>
             </div>
@@ -88,7 +90,6 @@ export const Hero = () => {
                   </a>
                </div>
                <div className="col-span-1 row-start-2 self-center justify-self-center">
-                  {' '}
                   <a
                      href={info[0].instagram}
                      target="_blank"
