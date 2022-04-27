@@ -7,10 +7,11 @@ import { NousTrouver } from './components/findUsApp/nousTrouver'
 import Page404 from './components/page404'
 import { MainLogoMinify } from './components/commons/icons'
 import { Products } from './components/laCarte/products'
-import { LandingPage } from './components/landing'
+import 'animate.css'
 
-const App = ({ location }) => {
+const App = () => {
    const [navIsHidden, setNavIsHidden] = useState(false)
+
    useEffect(() => {
       if (navIsHidden) {
          navMobile.current.hidden = false
@@ -21,26 +22,37 @@ const App = ({ location }) => {
       }
    })
 
-   const getHash = () => {
-      return '' || window.location.hash
-   }
-   const [hash, setHash] = useState(getHash())
+   const [url, setUrl] = useState(window.location.pathname)
    useEffect(() => {
-      if (hash === '#pizza-du-mois') {
-         handleScrollToPDM(350)
-      }
-      window.addEventListener('hashchange', () => setHash(getHash()))
-      return () => window.removeEventListener('hashchange', () => setHash(getHash()))
+      setUrl(window.location.pathname)
    })
+
+   // const getHash = () => {
+   //    return '' || window.location.hash
+   // }
+   // const [hash, setHash] = useState(getHash())
+   // useEffect(() => {
+   //    if (hash === '#pizza-du-mois') {
+   //       executeScroll(350)
+   //    }
+   //    window.addEventListener('hashchange', () => setHash(getHash()))
+   //    return () => window.removeEventListener('hashchange', () => setHash(getHash()))
+   // }, [hash])
 
    const iconNav = React.createRef()
    const navMobile = React.createRef()
    const pizzaDuMois = React.createRef()
+   const top = React.createRef()
+   const about = React.createRef()
 
-   const handleScrollToPDM = time => {
+   const handleNavToHome = ref => {
+      if (url === '/accueil') executeScroll(ref)
+   }
+
+   const executeScroll = ref => {
       setTimeout(() => {
-         pizzaDuMois.current.scrollIntoView({ behavior: 'smooth' })
-      }, time)
+         ref.current.scrollIntoView({ behavior: 'smooth' })
+      }, 350)
       clearTimeout()
    }
 
@@ -51,24 +63,27 @@ const App = ({ location }) => {
    return (
       <React.StrictMode>
          <Navigation navRef={navMobile} onClose={handleShowNav} />
-         <Navbar />
          <MainLogoMinify refLogo={iconNav} onClick={handleShowNav} beige={true} />
+         <Navbar handleScroll={handleNavToHome} scrollToRef={pizzaDuMois} />
          <Switch>
-            <Route path="/nous-trouver" component={NousTrouver} />
+            {/*<Route path="/nous-trouver" component={NousTrouver} />*/}
+            <Route
+               path="/nous-trouver"
+               render={() => <NousTrouver handleScroll={executeScroll} refPDM={pizzaDuMois} />}
+            />
             <Route path="/la-carte" component={Products} />
             <Route path="/oups" component={Page404} />
-            {/*region homeRedirect*/}
             <Redirect from="/home" to="/accueil" />
             <Redirect from="/" exact to="/accueil" />
-            {/*endregion*/}
             <Route
                path="/accueil"
+               exact
                render={() => (
                   <Home
-                     iconNavRef={iconNav}
-                     onOpenNav={handleShowNav}
+                     handleScroll={executeScroll}
                      refPDM={pizzaDuMois}
-                     handleScroll={handleScrollToPDM}
+                     refTop={top}
+                     refAbout={about}
                   />
                )}
             />
@@ -76,7 +91,7 @@ const App = ({ location }) => {
             {/*<Route path='/' component={LandingPage}/>*/}
             {/*<Redirect from="*" to={'/'} />*/}
             {/*endregion*/}
-            {/*<Redirect to="/oups" />*/}
+            <Redirect to="/oups" />
          </Switch>
       </React.StrictMode>
    )

@@ -24,7 +24,7 @@ export const TextLink = ({ children, link }) => {
    )
 }
 
-export const Navbar = () => {
+export const Navbar = ({ handleScroll, scrollToRef }) => {
    return (
       <nav
          className={
@@ -35,11 +35,7 @@ export const Navbar = () => {
                'max-w- animate__animated animate__fadeIn mx-auto flex h-full w-full max-w-7xl items-center justify-evenly lg:w-[85%]'
             }>
             <li>
-               <NavLink
-                  to="/accueil"
-                  className={
-                     'transition-transform ease-in-out hover:scale-105 hover:drop-shadow-md'
-                  }>
+               <NavLink to="/accueil">
                   <IconMenuNavBar />
                </NavLink>
             </li>
@@ -49,10 +45,8 @@ export const Navbar = () => {
             <li>
                <TextLink link={'/la-carte'}>Notre Carte</TextLink>
             </li>
-            <li>
-               <TextLink aria-current="page" link={'/accueil#pizza-du-mois'}>
-                  La Pizza Du Mois
-               </TextLink>
+            <li onClick={() => handleScroll(scrollToRef)}>
+               <TextLink link={'/accueil'}>La Pizza Du Mois</TextLink>
             </li>
             <li>
                <div

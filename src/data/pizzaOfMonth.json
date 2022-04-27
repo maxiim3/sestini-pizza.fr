@@ -1,15 +1,17 @@
 {
   "_id": 100,
-  "Pizza du mois" : true,
-  "nom": "La Pisello",
+  "nom": "Pizza du mois",
+  "pizzaDuMois" : true,
   "ingredients": [
-    "Chiffonnade de Jambon Blanc"
+    "Mozzarella Fior Di Latte","Chiffonnade de Jambon Blanc"
   ],
   "base": {
-    "label": "Base Mozzarella FDL",
-    "key": "baseMozza",
-    "state": "baseMozza",
-    "setState": "setBaseMozza"
+    "label": "Spéciale",
+    "describe": "",
+    "title": "Spéciale",
+    "key": "sansBase",
+    "state": "sansBase",
+    "setState": "setSansBase"
   },
   "avecViande": true,
   "avecPoisson": false,

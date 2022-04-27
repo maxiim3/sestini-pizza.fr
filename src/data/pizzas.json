@@ -5,7 +5,9 @@
          "nom": "La Margherita",
          "ingredients": ["Mozzarella Fior Di Latte", "Basilic frais", "Filet d'huile d'olive"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" : "Sauce Tomate",
+            "title" : "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -21,7 +23,9 @@
          "nom": "La Pizza de Bufflonne",
          "ingredients": ["Mozzarella di Bufala", "Basilic frais", "Filet d'huile d'olive"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -41,7 +45,9 @@
             "Filet d'huile d'Olive"
          ],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -63,7 +69,9 @@
             "Olives Noires"
          ],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -84,7 +92,9 @@
             "Oeuf coulant"
          ],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -107,7 +117,9 @@
             "Olives noires"
          ],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -123,7 +135,9 @@
          "nom": "L'Italienne",
          "ingredients": ["Mozzarella di Bufala"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -139,12 +153,14 @@
          "nom": "La Piccante",
          "ingredients": [
             "Mozzarella Fior Di Latte",
-            "Spianata Calabrese Picante",
+            "Spianata Calabrese",
             "Oignons rouges",
             "Olives noires"
          ],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -157,10 +173,12 @@
       },
       {
          "_id": 9,
-         "nom": "La Salsiccia de Buffelone",
+         "nom": "La Salsiccia de Bufflonne",
          "ingredients": ["Mozzarella di Bufala", "Saucisse", "Persillade", "Olives noires"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -176,7 +194,9 @@
          "nom": "La Napoletana",
          "ingredients": ["Mozzarella Fior Di Latte", "Anchois", "Câpres", "Olives noires"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -192,7 +212,9 @@
          "nom": "La Coppa",
          "ingredients": ["Mozzarella Fior Di Latte", "Artichaut à la Romaine", "Olives noires"],
          "base": {
-            "label": "Base Tomate",
+            "label": "Tomate",
+            "describe" :  "Sauce Tomate",
+            "title" :  "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -208,7 +230,9 @@
          "nom": "La 4 Formaggi",
          "ingredients": ["Mozzarella Fior Di Latte", "Chèvre", "Gorgonzola", "Parmigiano"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -224,7 +248,9 @@
          "nom": "La Biquette",
          "ingredients": ["Mozzarella Fior Di Latte", "Chèvre"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -238,9 +264,11 @@
       {
          "_id": 14,
          "nom": "La Salmone",
-         "ingredients": ["Mozzarella Fior Di Latte", "Émincés de Champignon"],
+         "ingredients": ["Mozzarella Fior Di Latte", "Émincés de Champignons"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -256,7 +284,9 @@
          "nom": "La Charcutière",
          "ingredients": ["Mozzarella Fior Di Latte", "Gorgonzola"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -265,7 +295,7 @@
          "avecPoisson": false,
          "afterCook": [
             "Jambon de Parme",
-            "Spianata Calabrese Picante",
+            "Spianata Calabrese",
             "Parmigiano",
             "Sauce basilic"
          ],
@@ -283,7 +313,9 @@
             "Persillade"
          ],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -299,7 +331,9 @@
          "nom": "La Tonno",
          "ingredients": ["Mozzarella Fior Di Latte", "Oignons rouges", "Thon", "Olives noires"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -315,7 +349,9 @@
          "nom": "La Tamburrini",
          "ingredients": ["Mozzarella Fior Di Latte", "Oignons rouges", "Lardons", "Gorgonzola", "Sauce Basilic"],
          "base": {
-            "label": "Base Crème",
+            "label": "Crème",
+            "describe" : "Crème Fraîche",
+            "title":  "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -331,7 +367,9 @@
          "nom": "La Speciale",
          "ingredients": ["Mozzarella Fior Di Latte", "Courgettes"],
          "base": {
-            "label": "Sans Base",
+            "label": "Spéciale",
+            "describe": "",
+            "title": "Spéciale",
             "key": "sansBase",
             "state": "sansBase",
             "setState": "setSansBase"

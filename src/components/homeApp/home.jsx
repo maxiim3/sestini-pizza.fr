@@ -4,16 +4,16 @@ import { PdM } from './home-pdm'
 import { Footer } from '../../footer'
 import { About } from './home-about'
 import * as PropTypes from 'prop-types'
+import 'animate.css'
 
-function NeoMorphismBTN({ children, link }) {
+function NeoMorphismBTN({ children, handleScroll, toRef }) {
    return (
       <div
+         onClick={() => handleScroll(toRef)}
          className={
-            ' neoMorphism grid h-24 w-max cursor-pointer place-content-center rounded-full font-main text-2xl uppercase text-beige'
+            ' neoMorphism grid h-24 w-max cursor-pointer place-content-center rounded-full font-main text-2xl uppercase text-beige underline-offset-2 hover:text-gold hover:underline'
          }>
-         <a className={'p-8'} href={link}>
-            {children}
-         </a>
+         <div className={'p-8'}>{children}</div>
       </div>
    )
 }
@@ -30,16 +30,17 @@ export const LayoutHomePage = ({ children }) => {
    )
 }
 
-const Home = ({ refPDM, handleScroll }) => {
+const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
    return (
       <>
          <main
+            ref={refTop}
             className={
                'relative flex flex-col flex-wrap items-center justify-between gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
             }>
             <header
                className={
-                  'hidden bg-dark-grey  md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center'
+                  'animate__animated animate__slideInDown  hidden bg-dark-grey md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center'
                }>
                <video
                   className={'hover:cursor-pointer active:cursor-grabbing xl:rounded-3xl'}
@@ -87,17 +88,21 @@ const Home = ({ refPDM, handleScroll }) => {
                </svg>
             </div>
             <LayoutHomePage>
-               <Hero handleScroll={handleScroll} />
+               <Hero handleScroll={handleScroll} scrollToRef={refPDM} />
             </LayoutHomePage>
             <LayoutHomePage>
                <PdM refPDM={refPDM} />
             </LayoutHomePage>
             <div className={'mx-auto mb-24'}>
-               <NeoMorphismBTN link={'#about'}>À PROPOS</NeoMorphismBTN>
+               <NeoMorphismBTN handleScroll={handleScroll} toRef={refAbout}>
+                  À PROPOS
+               </NeoMorphismBTN>
             </div>
-            <About />
+            <About refAbout={refAbout} />
             <div className={'my-24 mx-auto'}>
-               <NeoMorphismBTN link={'#'}>Haut de la page</NeoMorphismBTN>{' '}
+               <NeoMorphismBTN handleScroll={handleScroll} toRef={refTop}>
+                  Haut de la page
+               </NeoMorphismBTN>{' '}
             </div>
             <Footer />
          </main>

@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/icons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/commons/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/jours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/jours.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-about.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" afterDir="false" />
@@ -23,10 +18,10 @@
       <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/laCarte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/items.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +62,9 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="zxv5px1h" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -95,7 +93,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -142,7 +140,9 @@
       <workItem from="1650626162218" duration="4309000" />
       <workItem from="1650715587237" duration="19154000" />
       <workItem from="1650885596290" duration="14858000" />
-      <workItem from="1650982946464" duration="10612000" />
+      <workItem from="1650982946464" duration="10968000" />
+      <workItem from="1651053926299" duration="1376000" />
+      <workItem from="1651063131136" duration="21327000" />
     </task>
     <servers />
   </component>

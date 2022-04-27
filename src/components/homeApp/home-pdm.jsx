@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PizzaDuMois from '../../data/pizzaOfMonth.json'
+import { GoldifyWords } from '../commons/textTransform'
 
-export const TextGold = ({ children }) => {
-   return <span className={' text-gold'}>{children}</span>
+export const Title = ({ children }) => {
+   return (
+      <>
+         <span
+            className={
+               'mx-auto block h-3 w-full border-t-2 border-b-2 border-beige-light sm:border-gold-90 md:mr-8 md:inline-block md:w-1/5 md:border-gold'
+            }
+         />
+         {children}
+         <span
+            className={
+               'mx-auto block h-3 w-full border-t-2 border-b-2 border-beige-light sm:border-gold-90 md:ml-8 md:inline-block md:w-1/5 md:border-gold'
+            }
+         />
+      </>
+   )
 }
 
 export const PdM = ({ refPDM }) => {
-   const capitalizeFirstLetter = txt => {
-      return txt.split(' ').map(word => (
-         <>
-            <span className={'font-decorative uppercase'}>{word.slice(0, 1)}</span>
-            {word.slice(1)}
-         </>
-      ))
-   }
-
    return (
       <>
          <section
@@ -22,19 +28,18 @@ export const PdM = ({ refPDM }) => {
                'mx-auto max-w-4xl border-t-2 border-b-2 border-beige px-8 py-16 text-center text-3xl font-thin leading-loose tracking-wide md:mx-auto md:flex md:justify-around  md:rounded-3xl md:border-2 '
             }>
             <p>
-               <TextGold>Tous les mois</TextGold>, <br /> La Pizza Sestini<sup>&copy;</sup> met à
-               profit sa <TextGold>créativité</TextGold> et son <TextGold>expérience</TextGold> afin
-               de vous offrir une pizza <TextGold>originale</TextGold> et des{' '}
-               <TextGold>produits</TextGold> de <TextGold>qualité sélectionnés</TextGold> avec
-               soins.
+               <GoldifyWords>Tous les mois</GoldifyWords>, <br /> La Pizza Sestini<sup>&copy;</sup>{' '}
+               met à profit sa <GoldifyWords>créativité</GoldifyWords> et son{' '}
+               <GoldifyWords>expérience</GoldifyWords> afin de vous offrir une pizza{' '}
+               <GoldifyWords>originale</GoldifyWords> et des <GoldifyWords>produits</GoldifyWords>{' '}
+               de <GoldifyWords>qualité sélectionnés</GoldifyWords> avec soins.
             </p>
          </section>
 
          <article
             id={'pizza-du-mois'}
-            ref={refPDM}
             className={
-               'mx-auto mt-24 mb-12 flex flex-col items-center justify-between text-center text-3xl text-beige'
+               'mx-auto mt-24 mb-2 flex flex-col items-center justify-between text-center text-3xl text-beige'
             }>
             <span className={'mx-auto text-center text-3xl text-beige-light'}>
                <svg
@@ -52,42 +57,45 @@ export const PdM = ({ refPDM }) => {
                </svg>
             </span>
             <h2
+               ref={refPDM}
                className={
-                  'text-uppercase my-16 px-16 text-center font-accent text-3xl font-thin leading-loose tracking-wider text-beige-light'
+                  'text-uppercase my-16 px-16 text-center font-accent text-3xl font-normal leading-loose tracking-wider text-beige-light'
                }>
-               Ce mois-ci, <br /> Découvrez
+               Ce mois-ci, découvrez notre
             </h2>
-            <section className={'m-0 w-3/5 p-0'} aria-label={'Titre de la pizza du mois'}>
-               <span
-                  className={
-                     'mx-auto block h-3 w-full border-t-2 border-b-2 border-beige-light md:mr-8 md:inline-block md:w-1/5'
-                  }
-               />
-               <h3 className={'font-bolder my-12 font-accent text-5xl md:inline-block'}>
-                  {capitalizeFirstLetter(PizzaDuMois.nom)}
-               </h3>
-               <div
-                  className={
-                     'mx-auto block h-3 w-full border-t-2 border-b-2 border-beige-light md:ml-8 md:inline-block md:w-1/5'
-                  }
-               />
+            <section className={'m-0 w-full p-0 sm:w-3/5'} aria-label={'Titre de la pizza du mois'}>
+               <Title>
+                  <h3
+                     className={
+                        'my-12 font-decorative text-5xl text-gold sm:text-beige md:inline-block md:font-semibold'
+                     }>
+                     {PizzaDuMois.nom}
+                  </h3>
+               </Title>
             </section>
-            <dl className={'my-12 font-describe text-3xl leading-relaxed tracking-wider'}>
+            <dl
+               className={
+                  'my-12 font-describe text-3xl font-light leading-relaxed tracking-widest'
+               }>
                <dt className={'hidden'}>Ingrédients</dt>
-               <dd>{PizzaDuMois.base.label}</dd>
+               <dd>{PizzaDuMois.base.describe}</dd>
                {PizzaDuMois.ingredients.map(ingredient => (
-                  <dd>{ingredient}</dd>
+                  <dd key={ingredient}>{ingredient}</dd>
                ))}
-               {!PizzaDuMois.afterCook ? null : (
+               {PizzaDuMois.afterCook && (
                   <>
-                     <dt className={'hidden'}>Après cuisson</dt>
+                     <h4
+                        className={'mt-6 font-normal text-light-grey underline underline-offset-2'}>
+                        Après Cuisson
+                     </h4>
+                     <dt className={'hidden'}>Ingrédients ajoutés après-cuisson</dt>
                      {PizzaDuMois.afterCook.map(ingredient => (
                         <dd>{ingredient}</dd>
                      ))}
                   </>
                )}
-               <dt className={'hidden'}>Prix</dt>
-               <dl className={'mx-8 mt-4 text-center font-accent text-3xl text-beige-light'}>
+               <dt className={'hidden'}>Prix du produit</dt>
+               <dl className={'mx-8 mt-8 text-center font-accent text-4xl text-gold'}>
                   {PizzaDuMois.prix}€
                </dl>
             </dl>

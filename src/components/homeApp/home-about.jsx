@@ -1,17 +1,10 @@
 import React from 'react'
 
-const H2 = ({ children }) => {
-   return <h2 className={'my-4 font-decorative text-5xl'}>{children}</h2>
-}
-const H3 = ({ children }) => {
-   return <h3 className={'my-4 font-main text-4xl font-normal'}>{children}</h3>
-}
-const P = ({ children }) => {
-   return <p className={'leading-12 font-main text-4xl font-light tracking-wider'}>{children}</p>
-}
-export const About = () => {
+export const About = ({ refAbout }) => {
    return (
-      <article className="z-10 h-full w-screen bg-beige text-dark-grey md:mx-auto md:grid md:place-content-center md:px-[2%] ">
+      <article
+         ref={refAbout}
+         className="z-10 h-full w-screen bg-beige text-dark-grey md:mx-auto md:grid md:place-content-center md:px-[2%] ">
          <article className={' md:flex md:max-w-screen-md md:flex-row md:justify-start'}>
             <aside
                className={
@@ -52,7 +45,6 @@ export const About = () => {
                />
             </section>
             <section
-               id={'about'}
                className={
                   'mx-auto max-w-3xl text-justify font-describe font-describe text-2xl leading-relaxed tracking-widest sm:px-0 md:mx-0 md:w-auto md:w-auto'
                }>

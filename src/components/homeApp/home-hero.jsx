@@ -4,17 +4,21 @@ import { IconFaceBook, IconInstagram, IconNavLaCarte, IconNavLocalisation } from
 import { Link, NavLink } from 'react-router-dom'
 import { PhoneNumber } from '../commons/informations'
 import info from '../../data/informations.json'
+import 'animate.css'
 
-export const Hero = ({ handleScroll }) => {
+export const Hero = ({ handleScroll, scrollToRef }) => {
    return (
       <>
-         <header className="col-span-full grid h-96 place-content-center" to={'/bienvenus'}>
+         <header
+            className="animate__animated animate__fadeInUp col-span-full grid h-96 place-content-center"
+            to={'/bienvenus'}>
             {/*<MainLogo />*/}
             <img src={'./img/logo-groupe.png'} alt="Logo Sestini Pizza" />
          </header>
+
          <section
             className={
-               'grid grid-cols-5 grid-rows-6 justify-between gap-y-2 px-3 md:mx-auto md:flex  md:justify-around'
+               'animate__animated animate__fadeIn animate__delay-1s grid grid-cols-5 grid-rows-6 justify-between gap-y-2 px-3 md:mx-auto md:flex  md:justify-around'
             }>
             <div className={'col-start-1 col-end-3 row-start-1 self-center justify-self-center'}>
                <Button nav={true}>
@@ -47,7 +51,7 @@ export const Hero = ({ handleScroll }) => {
                <Button nav={true}>
                   <div
                      className="text-yellow-100 text-xl font-semibold uppercase"
-                     onClick={() => handleScroll(150)}>
+                     onClick={() => handleScroll(scrollToRef)}>
                      <span>
                         La Pizza
                         <br />
@@ -72,7 +76,7 @@ export const Hero = ({ handleScroll }) => {
             />
             <div
                className={
-                  'col-span-2 col-start-4 row-start-4 grid grid-cols-2 grid-rows-2 gap-y-px gap-x-px self-start justify-self-center md:order-first'
+                  'col-span-2 col-start-4 row-start-4 grid grid-cols-2 grid-rows-2 gap-y-px gap-x-px self-start justify-self-center md:order-first md:-translate-y-3'
                }
                aria-label={'Réseaux sociaux'}>
                <div

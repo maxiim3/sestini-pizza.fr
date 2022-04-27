@@ -1,10 +1,11 @@
 import React from 'react'
 import { RenderProductsLayout } from '../renderProducts'
+import { AddPlural } from '../../../commons/textTransform'
 
 export const RenderPizzas = ({ pizzas, supplements }) => {
    const getData = () => {
       const array = []
-      pizzas.forEach(({ base }) => array.push(base['label']))
+      pizzas.forEach(({ base }) => array.push(base['title']))
       const newArray = new Set(array)
       return [...newArray]
    }
@@ -15,12 +16,12 @@ export const RenderPizzas = ({ pizzas, supplements }) => {
             <>
                <h3
                   className={
-                     'mt-8 mb-4 text-center font-decorative text-3xl font-bold tracking-wide '
+                     'animate__animated animate__slideInLeft mt-8 mb-4 text-center font-decorative text-3xl font-bold tracking-wide '
                   }>
-                  Pizza {base}
+                  {AddPlural(`Pizza ${base}`)}
                </h3>
                {pizzas
-                  .filter(p => p.base.label === base)
+                  .filter(p => p.base.title === base)
                   .map(pizza => (
                      <RenderProductsLayout product={pizza} />
                   ))}

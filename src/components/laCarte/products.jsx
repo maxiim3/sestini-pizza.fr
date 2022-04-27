@@ -50,7 +50,7 @@ export const Products = () => {
             <Header title={`Nos ${activeCategory[0].toUpperCase() + activeCategory.slice(1)}`} />
             <div
                className={
-                  'animate__animated animate__fadeIn h-full w-screen bg-beige text-dark-grey md:max-w-6xl md:rounded-xl'
+                  'animate__animated animate__slideInUp h-full w-screen bg-beige text-dark-grey md:max-w-6xl md:rounded-xl'
                }>
                <article className={'mx-auto p-12'}>
                   <ul className={'my-4'}>

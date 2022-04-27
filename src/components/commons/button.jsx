@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import 'animate.css'
 /**
  * #Button Wrapper
  * @param children
@@ -17,7 +18,7 @@ export const Button = ({ children, activeClass, onClick, key, nav = false, heigh
       isNotActive: 'border-beige text-beige bg-transparent border-solid border-2',
    }
    const commonStyles = {
-      layoutProps: 'flex flex-column justify-center items-center',
+      layoutProps: 'flex flex-column justify-center items-center ',
       boxProps: `h-${height} md:h-[100px] w-28 sm:w-32 md:w-44 px-2 m-0 p-0 `,
       borderProps: 'rounded-3xl box-border',
       textProps: 'text-base sm:text-lg md:text-2xl font-semibold text-center ',
@@ -36,7 +37,7 @@ export const Button = ({ children, activeClass, onClick, key, nav = false, heigh
    return (
       <div
          key={key}
-         className={`cursor-pointer ${getClasses().layoutProps} ${getClasses().boxProps} ${
+         className={` cursor-pointer ${getClasses().layoutProps} ${getClasses().boxProps} ${
             getClasses().borderProps
          } ${getClasses().textProps} ${activeClass ? colors.isActive : colors.isNotActive}`}
          onClick={onClick}>
@@ -54,6 +55,5 @@ Button.propTypes = {
    onCLick: PropTypes.func,
    key: PropTypes.string || PropTypes.number,
    nav: PropTypes.bool,
-   height: PropTypes.number
+   height: PropTypes.number,
 }
-

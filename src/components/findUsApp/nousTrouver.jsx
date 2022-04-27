@@ -3,13 +3,12 @@ import { getDays } from './jours'
 import { Button } from '../commons/button'
 import { Layout } from '../commons/layout'
 import { Header } from '../commons/header'
-import Map from 'maplibre-gl'
 
 /**
  * @return {JSX.Element}
  * @constructor
  */
-export const NousTrouver = () => {
+export const NousTrouver = ({ refPDM, handleScroll }) => {
    const index = new Date().getDay() - 1
    const defaultDay = getDays()[index === 0 || 1 || 6 ? 2 : index]
    const [activeDay, setActiveDay] = useState(defaultDay)
@@ -18,19 +17,34 @@ export const NousTrouver = () => {
       return activeDay[key]
    }
 
+   /**
+    * Retourne un tableau contenant uniquement les jours d'ouvertures
+    * @return {({jour: string, horaires: string, adresse: {ville: string, rue: string, lng: string, num: string, cp: string, lat: string}, _id: number, estOuvert: boolean, url: string}|{jour: string, horaires: string, adresse: {ville: string, rue: string, lng: number, num: string, cp: string, lat: number}, _id: number, estOuvert: boolean, url: string})[]}
+    */
+   const openDays = () => {
+      return getDays().filter(j => j.estOuvert)
+   }
+
    return (
       <Layout title={'Nos Emplacements'}>
-         <section className="flex h-auto w-auto flex-col  items-center justify-center gap-8">
+         <section className=" animate__animated animate__fadeIn flex h-auto  w-auto flex-col items-center justify-center gap-8">
             <Header title={'Horaires'} />
-            <div className={'text-center text-2xl font-normal leading-relaxed tracking-wide'}>
+            <div
+               className={
+                  'animate__animated animate__slideInUp text-center text-2xl font-normal leading-relaxed tracking-wide'
+               }>
                <p>Nous sommes ouverts</p>
                <p>à partir de 18h</p>
-               <p>du mercredi au samedi</p>
+               <p>
+                  du {openDays().at(0).jour} au {openDays().at(-1).jour}
+               </p>
             </div>
             <div className={''}>
                <span>
                   <svg
-                     className={'w-12 text-beige'}
+                     className={
+                        'animate__animated animate__fadeIn animate__delay-1s w-12 text-beige'
+                     }
                      width="18"
                      height="18"
                      viewBox="0 0 18 18"
@@ -43,8 +57,12 @@ export const NousTrouver = () => {
                   </svg>
                </span>
             </div>
+
             <bottom>
-               <p className={'text-small text-center font-thin tracking-wider'}>
+               <p
+                  className={
+                     'text-small animate__animated animate__fadeIn animate__delay-1s text-center font-thin tracking-wider'
+                  }>
                   Sélectionnez un jour pour visualiser sur la carte nos emplacements
                </p>
             </bottom>
@@ -54,7 +72,10 @@ export const NousTrouver = () => {
                {getDays()
                   .filter(j => j.estOuvert)
                   .map(j => (
-                     <li className={'my-6 font-main text-2xl font-bold uppercase tracking-wide'}>
+                     <li
+                        className={
+                           'animate__animated animate__fadeIn animate__delay-2s my-6 font-main text-2xl font-bold uppercase tracking-wide'
+                        }>
                         <Button
                            key={j._id}
                            activeClass={j.jour === getActiveDay('jour')}
@@ -97,7 +118,10 @@ export const NousTrouver = () => {
                                  </svg>
                               </div>
                               <div className={'mx-auto w-fit text-2xl uppercase tracking-wide'}>
-                                 <p className={'w-fit text-center '}>
+                                 <p
+                                    className={
+                                       'animate__animated animate__slideInRight w-fit text-center '
+                                    }>
                                     {jour.adresse.lieuDit}
                                     <br />
                                     {jour.adresse.num} {jour.adresse.rue}
@@ -108,7 +132,7 @@ export const NousTrouver = () => {
                            </div>
                            <p
                               className={
-                                 'text-small text-center font-thin tracking-wider text-beige-light'
+                                 'text-small animate__delay-1s animate__animated animate__fadeIn text-center font-thin tracking-wider text-beige-light'
                               }>
                               Cliquez sur la carte pour ouvrir dans Google Maps
                            </p>
