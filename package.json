@@ -3,6 +3,35 @@
   "version": "0.1.0",
   "homepage": "http://test.sestini-pizza.fr",
   "private": true,
+  "name": "official-sestini-pizza",
+  "version": "1.0.0",
+  "homepage": "http://test.sestini-pizza.fr",
+  "description": "Template du site React sestini-pizza.fr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxiim3/sestini-pizza.fr"
+  },
+  "author": "Maxime Tamburrini <contact@maxii.me> (https://maxii.me/)",
+  "contributors": [
+    "Ben (https://github.com/ben3780)"
+  ],
+  "bugs": "https://github.com/maxiim3/sestini-pizza.fr/ISSUES",
+  "license": "",
+  "private": true,
+  "keywords": [
+    "maxiim3",
+    "sestini-pizza",
+    "react"
+  ],
+  "scripts": {
+    "start": "PORT=8888 HOST=192.168.1.48 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --w src/data/pizzaOfMonth.json --port 3003",
+    "sass": "sass --watch src/styles/index.scss src/styles/index.css",
+    "hello": "Hi, I'm Max! 👋"
+  },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@react-google-maps/api": "^2.7.0",
@@ -19,13 +48,6 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "PORT=8888 HOST=192.168.1.48 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --w src/data/pizzaOfMonth.json --port 3003"
   },
   "eslintConfig": {
     "extends": [
