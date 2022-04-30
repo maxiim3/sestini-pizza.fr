@@ -5,8 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Utils/informations.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cgu.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/icons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/icons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/informations.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/lineTitleWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/lineTitleWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commons/textTransform.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/textTransform.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/day.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/jours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/jours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-about.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-pdm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-pdm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/dessertCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderBoissons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/other/renderDesserts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/pizzaCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderPizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/laCarte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/landing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/navigation/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/navigation/navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/page404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/informations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/informations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaOfMonth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_laCarte.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/components/_laCarte.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/components/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/components/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_boxProp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/_boxProp.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/settings/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/settings/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +87,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3a1bee09-b7e2-4731-af19-c93322706f80" />
+        <option name="url" value="git@github.com:maxiim3/sestini-pizza.fr.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Routes/Routes.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupnpm">
@@ -90,11 +146,11 @@
       <recent name="$PROJECT_DIR$/public/icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/icon" />
-      <recent name="$PROJECT_DIR$/src/components/commons" />
-      <recent name="$PROJECT_DIR$/public/buttons" />
-      <recent name="$PROJECT_DIR$/src/components/laCarte/productSection/pizza" />
-      <recent name="$PROJECT_DIR$/src/components/laCarte/productSection/other" />
+      <recent name="$PROJECT_DIR$/src/Routes" />
+      <recent name="$PROJECT_DIR$/src/Routes/navigation" />
+      <recent name="$PROJECT_DIR$/src/Components" />
+      <recent name="$PROJECT_DIR$/src/Pages" />
+      <recent name="$PROJECT_DIR$/src/Data" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -129,7 +185,8 @@
       <workItem from="1650982946464" duration="10968000" />
       <workItem from="1651053926299" duration="1376000" />
       <workItem from="1651063131136" duration="21327000" />
-      <workItem from="1651325749872" duration="258000" />
+      <workItem from="1651325749872" duration="9640000" />
+      <workItem from="1651340093834" duration="192000" />
     </task>
     <servers />
   </component>

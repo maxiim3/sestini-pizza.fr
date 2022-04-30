@@ -28,9 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --w src/data/pizzaOfMonth.json --port 3003",
-    "sass": "sass --watch src/styles/index.scss src/styles/index.css",
-    "hello": "Hi, I'm Max! 👋"
+    "server": "json-server --w src/Data/pizzaOfMonth.json --port 3003",
+    "sass": "sass --watch src/Styles/index.scss src/Styles/index.css",
+    "hello": "Hi, 👋"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
