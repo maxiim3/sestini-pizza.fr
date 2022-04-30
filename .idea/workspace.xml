@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/findUsApp/nousTrouver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home-pdm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home-pdm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homeApp/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeApp/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/categorySection/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/pizza/renderPizzas.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/productSection/renderProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/laCarte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/laCarte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzaOfMonth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/pizzas.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +38,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/laCarte/filterSection/renderFiltersSection.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupnpm">
@@ -142,7 +127,9 @@
       <workItem from="1650885596290" duration="14858000" />
       <workItem from="1650982946464" duration="10968000" />
       <workItem from="1651053926299" duration="1376000" />
-      <workItem from="1651063131136" duration="21327000" />
+      <workItem from="1651063131136" duration="21367000" />
+      <workItem from="1651136373407" duration="365000" />
+      <workItem from="1651318858424" duration="229000" />
     </task>
     <servers />
   </component>
