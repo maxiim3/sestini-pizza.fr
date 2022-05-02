@@ -1,8 +1,10 @@
 import React from 'react'
 import { Layout } from '../Layout/layout'
 import { Link, NavLink } from 'react-router-dom'
+import { consoleMessage } from '../Utils/consoleMessage'
 
 const Page404 = () => {
+   consoleMessage()
    return (
       <Layout title={'404 - Oups...'}>
          <main className={'flex h-[60vh] w-screen flex-col items-center justify-center gap-12'}>

@@ -35,8 +35,6 @@ export const LinksSocialMedia = ({ component, text }) => {
          <Animate animation={'animate__fadeInDown animate__delay-4s'}>
             <a
                href={info[0][text]}
-               target="_blank"
-               rel="noopener"
                className={
                   'flex-column align-center block flex transform justify-center hover:scale-105 hover:text-beige-light'
                }>

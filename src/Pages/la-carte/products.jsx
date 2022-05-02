@@ -8,6 +8,7 @@ import { Layout } from '../../Layout/layout'
 import { Header } from '../../Layout/header'
 import { RenderPizzas } from './renderPizzas'
 import { RenderProductsLayout } from './renderProducts'
+import { consoleMessage } from '../../Utils/consoleMessage'
 
 /**
  * La carte Routes
@@ -36,17 +37,20 @@ export const Products = () => {
       setActiveCategory(cat) //(1)
       setFilteredProducts(allDatas[cat]) //(2)
    }
-
+   consoleMessage()
    return (
       <Layout title={'Notre Carte'}>
-         <section className="flex h-auto w-auto flex-col  items-center justify-center gap-4">
+         <section className="grid h-auto w-auto grid-flow-row place-content-center gap-4">
             <Header title={'Horaires'}>
                <IconHandClick />
             </Header>
-            <RenderButtons activeCategory={activeCategory} onChange={handleCategorize} />
+            <RenderButtons
+               activeCategory={activeCategory}
+               onChange={handleCategorize}
+            />
          </section>
 
-         <section className="flex h-max w-auto flex-col  items-center justify-center gap-12">
+         <section className="grid h-max w-auto place-content-center gap-12">
             <Header title={`Nos ${activeCategory[0].toUpperCase() + activeCategory.slice(1)}`} />
             <div
                className={

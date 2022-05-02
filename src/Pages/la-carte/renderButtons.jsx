@@ -146,16 +146,16 @@ export const RenderButtons = ({ onChange, activeCategory }) => {
    return (
       <div
          className={
-            ' animate__animated animate__fadeIn animate__delay-1s my-6 flex w-4/5 flex-wrap items-center justify-center gap-x-8 gap-y-4'
+            ' animate__animated animate__fadeIn animate__delay-1s my-6 grid w-full grid-flow-col-dense place-content-center gap-x-8 gap-y-4'
          }>
          {buttons.map(btn => (
             <Button
                key={btn._id}
                onClick={() => onChange(btn.text)}
                activeClass={activeCategory === btn.text}>
-               <div className={' flex flex-col items-center justify-center md:gap-2'}>
+               <div className={' grid place-content-center md:gap-2'}>
                   <p>{btn.text.toUpperCase()}</p>
-                  <span className={' w-8 md:w-16'}>
+                  <span className={' mx-auto w-8 md:w-16'}>
                      {activeCategory === btn.text ? btn.component.avec : btn.component.sans}
                   </span>
                </div>

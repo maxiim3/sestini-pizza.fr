@@ -6,28 +6,34 @@ import { About } from './home-about'
 import { NeoMorphismBTN } from '../../Components/neomorphismButton'
 import { LayoutHomePage } from '../../Layout/homePageLayout'
 import '../../../node_modules/animate.css/animate.css'
+import { consoleMessage } from '../../Utils/consoleMessage'
 
 const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
+   consoleMessage()
    return (
       <>
          <main
             ref={refTop}
             className={
-               'relative flex flex-col flex-wrap items-center justify-between gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
+               //TODO !IMPORTANT replaced flex by grid
+
+               // 'relative flex flex-col flex-wrap items-center justify-between gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
+               'relative grid place-content-center gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
             }>
             <header
                className={
-                  'animate__animated animate__slideInDown  hidden bg-dark-grey md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center'
+                  'animate__animated animate__slideInDown tablet:hidden hidden bg-dark-grey md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center mobile:hidden'
                }>
                {/*TODO Check responsive Video, do not display on mobile device*/}
                <video
-                  className={'hover:cursor-pointer active:cursor-grabbing xl:rounded-3xl'}
+                  className={
+                     'hidden hover:cursor-pointer active:cursor-grabbing md:block xl:rounded-3xl'
+                  }
                   src={'./video/pexels-denys-gromov-6176588.mp4'}
                   controls={true}
                   controlsList={'nodownload nofullscreen noremotreplayback'}
                   loop={true}
                   muted={true}
-                  autoPlay={true}
                />
             </header>
             <img
@@ -66,19 +72,26 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
                </svg>
             </div>
             <LayoutHomePage>
-               <Hero handleScroll={handleScroll} scrollToRef={refPDM} />
+               <Hero
+                  handleScroll={handleScroll}
+                  scrollToRef={refPDM}
+               />
             </LayoutHomePage>
             <LayoutHomePage>
                <PdM refPDM={refPDM} />
             </LayoutHomePage>
             <div className={'mx-auto mb-24'}>
-               <NeoMorphismBTN handleScroll={handleScroll} toRef={refAbout}>
+               <NeoMorphismBTN
+                  handleScroll={handleScroll}
+                  toRef={refAbout}>
                   À PROPOS
                </NeoMorphismBTN>
             </div>
             <About refAbout={refAbout} />
             <div className={'my-24 mx-auto'}>
-               <NeoMorphismBTN handleScroll={handleScroll} toRef={refTop}>
+               <NeoMorphismBTN
+                  handleScroll={handleScroll}
+                  toRef={refTop}>
                   Haut de la page
                </NeoMorphismBTN>{' '}
             </div>

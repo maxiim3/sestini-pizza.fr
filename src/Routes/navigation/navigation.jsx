@@ -14,48 +14,72 @@ import info from '../../Data/informations.json'
 
 const Navigation = ({ navRef, onClose }) => {
    return (
-      <nav className="navigation z-20" ref={navRef}>
+      <nav
+         className="navigation z-20"
+         ref={navRef}>
          <div className="navigationWrapper">
-            <NavLink onClick={onClose} className="navbar-brand" to={'/accueil'}>
+            <NavLink
+               onClick={onClose}
+               className="navbar-brand"
+               to={'/accueil'}>
                <MainLogo />
             </NavLink>
-            <Button onClick={onClose} nav={true} activeClass={false}>
+            <Button
+               onClick={onClose}
+               nav={true}
+               activeClass={false}>
                <IconNavLocalisation />
-               <NavLink className="" to={'/nous-trouver'}>
+               <NavLink
+                  className=""
+                  to={'/nous-trouver'}>
                   Nous
                   <br />
                   Trouver
                </NavLink>
             </Button>
-            <Button onClick={onClose} nav={true} activeClass={true}>
+            <Button
+               onClick={onClose}
+               nav={true}
+               activeClass={true}>
                <IconNavLaCarte />
-               <NavLink className="" to={'/la-carte'}>
+               <NavLink
+                  className=""
+                  to={'/la-carte'}>
                   Notre
                   <br />
                   Carte
                </NavLink>
             </Button>
-            <Button onClick={onClose} nav={true} activeClass={false}>
-               {/*TODO check link to Pizza du Mois*/}
-               <NavLink className="" aria-current="page" to={'/accueil#pizza-du-mois'}>
-                  La Pizza
-                  <br />
-                  Du Mois
-               </NavLink>
-            </Button>
-            <div className={'cursor-pointer'} onClick={onClose} onClick={() => onClose()}>
+            {/*<Button*/}
+            {/*   onClick={onClose}*/}
+            {/*   nav={true}*/}
+            {/*   activeClass={false}>*/}
+            {/*   /!*TODO check link to Pizza du Mois*!/*/}
+            {/*   <NavLink*/}
+            {/*      className=""*/}
+            {/*      aria-current="page"*/}
+            {/*      to={'/accueil#pizza-du-mois'}>*/}
+            {/*      La Pizza*/}
+            {/*      <br />*/}
+            {/*      Du Mois*/}
+            {/*   </NavLink>*/}
+            {/*</Button>*/}
+            <div
+               className={'cursor-pointer'}
+               onClick={onClose}
+               onClick={() => onClose()}>
                <IconCloseNav />
             </div>
             <div className="social-grid">
                <PhoneNumber />
-               <a href={info[0].facebook} target="_blank" noreferrer className={'inline-block'}>
+               <a
+                  href={info[0].facebook}
+                  className={'inline-block'}>
                   {' '}
                   <IconFaceBook beige={true} />{' '}
                </a>
                <a
                   href={info[0].instagram}
-                  target="_blank"
-                  rel="noopener"
                   className={'inline-block'}>
                   <IconInstagram beige={true} />{' '}
                </a>

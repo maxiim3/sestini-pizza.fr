@@ -1,10 +1,15 @@
 module.exports = {
-   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+   content: ['./src/**/*.{js,jsx, ts, tsx}'],
    theme: {
       extend: {
          animation: {
             'spin-slow': 'spin 10s linear infinite reverse',
             'spin-faster': 'spin 3 linear infinite reverse',
+         },
+         screens: {
+            mobile: {
+               raw: '(orientation : portrait) and (max-width: 819px), (min-aspect-ratio: 15/7)',
+            },
          },
       },
       fontFamily: {

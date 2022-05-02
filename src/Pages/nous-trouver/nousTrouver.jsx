@@ -3,12 +3,13 @@ import { getDays } from '../../Data/jours'
 import { Button } from '../../Components/button'
 import { Layout } from '../../Layout/layout'
 import { Header } from '../../Layout/header'
+import { consoleMessage } from '../../Utils/consoleMessage'
 
 /**
  * @return {JSX.Element}
  * @constructor
  */
-export const NousTrouver = ({ refPDM, handleScroll }) => {
+export const NousTrouver = () => {
    const index = new Date().getDay() - 1
    const defaultDay = getDays()[index === 0 || 1 || 6 ? 2 : index]
    const [activeDay, setActiveDay] = useState(defaultDay)
@@ -25,9 +26,10 @@ export const NousTrouver = ({ refPDM, handleScroll }) => {
       return getDays().filter(j => j.estOuvert)
    }
 
+   consoleMessage()
    return (
       <Layout title={'Nos Emplacements'}>
-         <section className=" animate__animated animate__fadeIn flex h-auto  w-auto flex-col items-center justify-center gap-8">
+         <section className=" animate__animated animate__fadeIn grid h-auto  w-auto place-content-center gap-8">
             <Header title={'Horaires'} />
             <div
                className={
@@ -36,10 +38,10 @@ export const NousTrouver = ({ refPDM, handleScroll }) => {
                <p>Nous sommes ouverts</p>
                <p>à partir de 18h</p>
                <p>
-                  du {openDays().at(0).jour} au {openDays().at(-1).jour}
+                  du {openDays()[0]['jour']} au {openDays()[openDays.length]['jour']}
                </p>
             </div>
-            <div className={''}>
+            <div className={'mx-auto'}>
                <span>
                   <svg
                      className={
@@ -68,7 +70,9 @@ export const NousTrouver = ({ refPDM, handleScroll }) => {
             </bottom>
          </section>
          <section>
-            <ul className="flex w-full flex-row flex-wrap items-center justify-center gap-x-8 text-beige">
+            {/*TODO !IMPORTANT replaced flex by grid*/}
+            {/*<ul className="flex w-full flex-row flex-wrap items-center justify-center gap-x-8 text-beige">*/}
+            <ul className="grid w-full grid-flow-col place-content-center gap-x-8 text-beige">
                {getDays()
                   .filter(j => j.estOuvert)
                   .map(j => (
@@ -88,22 +92,22 @@ export const NousTrouver = ({ refPDM, handleScroll }) => {
             </ul>
          </section>
 
-         <section className="flex h-max w-auto flex-col  items-center justify-center gap-2">
+         <section className="grid h-max w-auto place-content-center gap-2">
             <article className={'animate__animated animate__fadeIn h-full w-full'}>
-               <dl
-                  className={
-                     'mx-auto flex max-w-5xl flex-col items-center justify-center  gap-y-6'
-                  }>
+               <dl className={'mx-auto grid max-w-5xl place-content-center gap-y-6'}>
                   {getDays()
                      .filter(j => j._id === getActiveDay('_id'))
                      .map(jour => (
-                        <dt className={'text-center '} key={jour._id + 10}>
+                        <dt
+                           className={'text-center '}
+                           key={jour._id + 10}>
                            <div
                               className={
-                                 'flex w-full items-center justify-center border-t border-b border-beige px-6 py-8'
+                                 'grid w-full grid-flow-col border-t border-b border-beige px-6 py-8'
                               }>
                               <div className={'grid w-max place-content-center'}>
                                  <svg
+                                    className={''}
                                     width="13"
                                     height="20"
                                     viewBox="0 0 13 20"
@@ -117,7 +121,7 @@ export const NousTrouver = ({ refPDM, handleScroll }) => {
                                     />
                                  </svg>
                               </div>
-                              <div className={'mx-auto w-fit text-2xl uppercase tracking-wide'}>
+                              <div className={'w-fit  text-2xl uppercase tracking-wide'}>
                                  <p
                                     className={
                                        'animate__animated animate__slideInRight w-fit text-center '

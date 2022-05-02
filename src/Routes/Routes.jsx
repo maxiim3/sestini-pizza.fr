@@ -26,6 +26,8 @@ const Routes = () => {
    useEffect(() => {
       setUrl(window.location.pathname)
    })
+   //TODO FIX the Gap issue due to  < 14 Safari version
+   // => Do not support Flex-Gap, Use
 
    // const getHash = () => {
    //    return '' || window.location.hash
@@ -45,10 +47,6 @@ const Routes = () => {
    const top = React.createRef()
    const about = React.createRef()
 
-   const handleNavToHome = ref => {
-      if (url === '/accueil') executeScroll(ref)
-   }
-
    const executeScroll = ref => {
       setTimeout(() => {
          ref.current.scrollIntoView({ behavior: 'smooth' })
@@ -62,19 +60,39 @@ const Routes = () => {
 
    return (
       <React.StrictMode>
-         <Navigation navRef={navMobile} onClose={handleShowNav} />
-         <MainLogoMinify refLogo={iconNav} onClick={handleShowNav} beige={true} />
-         <Navbar handleScroll={handleNavToHome} scrollToRef={pizzaDuMois} />
+         <Navigation
+            navRef={navMobile}
+            onClose={handleShowNav}
+         />
+         <MainLogoMinify
+            refLogo={iconNav}
+            onClick={handleShowNav}
+            beige={true}
+         />
+         <Navbar />
          <Switch>
             {/*<Route path="/nous-trouver" component={NousTrouver} />*/}
             <Route
                path="/nous-trouver"
-               render={() => <NousTrouver handleScroll={executeScroll} refPDM={pizzaDuMois} />}
+               component={NousTrouver}
             />
-            <Route path="/la-carte" component={Products} />
-            <Route path="/oups" component={Page404} />
-            <Redirect from="/home" to="/accueil" />
-            <Redirect from="/" exact to="/accueil" />
+            <Route
+               path="/la-carte"
+               component={Products}
+            />
+            <Route
+               path="/oups"
+               component={Page404}
+            />
+            <Redirect
+               from="/home"
+               to="/accueil"
+            />
+            <Redirect
+               from="/"
+               exact
+               to="/accueil"
+            />
             <Route
                path="/accueil"
                exact
@@ -91,7 +109,10 @@ const Routes = () => {
             {/*<Route path='/' component={LandingPage}/>*/}
             {/*<Redirect from="*" to={'/'} />*/}
             {/*endregion*/}
-            <Redirect from="/*" to="/oups" />
+            <Redirect
+               from="/*"
+               to="/oups"
+            />
          </Switch>
       </React.StrictMode>
    )

@@ -24,7 +24,7 @@ export const TextLink = ({ children, link }) => {
    )
 }
 
-export const Navbar = ({ handleScroll, scrollToRef }) => {
+export const Navbar = () => {
    return (
       <nav
          className={
@@ -45,22 +45,32 @@ export const Navbar = ({ handleScroll, scrollToRef }) => {
             <li>
                <TextLink link={'/la-carte'}>Notre Carte</TextLink>
             </li>
-            <li onClick={() => handleScroll(scrollToRef)}>
-               {/*TODO check link to Pizza du Mois*/}
-               <TextLink link={'/accueil'}>La Pizza Du Mois</TextLink>
-            </li>
+            {/*<li onClick={() => handleScroll(scrollToRef)}>*/}
+            {/*   /!*TODO check link to Pizza du Mois*!/*/}
+            {/*   <TextLink link={'/accueil'}>La Pizza Du Mois</TextLink>*/}
+            {/*</li>*/}
             <li>
                <div
                   className={'mt-2 grid h-20 grid-cols-2 grid-rows-2  hover:drop-shadow-md'}
                   aria-label={'Réseaux sociaux'}>
                   <div className="col-span-1 row-start-1 justify-self-center">
-                     <a href={info[0].facebook} className={'inline-block'}>
-                        <IconFaceBook beige={true} classTW={'w-12'} />
+                     <a
+                        href={info[0].facebook}
+                        className={'inline-block'}>
+                        <IconFaceBook
+                           beige={true}
+                           classTW={'w-12'}
+                        />
                      </a>
                   </div>
                   <div className="col-span-1 row-start-1 justify-self-center">
-                     <a href={info[0].instagram} className={'inline-block'}>
-                        <IconInstagram beige={true} classTW={'w-12'} />
+                     <a
+                        href={info[0].instagram}
+                        className={'inline-block'}>
+                        <IconInstagram
+                           beige={true}
+                           classTW={'w-12'}
+                        />
                      </a>
                   </div>
                   <div
