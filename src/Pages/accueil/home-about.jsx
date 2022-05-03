@@ -1,6 +1,23 @@
 import React from 'react'
 
 export const About = ({ refAbout }) => {
+   const TextBold = ({ children, title = false }) => {
+      return (
+         <span className={'font-bold tracking-wide' + (title && '  text-orange md:text-dark-grey')}>
+            {children}
+         </span>
+      )
+   }
+   const Paragraph = ({ children, top = false, bottom = false, both = false }) => {
+      if (both) top = bottom = true
+      return (
+         <>
+            {top && <br className={'mt-1'} />}
+            <span className={'block'}>{children}</span>
+            {bottom && <br className={'mb-1'} />}
+         </>
+      )
+   }
    return (
       <article
          ref={refAbout}
@@ -44,17 +61,54 @@ export const About = ({ refAbout }) => {
                   alt="Notre pâte se repose plusieurs jours afin de vous offire un goût inoubliable"
                />
             </section>
-            <section
-               className={
-                  'mx-auto max-w-3xl text-justify font-describe font-describe text-2xl leading-relaxed tracking-widest sm:px-0 md:mx-0 md:w-auto md:w-auto'
-               }>
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur
-                  deleniti molestiae nobis officiis, provident quisquam quod repellendus soluta.
-                  Atque, aut beatae corporis culpa cupiditate deleniti dolorum eos esse fuga laborum
-                  molestias officia porro saepe, sed temporibus veritatis voluptatem voluptatum?
-                  Accusantium alias beatae distinctio est illo laborum maxime repellendus,
-                  repudiandae sit tempora!
+            <section className={'mx-auto max-w-3xl  sm:px-0 md:mx-0 md:w-auto'}>
+               <p
+                  className={
+                     'text-justify font-describe text-2xl leading-relaxed tracking-wider text-dark-grey md:leading-normal'
+                  }>
+                  <Paragraph>
+                     <TextBold title>Une bonne pizza selon Sestini pizza :</TextBold>
+                  </Paragraph>
+                  Des produits locaux, un savoir-faire <TextBold>traditionnel</TextBold>, de la{' '}
+                  <TextBold>créativité</TextBold>. <br />
+                  <Paragraph top>
+                     <TextBold title>Une bonne pizza c'est aussi et avant tout...</TextBold> une
+                     belle pâte ! <br />
+                     Nous prenons le temps de la faire lever pendant{' '}
+                     <TextBold>plusieurs jours</TextBold>.
+                  </Paragraph>
+                  <Paragraph top>
+                     <TextBold title>Mais, une bonne pizza c'est aussi...</TextBold> une garniture
+                     de qualité ! <br />
+                     Nous sommes en effet toujours en recherche de nouvelles combinaisons ! Nous
+                     utilisons des <TextBold>produits frais</TextBold> et{' '}
+                     <TextBold>de saison</TextBold>, travaillant étroitement avec nos
+                     <TextBold> producteurs locaux</TextBold>. <br />
+                     Le but est de <TextBold>sublimer</TextBold> chacun de leurs beaux produits afin
+                     de vous <TextBold>garantir</TextBold> des pizzas aux{' '}
+                     <TextBold>saveurs délicieuses</TextBold>.
+                  </Paragraph>
+                  <Paragraph top>
+                     <TextBold title>
+                        Votre pizzaïolo collabore depuis des années avec des maîtres réputés.
+                     </TextBold>
+                     <br />
+                     Nous façonnons ainsi vos pizzas à la main, et à la façon{' '}
+                     <TextBold>traditionnelle italienne</TextBold>.
+                  </Paragraph>
+                  <Paragraph top>
+                     <TextBold title>Enfin, une bonne pizza c’est...</TextBold> la passion des bons
+                     produits et de la gastronomie.
+                  </Paragraph>
+                  <Paragraph top>
+                     Nos <TextBold title>pizzas</TextBold> sont <TextBold title>créatives</TextBold>{' '}
+                     et <TextBold title>parfumées</TextBold> de{' '}
+                     <TextBold title>saveurs uniques</TextBold>. <br />
+                     Grâce à cette <TextBold>combinaison de savoir-faire</TextBold>,{' '}
+                     <TextBold>
+                        vous passerez un moment inoubliable… nous vous le promettons !
+                     </TextBold>
+                  </Paragraph>
                </p>
             </section>
          </article>

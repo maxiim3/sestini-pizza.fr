@@ -1,7 +1,7 @@
 {
   "name": "official-sestini-pizza",
   "version": "1.0.0",
-  "homepage": "http://test.sestini-pizza.fr",
+  "homepage": "http://sestini-pizza.fr",
   "private": true,
   "description": "Template du site React sestini-pizza.fr",
   "repository": {

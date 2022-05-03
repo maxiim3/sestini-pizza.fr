@@ -6,21 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/homePageLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/homePageLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home-about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-about.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/landing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/page404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/page404.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/navigation/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/navigation/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/navigation/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/navigation/navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/consoleMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/consoleMessage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +83,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -106,6 +97,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/video" />
       <recent name="$PROJECT_DIR$/public/icon" />
@@ -152,7 +144,8 @@
       <workItem from="1651063131136" duration="21327000" />
       <workItem from="1651325749872" duration="9640000" />
       <workItem from="1651340093834" duration="335000" />
-      <workItem from="1651507898053" duration="8325000" />
+      <workItem from="1651507898053" duration="10702000" />
+      <workItem from="1651595305063" duration="2908000" />
     </task>
     <servers />
   </component>

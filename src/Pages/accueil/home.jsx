@@ -48,7 +48,7 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
             />
             <div
                className={
-                  'fixed bottom-44 z-20 mt-24 hidden translate-x-[40vw] mix-blend-difference md:block'
+                  'fixed bottom-44 right-[10vw] z-20 mt-24 hidden mix-blend-difference lg:block'
                }>
                <svg
                   className={'scroll-icon text-beige drop-shadow-md'}
