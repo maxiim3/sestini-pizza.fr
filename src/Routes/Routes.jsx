@@ -84,10 +84,10 @@ const Routes = () => {
                path="/oups"
                component={Page404}
             />
-            <Redirect
-               from="/home"
-               to="/accueil"
-            />
+            {/*<Redirect*/}
+            {/*   from="/home"*/}
+            {/*   to="/accueil"*/}
+            {/*/>*/}
             <Redirect
                from="/"
                exact

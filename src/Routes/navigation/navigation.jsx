@@ -50,20 +50,7 @@ const Navigation = ({ navRef, onClose }) => {
                   Carte
                </NavLink>
             </Button>
-            {/*<Button*/}
-            {/*   onClick={onClose}*/}
-            {/*   nav={true}*/}
-            {/*   activeClass={false}>*/}
-            {/*   /!*TODO check link to Pizza du Mois*!/*/}
-            {/*   <NavLink*/}
-            {/*      className=""*/}
-            {/*      aria-current="page"*/}
-            {/*      to={'/accueil#pizza-du-mois'}>*/}
-            {/*      La Pizza*/}
-            {/*      <br />*/}
-            {/*      Du Mois*/}
-            {/*   </NavLink>*/}
-            {/*</Button>*/}
+
             <div
                className={'cursor-pointer'}
                onClick={onClose}

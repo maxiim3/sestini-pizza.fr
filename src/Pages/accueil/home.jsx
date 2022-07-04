@@ -15,9 +15,6 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
          <main
             ref={refTop}
             className={
-               //TODO !IMPORTANT replaced flex by grid
-
-               // 'relative flex flex-col flex-wrap items-center justify-between gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
                'relative grid place-content-center gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
             }>
             <header
@@ -77,9 +74,9 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
                   scrollToRef={refPDM}
                />
             </LayoutHomePage>
-            <LayoutHomePage>
-               <PdM refPDM={refPDM} />
-            </LayoutHomePage>
+            {/*<LayoutHomePage>*/}
+            {/*   <PdM refPDM={refPDM} />*/}
+            {/*</LayoutHomePage>*/}
             <div className={'mx-auto mb-24'}>
                <NeoMorphismBTN
                   handleScroll={handleScroll}

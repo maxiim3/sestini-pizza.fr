@@ -19,7 +19,7 @@ export const Button = ({ children, activeClass, onClick, key, nav = false, heigh
    }
    const commonStyles = {
       layoutProps: 'flex flex-column justify-center items-center ',
-      boxProps: `h-${height} md:h-[100px] w-28 sm:w-32 md:w-44 px-2 m-0 p-0 `,
+      boxProps: `h-${height} md:h-[100px] w-28 sm:w-32 md:w-44 px-2 sm:px-4 md:px-6 m-0 p-0 `,
       borderProps: 'rounded-3xl box-border',
       textProps: 'text-base sm:text-lg md:text-2xl font-semibold text-center ',
    }

@@ -26,7 +26,7 @@ export const NousTrouver = () => {
       return getDays().filter(j => j.estOuvert)
    }
 
-   consoleMessage()
+   // consoleMessage()
    return (
       <Layout title={'Nos Emplacements'}>
          <section className=" animate__animated animate__fadeIn grid h-auto  w-auto place-content-center gap-8">
@@ -38,7 +38,7 @@ export const NousTrouver = () => {
                <p>Nous sommes ouverts</p>
                <p>à partir de 18h</p>
                <p>
-                  du {openDays()[0]['jour']} au {openDays()[openDays.length]['jour']}
+                  du {openDays().at(0)['jour']} au {openDays().at(-1)['jour']}
                </p>
             </div>
             <div className={'mx-auto'}>
@@ -70,15 +70,14 @@ export const NousTrouver = () => {
             </bottom>
          </section>
          <section>
-            {/*TODO !IMPORTANT replaced flex by grid*/}
-            {/*<ul className="flex w-full flex-row flex-wrap items-center justify-center gap-x-8 text-beige">*/}
-            <ul className="grid w-full grid-flow-col place-content-center gap-x-8 text-beige">
+            <ul className="mx-auto my-4 flex w-[80vw] flex-row flex-wrap place-content-center  gap-x-8 gap-y-4 text-beige sm:w-full">
+               {/*<ul className="grid w-full grid-flow-col place-content-center gap-x-8 text-beige">*/}
                {getDays()
                   .filter(j => j.estOuvert)
                   .map(j => (
                      <li
                         className={
-                           'animate__animated animate__fadeIn animate__delay-2s my-6 font-main text-2xl font-bold uppercase tracking-wide'
+                           'animate__animated animate__fadeIn animate__delay-2s font-main text-2xl font-bold uppercase tracking-wide'
                         }>
                         <Button
                            key={j._id}
