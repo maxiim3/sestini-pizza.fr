@@ -17,7 +17,8 @@ import { consoleMessage } from '../../Utils/consoleMessage'
  */
 export const Products = () => {
    const allDatas = {
-      pizzas: [PizzaDuMois, ...Data['pizzas']],
+      // pizzas: [PizzaDuMois, ...Data['pizzas']],
+      pizzas: [...Data['pizzas']],
       boissons: [...Data['boissons']],
       desserts: [...Data['desserts']],
       supplements: [...Data['supplements']],
