@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/jours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/jours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/pizzaOfMonth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/pizzas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home-pdm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-pdm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderPizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +83,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/maxi/Projets/PhpstormProjects/sestini-pizza/node_modules/prettier&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/maxi/Projets/PhpstormProjects/sestini-pizza/node_modules/prettier",
+    "ts.external.directory.path": "/Applications/JetBrains/Toolbox/apps/PhpStorm/ch-0/222.4167.33/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Pages/image" />
@@ -90,11 +105,11 @@
       <recent name="$PROJECT_DIR$/public/icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/Pages/image" />
       <recent name="$PROJECT_DIR$/src/Routes" />
       <recent name="$PROJECT_DIR$/src/Routes/navigation" />
-      <recent name="$PROJECT_DIR$/src/Components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -1,6 +1,7 @@
 @use 'normalize.css';
 @use 'settings' as var;
 @use 'components' as comp;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,19 +16,21 @@
 
    scroll-behavior: smooth;
 }
-.neoMorphism{
-   box-shadow: -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
-   2px 2px 3px 0px rgba(0, 0, 0, 0.4);
 
-   &:focus, &:active{
-      box-shadow:inset -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
-      inset 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+.neoMorphism {
+   box-shadow: -2px -2px 3px 0px rgba(158, 158, 158, 0.5), 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+
+   &:focus,
+   &:active {
+      box-shadow: inset -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
+         inset 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
    }
 }
 
-.borderTop{
+.borderTop {
    box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
+
 //region NAVIGATION-MOBILE
 
 .nav-btn-full {
@@ -71,5 +74,16 @@
    }
    100% {
       transform: translateY(1rem);
+   }
+}
+
+.modal {
+   width: 100%;
+   height: 100%;
+   background: rgba(32, 43, 49, 0.9);
+   border-radius: 20px;
+
+   &::backdrop {
+      background: rgba(0, 0, 0, 0.75);
    }
 }

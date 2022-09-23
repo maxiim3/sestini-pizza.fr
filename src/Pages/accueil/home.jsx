@@ -1,27 +1,102 @@
-import React, { useEffect, useState } from 'react'
+import React, { createRef, useEffect, useState } from 'react'
 import { Hero } from './home-hero'
-import { PdM } from './home-pdm'
+import { PdS, Title } from './home-pdm'
 import { Footer } from '../../Layout/footer'
 import { About } from './home-about'
 import { NeoMorphismBTN } from '../../Components/neomorphismButton'
 import { LayoutHomePage } from '../../Layout/homePageLayout'
 import '../../../node_modules/animate.css/animate.css'
 import { consoleMessage } from '../../Utils/consoleMessage'
+import PizzaDeSaison from '../../Data/pizzaDeSaison.json'
+import { NavLink } from 'react-router-dom'
+
+function Modal() {
+   setTimeout(() => {
+      document.querySelector('.modal').close()
+   }, 8000)
+
+   setTimeout(() => {
+      document.querySelector('.modal').showModal()
+   }, 300)
+
+   return (
+      <dialog className={'modal animate__animated animate__fadeIn'}>
+         <span
+            className={
+               'absolute top-12 right-12 text-3xl font-semibold text-gold hover:cursor-pointer hover:text-beige hover:underline hover:underline-offset-4'
+            }
+            onClick={() => document.querySelector('.modal').close()}>
+            {' '}
+            fermer X
+         </span>
+         <article
+            id={'pizza-du-mois'}
+            className={
+               'mx-auto mt-12 mb-2 flex flex-col items-center justify-evenly text-center text-3xl text-beige'
+            }>
+            <h2
+               className={
+                  'text-uppercase text-center font-accent text-3xl font-normal leading-loose tracking-wider text-beige'
+               }>
+               {/*// todo remettre data pizza ete*/}
+               Découvrez notre
+            </h2>
+            <h3
+               className={
+                  'my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold'
+               }>
+               pizza d'automne
+            </h3>
+            <dl
+               className={
+                  'my-12 w-full bg-beige py-4 font-describe text-3xl font-normal leading-relaxed tracking-widest text-dark-grey'
+               }>
+               <dt className={'hidden'}>Ingrédients</dt>
+               <dd>{PizzaDeSaison.base.describe}</dd>
+               {PizzaDeSaison.ingredients.map(ingredient => (
+                  <dd key={ingredient}>{ingredient}</dd>
+               ))}
+               {PizzaDeSaison.afterCook && (
+                  <>
+                     <h4
+                        className={'mt-6 font-normal text-light-grey underline underline-offset-2'}>
+                        Après Cuisson
+                     </h4>
+                     <dt className={'hidden'}>Ingrédients ajoutés après-cuisson</dt>
+                     {PizzaDeSaison.afterCook.map(ingredient => (
+                        <dd>{ingredient}</dd>
+                     ))}
+                  </>
+               )}
+            </dl>
+            <NavLink
+               className={
+                  'mb-12 text-center font-accent text-4xl text-gold underline underline-offset-4'
+               }
+               to={'/la-carte'}>
+               Je découvre la carte {/*d'Automne-Hiver*/}
+            </NavLink>
+            <img
+               src={PizzaDeSaison.url}
+               alt="La Pizza d'Automne"
+            />
+         </article>
+      </dialog>
+   )
+}
 
 const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
-   consoleMessage()
    return (
       <>
          <main
             ref={refTop}
             className={
-               'relative grid place-content-center gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-72'
+               'relative grid place-content-center gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-48'
             }>
             <header
                className={
                   'animate__animated animate__slideInDown tablet:hidden hidden bg-dark-grey md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center mobile:hidden'
                }>
-               {/*TODO Check responsive Video, do not display on mobile device*/}
                <video
                   className={
                      'hidden hover:cursor-pointer active:cursor-grabbing md:block xl:rounded-3xl'
@@ -38,11 +113,11 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
                src={'./img/basilic.png'}
                aria-hidden={true}
             />
-            <img
+            {/*            <img
                className={'hidden md:absolute md:top-[40%] md:-left-36 md:block lg:-left-0'}
                src={'./img/pizza-half.png'}
                aria-hidden={true}
-            />
+            />*/}
             <div
                className={
                   'fixed bottom-44 right-[10vw] z-20 mt-24 hidden mix-blend-difference lg:block'
@@ -68,15 +143,17 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
                   </g>
                </svg>
             </div>
+            {/*Modal PDM*/}
+            <Modal />
             <LayoutHomePage>
                <Hero
                   handleScroll={handleScroll}
                   scrollToRef={refPDM}
                />
             </LayoutHomePage>
-            {/*<LayoutHomePage>*/}
-            {/*   <PdM refPDM={refPDM} />*/}
-            {/*</LayoutHomePage>*/}
+            {/*         <LayoutHomePage>
+               <PdS refPDM={refPDM} />
+            </LayoutHomePage>*/}
             <div className={'mx-auto mb-24'}>
                <NeoMorphismBTN
                   handleScroll={handleScroll}

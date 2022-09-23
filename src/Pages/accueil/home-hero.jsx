@@ -15,7 +15,7 @@ export const Hero = ({ handleScroll, scrollToRef }) => {
    return (
       <>
          <header
-            className="animate__animated animate__fadeInUp col-span-full grid h-96 place-content-center"
+            className="animate__animated animate__fadeInUp col-span-full grid h-96 place-content-center xl:mt-48"
             to={'/bienvenus'}>
             {/*<MainLogo />*/}
             <img

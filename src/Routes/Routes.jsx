@@ -43,7 +43,7 @@ const Routes = () => {
 
    const iconNav = React.createRef()
    const navMobile = React.createRef()
-   const pizzaDuMois = React.createRef()
+   const pizzaDeSaison = React.createRef()
    const top = React.createRef()
    const about = React.createRef()
 
@@ -99,7 +99,7 @@ const Routes = () => {
                render={() => (
                   <Home
                      handleScroll={executeScroll}
-                     refPDM={pizzaDuMois}
+                     refPDM={pizzaDeSaison}
                      refTop={top}
                      refAbout={about}
                   />

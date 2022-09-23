@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Data from '../../Data/pizzas.json'
-import PizzaDuMois from '../../Data/pizzaOfMonth.json'
+import PizzaDeSaison from '../../Data/pizzaDeSaison.json'
 import '../../../node_modules/animate.css/animate.css'
 import { RenderButtons } from './renderButtons'
 import { IconHandClick } from '../../Components/icons'
@@ -17,8 +17,8 @@ import { consoleMessage } from '../../Utils/consoleMessage'
  */
 export const Products = () => {
    const allDatas = {
-      // pizzas: [PizzaDuMois, ...Data['pizzas']],
-      pizzas: [...Data['pizzas']],
+      pizzaDeSaison: PizzaDeSaison,
+      pizzas: [...Data['pizzasWinter']],
       boissons: [...Data['boissons']],
       desserts: [...Data['desserts']],
       supplements: [...Data['supplements']],
@@ -38,7 +38,7 @@ export const Products = () => {
       setActiveCategory(cat) //(1)
       setFilteredProducts(allDatas[cat]) //(2)
    }
-   consoleMessage()
+
    return (
       <Layout title={'Notre Carte'}>
          <section className="grid h-auto w-auto grid-flow-row place-content-center gap-4">
@@ -53,6 +53,12 @@ export const Products = () => {
 
          <section className="grid h-max w-auto place-content-center gap-12">
             <Header title={`Nos ${activeCategory[0].toUpperCase() + activeCategory.slice(1)}`} />
+            <p
+               className={
+                  "animate__animated animate__fadeIn text-center font-['Cinzel'] text-3xl font-normal uppercase"
+               }>
+               Carte Automne-Hiver
+            </p>
             <div
                className={
                   'animate__animated animate__slideInUp h-full w-screen bg-beige text-dark-grey md:max-w-6xl md:rounded-xl'
@@ -61,6 +67,7 @@ export const Products = () => {
                   <ul className={'my-4'}>
                      {activeCategory === 'pizzas' ? (
                         <RenderPizzas
+                           pizzaDeSaison={allDatas.pizzaDeSaison}
                            pizzas={filteredProducts}
                            supplements={allDatas.supplements}
                         />

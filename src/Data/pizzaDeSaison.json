@@ -1,0 +1,24 @@
+{
+   "_id": 100,
+   "nom": "Pizza d'Automne",
+   "pizzaDeSaison": true,
+   "ingredients": [
+      "Mozzarella Fior Di Latte",
+      "Pomme de Terre, Cèpes Frais Cuisinés en Persillafe",
+      "Filet d'Huile aux Cèpes",
+      "Olives Noires"
+   ],
+   "base": {
+      "label": "Crème",
+      "describe": "Crème Fraîche",
+      "title": "Base Crème",
+      "key": "baseBlanche",
+      "state": "baseBlanche",
+      "setState": "setBaseBlanche"
+   },
+   "avecViande": true,
+   "avecPoisson": false,
+   "afterCook": null,
+   "url": "./img/pizzadumois.png",
+   "prix": "14,50"
+}

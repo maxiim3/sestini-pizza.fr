@@ -2,17 +2,24 @@ import React from 'react'
 import { RenderProductsLayout } from './renderProducts'
 import { AddPlural } from '../../Utils/textTransform'
 
-export const RenderPizzas = ({ pizzas, supplements }) => {
-   const getData = () => {
+export const RenderPizzas = ({ pizzas, supplements, pizzaDeSaison }) => {
+   const toutesLesBases = () => {
       const array = []
       pizzas.forEach(({ base }) => array.push(base['title']))
-      const newArray = new Set(array)
-      return [...newArray]
+      return [...new Set(array)]
    }
 
    return (
       <>
-         {getData().map(base => (
+         <h3
+            className={
+               'animate__animated animate__slideInLeft mt-8 mb-4 text-center font-decorative text-3xl font-bold tracking-wide '
+            }>
+            Pizza de Saison
+         </h3>
+
+         <RenderProductsLayout product={pizzaDeSaison} />
+         {toutesLesBases().map(base => (
             <>
                <h3
                   className={
@@ -21,7 +28,7 @@ export const RenderPizzas = ({ pizzas, supplements }) => {
                   {AddPlural(`Pizza ${base}`)}
                </h3>
                {pizzas
-                  .filter(p => p.base.title === base)
+                  .filter(pizza => pizza.base.title === base)
                   .map(pizza => (
                      <RenderProductsLayout product={pizza} />
                   ))}

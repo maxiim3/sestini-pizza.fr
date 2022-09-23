@@ -7,12 +7,7 @@ export const RenderProductsLayout = ({ product }) => {
          key={`${product._id}_${product.nom}`}>
          <dl className={'flex flex-row flex-nowrap items-center gap-x-8'}>
             <dt className={'hidden'}>Nom du Produit</dt>
-            <dd
-               className={`block font-['Cinzel'] font-bold uppercase ${
-                  product.pizzaDuMois && 'text-gold underline underline-offset-2'
-               }`}>
-               {product.nom}
-            </dd>
+            <dd className={"block font-['Cinzel'] font-bold uppercase"}>{product.nom}</dd>
             <dt className={'hidden'}>Prix du produit</dt>
             <div className={'mx-4 block w-max flex-1 border-t border-light-grey'} />
             <dd className={'block text-2xl'}> {product.prix}€</dd>

@@ -1,19 +1,3 @@
-# 👋 Formation React OpenClassRooms
-### Maxime Tamburrini
-
----
-
-*  Je postule pour la formation React. Voici un projet, toujours en cours de développement, réalisé pour un restaurateur.
-
-* J'ai tout d'abord réalisé les WireFrames, Charte Graphique, logo, maquette et prototypage sur [Figma](https://www.figma.com/file/w9B1WSITFZaVE2KtCO4yIV/Sestini-pizza.fr?node-id=0%3A1)
-
-* Le site est entièrement en React. Voici le lien vers [GitHub](https://github.com/maxiim3/sestini-pizza.fr)
-
-* Le site est hébergé sur [Hostinger](https://www.hostinger.com/)
----
-
-### Installation du Projet
-
 
 1. run `npm install`
 2. Branches

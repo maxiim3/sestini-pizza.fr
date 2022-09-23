@@ -20,11 +20,11 @@
     "react"
   ],
   "scripts": {
-    "start": "PORT=8888 HOST=192.168.1.39 react-scripts start",
+    "start": "PORT=8888 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --w src/Data/pizzaOfMonth.json --port 3003",
+    "server": "json-server --w src/Data/pizzaDeSaison.json --port 3003",
     "watch": "sass --watch src/Styles/index.scss src/Styles/index.css",
     "hello": "Hi, 👋"
   },
