@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Data from '../../Data/pizzas.json'
-import PizzaDeSaison from '../../Data/pizzaDeSaison.json'
+import MenuWinterJson from '../../Data/menuWinter.json'
+import MenuSummerJson from '../../Data/menuSummer.json'
+import PizzaDeSaisonJson from '../../Data/pizzaDeSaison.json'
 import '../../../node_modules/animate.css/animate.css'
 import { RenderButtons } from './renderButtons'
 import { IconHandClick } from '../../Components/icons'
@@ -16,16 +17,60 @@ import { consoleMessage } from '../../Utils/consoleMessage'
  * @constructor
  */
 export const Products = () => {
-   const allDatas = {
-      pizzaDeSaison: PizzaDeSaison,
-      pizzas: [...Data['pizzasWinter']],
-      boissons: [...Data['boissons']],
-      desserts: [...Data['desserts']],
-      supplements: [...Data['supplements']],
+   /**
+    *
+    * @type {"Printemps-Été" || "Automne-Hiver"}
+    */
+   let carte
+
+   /**
+    *## Menu de Saison
+    * @param saison {"summer" || "winter"}
+    * @description Define **allProducts**
+    * @see allProducts
+    * @description Define **carte**
+    * @see carte
+    * @return {{desserts: *[], supplements: *[], pizzas: *[], boissons: *[], pizzaDeSaison: {_id: number, nom: string, pizzaDeSaison: boolean, ingredients: {}, base: {label: string, describe: string, title: string, key: string, state: string, setState: string}, avecViande: boolean, avecPoisson: boolean, afterCook: *, url: string, prix: string}}}
+    */
+   function menuDeSaison(saison) {
+      if (saison === 'summer') {
+         carte = 'Printemps-Été'
+         return {
+            pizzaDeSaison: PizzaDeSaisonJson,
+            pizzas: [...MenuSummerJson['pizzas']],
+            boissons: [...MenuSummerJson['boissons']],
+            desserts: [...MenuSummerJson['desserts']],
+            supplements: [...MenuSummerJson['supplements']],
+         }
+      }
+      if (saison === 'winter') {
+         carte = 'Automne-Hiver'
+         return {
+            pizzaDeSaison: PizzaDeSaisonJson,
+            pizzas: [...MenuWinterJson['pizzas']],
+            boissons: [...MenuWinterJson['boissons']],
+            desserts: [...MenuWinterJson['desserts']],
+            supplements: [...MenuWinterJson['supplements']],
+         }
+      }
    }
 
-   const [products] = useState(allDatas.pizzas)
+   /**
+    *
+    * @type {{desserts: *[], supplements: *[], pizzas: *[], boissons: *[], pizzaDeSaison: {_id: number, nom: string, pizzaDeSaison: boolean, ingredients: {}, base: {label: string, describe: string, title: string, key: string, state: string, setState: string}, avecViande: boolean, avecPoisson: boolean, afterCook: *, url: string, prix: string}}}
+    */
+   const allProducts = menuDeSaison('summer')
+   /**
+    * @type {allProducts}
+    */
+   const [products] = useState(allProducts.pizzas)
+   /**
+    * @type {"pizzaDeSaison" || "pizzas" || "boissons" || "desserts" || "supplements"}
+    */
    const [activeCategory, setActiveCategory] = useState('pizzas')
+   /**
+    * @type {products}
+    */
    const [filteredProducts, setFilteredProducts] = useState(products)
 
    /**
@@ -36,7 +81,7 @@ export const Products = () => {
     */
    function handleCategorize(cat) {
       setActiveCategory(cat) //(1)
-      setFilteredProducts(allDatas[cat]) //(2)
+      setFilteredProducts(allProducts[cat]) //(2)
    }
 
    return (
@@ -57,7 +102,7 @@ export const Products = () => {
                className={
                   "animate__animated animate__fadeIn text-center font-['Cinzel'] text-3xl font-normal uppercase"
                }>
-               Carte Automne-Hiver
+               Carte {carte}
             </p>
             <div
                className={
@@ -67,9 +112,9 @@ export const Products = () => {
                   <ul className={'my-4'}>
                      {activeCategory === 'pizzas' ? (
                         <RenderPizzas
-                           pizzaDeSaison={allDatas.pizzaDeSaison}
+                           pizzaDeSaison={allProducts.pizzaDeSaison}
                            pizzas={filteredProducts}
-                           supplements={allDatas.supplements}
+                           supplements={allProducts.supplements}
                         />
                      ) : (
                         filteredProducts.map(product => <RenderProductsLayout product={product} />)

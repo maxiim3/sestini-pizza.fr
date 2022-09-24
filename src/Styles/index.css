@@ -421,13 +421,18 @@ template {
   }
 }
 .modal {
-  width: 100%;
+  width: min(100%, 850px);
   height: 100%;
   background: rgba(32, 43, 49, 0.9);
   border-radius: 20px;
 }
 .modal::backdrop {
   background: rgba(0, 0, 0, 0.75);
+}
+.modal .modalLink,
+.modal .close-btn {
+  outline-color: rgb(224, 170, 62);
+  outline-offset: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
