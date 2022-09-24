@@ -6,8 +6,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Basilic frais", "Filet d'huile d'olive"],
          "base": {
             "label": "Tomate",
-            "describe" : "Sauce Tomate",
-            "title" : "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -24,8 +24,8 @@
          "ingredients": ["Mozzarella di Bufala", "Basilic frais", "Filet d'huile d'olive"],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -46,8 +46,8 @@
          ],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -70,8 +70,8 @@
          ],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -93,8 +93,8 @@
          ],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -118,8 +118,8 @@
          ],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -136,8 +136,8 @@
          "ingredients": ["Mozzarella di Bufala"],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -159,8 +159,8 @@
          ],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -177,8 +177,8 @@
          "ingredients": ["Mozzarella di Bufala", "Saucisse", "Persillade", "Olives noires"],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -195,8 +195,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Anchois", "Câpres", "Olives noires"],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -213,8 +213,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Artichaut à la Romaine", "Olives noires"],
          "base": {
             "label": "Tomate",
-            "describe" :  "Sauce Tomate",
-            "title" :  "Base Tomate",
+            "describe": "Sauce Tomate",
+            "title": "Base Tomate",
             "key": "baseRouge",
             "state": "baseRouge",
             "setState": "setBaseRouge"
@@ -231,8 +231,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Chèvre", "Gorgonzola", "Parmigiano"],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -249,8 +249,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Chèvre"],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -267,8 +267,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Émincés de Champignons"],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -285,20 +285,15 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Gorgonzola"],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
          },
          "avecViande": true,
          "avecPoisson": false,
-         "afterCook": [
-            "Jambon de Parme",
-            "Spianata Calabrese",
-            "Parmigiano",
-            "Sauce basilic"
-         ],
+         "afterCook": ["Jambon de Parme", "Spianata Calabrese", "Parmigiano", "Sauce basilic"],
          "url": "https://wdwnt.com/wp-content/uploads/2021/04/craftsman-bar-grill-charcuterie-pizza-4-1711939-1200x900.jpg",
          "prix": "13,00"
       },
@@ -314,8 +309,8 @@
          ],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -332,8 +327,8 @@
          "ingredients": ["Mozzarella Fior Di Latte", "Oignons rouges", "Thon", "Olives noires"],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -347,11 +342,17 @@
       {
          "_id": 18,
          "nom": "La Tamburrini",
-         "ingredients": ["Mozzarella Fior Di Latte", "Oignons rouges", "Lardons", "Gorgonzola", "Sauce Basilic"],
+         "ingredients": [
+            "Mozzarella Fior Di Latte",
+            "Oignons rouges",
+            "Lardons",
+            "Gorgonzola",
+            "Sauce Basilic"
+         ],
          "base": {
             "label": "Crème",
-            "describe" : "Crème Fraîche",
-            "title":  "Base Crème",
+            "describe": "Crème Fraîche",
+            "title": "Base Crème",
             "key": "baseBlanche",
             "state": "baseBlanche",
             "setState": "setBaseBlanche"
@@ -454,7 +455,7 @@
       {
          "_id": 10,
          "nom": "Vin Rosé Local",
-         "prix": "8,00",
+         "prix": "7,00",
          "boissonChaudes": false,
          "boissonAlcool": true,
          "boissonSoft": false
@@ -469,29 +470,34 @@
       },
       {
          "_id": 2,
-         "nom": "Mousse au Chocolat",
-         "prix": "4,50",
+         "nom": "Panna Cotta",
+         "prix": "3,50",
          "url": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/panna-cotta-thermomix-3644747/86259461-1-fre-FR/Panna-cotta-Thermomix.jpg"
       }
    ],
    "supplements": [
       {
          "_id": 1,
-         "nom": "Légumes",
+         "nom": "Oeuf/Légumes",
          "prix": "0,50"
       },
       {
          "_id": 3,
-         "nom": "Tomates Séchées, Oeuf",
-         "prix": "1,00"
+         "nom": "Légume",
+         "prix": "0,50"
       },
       {
          "_id": 4,
-         "nom": "Fromages, Charcuteries, Viandes, Thons, Saumon, Anchois",
-         "prix": "1,50"
+         "nom": "Fromages, Charcuteries, Saucisse, Artichaut",
+         "prix": "1,00"
       },
       {
          "_id": 5,
+         "nom": "Thon, Saumon",
+         "prix": "1,50"
+      },
+      {
+         "_id": 6,
          "nom": "Bufala",
          "prix": "2,50"
       }

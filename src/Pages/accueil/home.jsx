@@ -65,8 +65,9 @@ const Home = ({ refPDM, refAbout, refTop, handleScroll }) => {
                   </g>
                </svg>
             </div>
-            {/*Modal PDM*/}
+
             <Modal />
+
             <LayoutHomePage>
                <Hero
                   handleScroll={handleScroll}

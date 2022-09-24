@@ -1,27 +1,59 @@
 import PizzaDeSaison from '../../Data/pizzaDeSaison.json'
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import React, { createRef, useEffect, useState } from 'react'
 
-export function Modal() {
-   setTimeout(() => {
-      document.querySelector('.modal').close()
-   }, 8000)
+export const Modal = () => {
+   const [modal, setModal] = useState(true)
+   useEffect(() => {
+      if (modal === true) {
+         setTimeout(() => {
+            const $modal = document.querySelector('dialog')
+            $modal.showModal()
+         }, 350)
+      } else if (modal === false) {
+         closeDialog()
+      }
+   }, [modal])
 
-   setTimeout(() => {
-      document.querySelector('.modal').showModal()
-   }, 300)
+   const [counter, setCounter] = useState(10)
+   useEffect(() => {
+      if (modal === true) {
+         if (counter < 3) {
+            setModal(false)
+         } else {
+            const timer = setTimeout(() => {
+               if (counter === 2) clearTimeout(timer)
+               else {
+                  setCounter(counter - 1)
+               }
+            }, 1000)
+         }
+      }
+      return () => {}
+   }, [counter])
+
+   function closeDialog() {
+      const $modal = document.querySelector('#modal')
+      $modal.className = 'animate__animated animate__fadeOut'
+
+      const timerClose = setTimeout(() => {
+         $modal.close()
+         clearTimeout(timerClose)
+      }, 450)
+   }
 
    return (
-      <dialog className={'modal animate__animated animate__fadeIn'}>
-         <span
-            tabIndex={0}
+      <dialog
+         id={'modal'}
+         data-timing={`Fermeture dans ${counter}s`}
+         className={'animate__animated animate__fadeIn'}>
+         <button
             className={
-               'close-btn absolute top-12 right-12 text-3xl font-semibold text-gold hover:cursor-pointer hover:text-beige hover:underline hover:underline-offset-4'
+               'absolute top-12 right-12 text-3xl font-semibold text-gold hover:cursor-pointer hover:text-beige hover:underline hover:underline-offset-4'
             }
-            onClick={() => document.querySelector('.modal').close()}>
-            {' '}
-            fermer X
-         </span>
+            onClick={() => setModal(false)}>
+            Fermer X
+         </button>
          <article
             id={'pizza-du-mois'}
             className={
@@ -66,7 +98,7 @@ export function Modal() {
                   'modalLink mb-12 text-center font-accent text-4xl text-gold underline underline-offset-4'
                }
                to={'/la-carte'}>
-               Je découvre la carte}
+               Je découvre la carte
             </NavLink>
             <img
                src={PizzaDeSaison.url}
