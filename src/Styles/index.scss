@@ -98,10 +98,13 @@
       content: attr(data-timing);
       display: block;
       position: absolute;
-      top: 60px;
+      top: 30px;
       right: 17px;
       width: 100px;
       font-size: 10px;
       font-weight: normal;
+      @media screen and (min-width: 768px){
+         top: 60px;
+      }
    }
 }

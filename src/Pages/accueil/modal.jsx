@@ -49,7 +49,7 @@ export const Modal = () => {
          className={'animate__animated animate__fadeIn'}>
          <button
             className={
-               'absolute top-12 right-12 text-3xl font-semibold text-gold hover:cursor-pointer hover:text-beige hover:underline hover:underline-offset-4'
+               'absolute top-4 right-12 text-xl font-semibold text-gold hover:cursor-pointer hover:text-beige hover:underline hover:underline-offset-4 md:top-12 md:text-3xl'
             }
             onClick={() => setModal(false)}>
             Fermer X
@@ -73,7 +73,7 @@ export const Modal = () => {
             </h3>
             <dl
                className={
-                  'my-12 w-full bg-beige py-4 font-describe text-3xl font-normal leading-relaxed tracking-widest text-dark-grey'
+                  'my-12 w-full bg-beige py-4 font-describe text-lg font-normal leading-relaxed tracking-widest text-dark-grey sm:text-xl md:text-2xl xl:text-3xl'
                }>
                <dt className={'hidden'}>Ingrédients</dt>
                <dd>{PizzaDeSaison.base.describe}</dd>
@@ -95,7 +95,7 @@ export const Modal = () => {
             </dl>
             <NavLink
                className={
-                  'modalLink mb-12 text-center font-accent text-4xl text-gold underline underline-offset-4'
+                  'modalLink mb-12 text-center font-accent text-3xl text-gold underline underline-offset-4 md:text-4xl'
                }
                to={'/la-carte'}>
                Je découvre la carte
