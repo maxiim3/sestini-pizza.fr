@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +111,6 @@
     <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8888">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug." />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -153,6 +152,11 @@
       <workItem from="1656928115874" duration="3452000" />
       <workItem from="1657104719901" duration="1000" />
       <workItem from="1657108735305" duration="267000" />
+      <workItem from="1664613310077" duration="529000" />
+      <workItem from="1664630818046" duration="1155000" />
+      <workItem from="1665421769072" duration="1500000" />
+      <workItem from="1665473191386" duration="6000" />
+      <workItem from="1666979322944" duration="851000" />
     </task>
     <servers />
   </component>

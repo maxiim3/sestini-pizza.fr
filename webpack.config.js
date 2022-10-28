@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const port = process.env.PORT || 8888
 
 module.exports = {
-   mode: 'development',
+   mode: 'production',
    entry: './src/index.js',
    output: {
       filename: 'bundle.[hash].js',

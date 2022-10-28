@@ -1,24 +1,21 @@
 {
    "_id": 100,
-   "nom": "Pizza d'Automne",
+   "nom": "Pizza d'Halloween",
    "pizzaDeSaison": true,
    "ingredients": [
-      "Mozzarella Fior Di Latte",
-      "Pomme de Terre, Cèpes Frais Cuisinés en Persillafe",
-      "Filet d'Huile aux Cèpes",
-      "Olives Noires"
+      "Mozzarella di Bufala"
    ],
    "base": {
       "label": "Crème",
-      "describe": "Crème Fraîche",
-      "title": "Base Crème",
-      "key": "baseBlanche",
-      "state": "baseBlanche",
-      "setState": "setBaseBlanche"
+      "describe": "Crème De Potimarron",
+      "title": "Base Potimarron",
+      "key": "basePotimarron",
+      "state": "basePotimarron",
+      "setState": "setBasePotimarron"
    },
    "avecViande": true,
    "avecPoisson": false,
-   "afterCook": null,
-   "url": "./img/pizzadumois.png",
+   "afterCook": ["Speck", "Noix", "Crème de Balsamique"],
+   "url": "./img/pizza-halloween.jpeg",
    "prix": "14,50"
 }
