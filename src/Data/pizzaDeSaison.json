@@ -1,21 +1,21 @@
 {
    "_id": 100,
-   "nom": "Pizza d'Halloween",
+   "nom": "Pizza de Noël",
    "pizzaDeSaison": true,
    "ingredients": [
-      "Mozzarella di Bufala"
+      "Mozzarella Fior Di Latte", "Pommes de Terre", "Oignons Confits", "Magret de Canard Frais", "Olives Noires"
    ],
    "base": {
       "label": "Crème",
-      "describe": "Crème De Potimarron",
-      "title": "Base Potimarron",
-      "key": "basePotimarron",
-      "state": "basePotimarron",
-      "setState": "setBasePotimarron"
+      "describe": "Crème Fraîche",
+      "title": "Base Crème",
+      "key": "baseBlanche",
+      "state": "baseBlanche",
+      "setState": "setBaseBlanche"
    },
    "avecViande": true,
    "avecPoisson": false,
-   "afterCook": ["Speck", "Noix", "Crème de Balsamique"],
-   "url": "./img/pizza-halloween.jpeg",
+   "afterCook": null,
+   "url": "./img/PDN.png",
    "prix": "14,50"
 }

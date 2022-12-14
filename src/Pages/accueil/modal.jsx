@@ -82,7 +82,7 @@ export const Modal = () => {
 						className={
 							"my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold"
 						}>
-						Pizza d'Halloween <i className="fa-regular fa-ghost"></i>
+						Pizza de Noël<i className="fa-regular fa-ghost"></i>
 					</h3>
 
 					<dl

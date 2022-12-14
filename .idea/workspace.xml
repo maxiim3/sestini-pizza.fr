@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/jours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/jours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/menuSummer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuSummer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/menuWinter.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuWinter.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderPizzas.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/maxi/Projets/PhpstormProjects/sestini-pizza/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/JetBrains/Toolbox/apps/PhpStorm/ch-0/222.4167.33/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
 }</component>
@@ -107,10 +108,33 @@
       <recent name="$PROJECT_DIR$/src/Routes/navigation" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm sta" />
+      <command value="npm run bui" />
+      <command value="npm run build" />
+      <command value="npm start" />
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.build">
     <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8888">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -156,12 +180,36 @@
       <workItem from="1664630818046" duration="1155000" />
       <workItem from="1665421769072" duration="1500000" />
       <workItem from="1665473191386" duration="6000" />
-      <workItem from="1666979322944" duration="851000" />
+      <workItem from="1666979322944" duration="1368000" />
+      <workItem from="1667037321178" duration="38000" />
+      <workItem from="1667037365694" duration="769000" />
+      <workItem from="1667231398018" duration="713000" />
+      <workItem from="1667293487855" duration="597000" />
+      <workItem from="1667295518949" duration="29000" />
+      <workItem from="1667823684055" duration="219000" />
+      <workItem from="1667923065006" duration="1874000" />
+      <workItem from="1667926622270" duration="13000" />
+      <workItem from="1668072428135" duration="1060000" />
+      <workItem from="1668171403513" duration="171000" />
+      <workItem from="1669113434320" duration="1267000" />
+      <workItem from="1670939318991" duration="2554000" />
+      <workItem from="1671008250211" duration="389000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

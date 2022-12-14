@@ -143,9 +143,9 @@
          },
          "avecViande": true,
          "avecPoisson": false,
-         "afterCook": ["Jambon de Parme 24 mois", "Parmigiano", "Tomates cerises", "Sauce basilic"],
+         "afterCook": ["Jambon de Parme 24 mois", "Parmigiano", "Tomates Séchées", "Sauce basilic"],
          "url": "https://eat.portodimarecascais.com/wp-content/uploads/2020/09/parma-bufala.jpg",
-         "prix": "13,00"
+         "prix": "13,50"
       },
       {
          "_id": 8,
@@ -168,7 +168,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://www.chilirezept.de/wp-content/uploads/2019/02/Pizza-Calabria.jpg",
-         "prix": "11,50"
+         "prix": "12,00"
       },
       {
          "_id": 9,
@@ -191,7 +191,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://www.mydailydinner.nl/wp-content/uploads/2020/04/Pizza-Salsiccia-02-04-2020.jpg",
-         "prix": "12,50"
+         "prix": "13,00"
       },
       {
          "_id": 10,
@@ -209,7 +209,7 @@
          "avecPoisson": true,
          "afterCook": null,
          "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-napolitaine_ok.jpg?fit=4898%2C3265&ssl=1",
-         "prix": "11,50"
+         "prix": "12,00"
       },
       {
          "_id": 11,
