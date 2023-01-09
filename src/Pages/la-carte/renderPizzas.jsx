@@ -18,7 +18,7 @@ export const RenderPizzas = ({pizzas, supplements, pizzaDeSaison}) => {
 				Pizza de Saison
 			</h3>*/}
 
-			{/*<RenderProductsLayout product={pizzaDeSaison} />*/}
+			<RenderProductsLayout product={pizzaDeSaison} />
 			{toutesLesBases().map(base => (
 				<>
 					<h3

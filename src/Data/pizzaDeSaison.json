@@ -1,6 +1,6 @@
 {
    "_id": 100,
-   "nom": "Pizza de Noël",
+   "nom": "Pizza du Moment",
    "pizzaDeSaison": true,
    "ingredients": [
       "Mozzarella Fior Di Latte"
@@ -8,7 +8,7 @@
    "base": {
       "label": "Crème de Betterave",
       "describe": "Crème de Betterave",
-      "title": "Base de Betterave",
+      "title": "Base Crème de Betterave",
       "key": "baseBetterave",
       "state": "baseBetterave",
       "setState": "setBaseBetterave"
@@ -16,6 +16,6 @@
    "avecViande": true,
    "avecPoisson": false,
    "afterCook": ["Speck, Tomates Séchées, Mâche, Noix"],
-   "url": "./img/PDN.png",
+   "url": "./img/pizza-de-janvier.png",
    "prix": "14,50"
 }
