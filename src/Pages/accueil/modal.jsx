@@ -1,7 +1,6 @@
+import React, {useEffect, useState} from "react"
+import NavLink from "react-router-dom/NavLink"
 import PizzaDeSaison from "../../Data/pizzaDeSaison.json"
-import {NavLink} from "react-router-dom"
-import React, {createRef, useEffect, useState} from "react"
-
 export const Modal = () => {
 	const [modal, setModal] = useState(true)
 	useEffect(() => {
@@ -15,7 +14,7 @@ export const Modal = () => {
 		}
 	}, [modal])
 
-	const [counter, setCounter] = useState(10)
+	const [counter, setCounter] = useState(12)
 	useEffect(() => {
 		if (modal === true) {
 			if (counter < 3) {
@@ -54,19 +53,44 @@ export const Modal = () => {
 				onClick={() => setModal(false)}>
 				Fermer X
 			</button>
-			{/*todo Fermeture exceptionnelle*/}
-			{counter > 5 && new Date().getMonth() === 9 && new Date().getDate() === 28 ? (
-				<article
+			{/*decoration de noel*/}
+			{/*<img
+				className={"hat"}
+				aria-hidden={true}
+				tabIndex={-1}
+				src={"./img/christmas-hat.png"}
+				alt="icon.."
+			/>
+			<img
+				className={"candy"}
+				aria-hidden={true}
+				tabIndex={-1}
+				src={"./img/christmas-candy.png"}
+				alt="icon.."
+			/>*/}
+			{
+				// Fermeture
+				/*<article
 					className={
-						"mx-auto mt-48 mb-2 flex h-max flex-col items-center justify-center gap-12 text-center text-3xl text-beige"
+						"mx-auto mt-48 mb-2 grid h-fit place-content-center gap-12 text-center text-3xl text-beige"
 					}>
-					<h4 className={"block pb-4 font-bold text-gold underline"}>
-						FERMETURE EXCEPTIONNELLE {}
+					<h4 className={"block pb-4 font-bold text-beige underline"}>
+						FERMETURE VACANCES DE NOËL {}
 					</h4>
-					<h5 className={"font-semibold"}>Ce Vendredi 28 octobre à Gigean</h5>
-					<p>Nous nous excusons... Retrouvez-nous dès demain</p>
-				</article>
-			) : (
+					<h5 className={"font-semibold text-gold"}>
+						Sestini Pizza est fermé pendant les fêtes
+					</h5>
+					<p>
+						<span className={"text-gold"}>Du</span> mercredi{" "}
+						<span className={"text-gold"}>21 décembre 2022</span>
+					</p>
+					<p>
+						<span className={"text-gold"}>au</span> dimanche{" "}
+						<span className={"text-gold"}>1er janvier 2023</span> (inclus)
+					</p>
+					<p>Nous vous souhaitons de belles fêtes de fin d'année!</p>
+				</article>*/
+				// Pizza du Moment
 				<article
 					id={"pizza-du-mois"}
 					className={
@@ -123,7 +147,7 @@ export const Modal = () => {
 						alt="La Pizza d'Halloween"
 					/>
 				</article>
-			)}
+			}
 		</dialog>
 	)
 }

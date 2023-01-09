@@ -31,6 +31,8 @@ const Home = ({refPDM, refAbout, refTop, handleScroll}) => {
 					/>
 				</header>
 				<img
+					tabIndex={-1}
+					alt={"basilic"}
 					className={"hidden md:absolute md:top-[30%] md:-right-1 md:block"}
 					src={"./img/basilic.png"}
 					aria-hidden={true}
@@ -66,7 +68,7 @@ const Home = ({refPDM, refAbout, refTop, handleScroll}) => {
 					</svg>
 				</div>
 
-				{/*<Modal />*/}
+				<Modal />
 
 				<LayoutHomePage>
 					<Hero

@@ -3,19 +3,19 @@
    "nom": "Pizza de Noël",
    "pizzaDeSaison": true,
    "ingredients": [
-      "Mozzarella Fior Di Latte", "Pommes de Terre", "Oignons Confits", "Magret de Canard Frais", "Olives Noires"
+      "Mozzarella Fior Di Latte"
    ],
    "base": {
-      "label": "Crème",
-      "describe": "Crème Fraîche",
-      "title": "Base Crème",
-      "key": "baseBlanche",
-      "state": "baseBlanche",
-      "setState": "setBaseBlanche"
+      "label": "Crème de Betterave",
+      "describe": "Crème de Betterave",
+      "title": "Base de Betterave",
+      "key": "baseBetterave",
+      "state": "baseBetterave",
+      "setState": "setBaseBetterave"
    },
    "avecViande": true,
    "avecPoisson": false,
-   "afterCook": null,
+   "afterCook": ["Speck, Tomates Séchées, Mâche, Noix"],
    "url": "./img/PDN.png",
    "prix": "14,50"
 }

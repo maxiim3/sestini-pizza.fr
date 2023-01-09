@@ -9,7 +9,6 @@ import {Layout} from "../../Layout/layout"
 import {Header} from "../../Layout/header"
 import {RenderPizzas} from "./renderPizzas"
 import {RenderProductsLayout} from "./renderProducts"
-import {consoleMessage} from "../../Utils/consoleMessage"
 
 /**
  * La carte Routes

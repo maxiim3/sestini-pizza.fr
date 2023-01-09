@@ -412,19 +412,12 @@ template {
   animation-timing-function: linear;
 }
 
-@keyframes scrollY {
-  0% {
-    transform: translateY(-1rem);
-  }
-  100% {
-    transform: translateY(1rem);
-  }
-}
 #modal {
   width: min(100%, 850px);
   height: min(100%, 1050px);
   background: rgba(32, 43, 49, 0.9);
   border-radius: 20px;
+  position: relative;
   overflow: hidden;
 }
 #modal::backdrop {
@@ -451,6 +444,39 @@ template {
     top: 60px;
   }
 }
+#modal .hat,
+#modal .candy {
+  position: absolute;
+  width: 48px;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#modal .hat {
+  animation-name: scrollX_hat;
+  top: 2%;
+  right: 45%;
+}
+@media screen and (min-width: 560px) {
+  #modal .hat {
+    animation-name: scrollY_hat;
+    right: 7%;
+    top: 25%;
+  }
+}
+#modal .candy {
+  animation-name: scrollX_candy;
+  bottom: 15%;
+  left: 45%;
+}
+@media screen and (min-width: 560px) {
+  #modal .candy {
+    animation-name: scrollY_candy;
+    left: 9%;
+    top: 15%;
+  }
+}
 
 .modal__img {
   width: min(100%, 850px);
@@ -459,6 +485,66 @@ template {
   border-radius: 15px;
   object-fit: contain;
   object-position: center;
+}
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+@keyframes scrollY_hat {
+  0% {
+    scale: 100%;
+    transform: translateY(245px);
+    rotate: -12deg;
+  }
+  100% {
+    transform: translateY(-50px);
+    rotate: 10deg;
+    scale: 150%;
+  }
+}
+@keyframes scrollX_hat {
+  0% {
+    scale: 100%;
+    transform: translateX(-42px) translateY(-12px);
+    rotate: -12deg;
+  }
+  100% {
+    transform: translateX(30px) translateY(2px);
+    rotate: 10deg;
+    scale: 120%;
+  }
+}
+@keyframes scrollY_candy {
+  0% {
+    transform: translateY(100px);
+    rotate: 35deg;
+    scale: 120%;
+  }
+  25% {
+    transform: translateY(-45px);
+  }
+  100% {
+    transform: translateY(125px);
+    rotate: -12deg;
+    scale: 75%;
+  }
+}
+@keyframes scrollX_candy {
+  0% {
+    scale: 100%;
+    transform: translateX(45px) translateY(-32px);
+    rotate: 12deg;
+  }
+  100% {
+    transform: translateX(-50px) translateY(12px);
+    rotate: -10deg;
+    scale: 120%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
