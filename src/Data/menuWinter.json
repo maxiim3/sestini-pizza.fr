@@ -16,7 +16,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/19/2010/01/21/pizzetta-margherita-pizza-su-x.jpg",
-         "prix": "10,00"
+         "prix": "10,50"
       },
       {
          "_id": 2,
@@ -34,7 +34,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://thumbs.dreamstime.com/b/delicious-italian-pizza-buffalo-mozzarella-tomato-sauce-basil-classic-napoli-food-italian-pizza-bufalina-103122067.jpg",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 3,
@@ -56,7 +56,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://parmacrown.com/wp-content/uploads/2015/03/Pizza-4.jpg",
-         "prix": "10,50"
+         "prix": "11,00"
       },
       {
          "_id": 4,
@@ -80,7 +80,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://i.pinimg.com/originals/c5/62/b3/c562b36428b8740aa0b4d6349b3c2200.jpg",
-         "prix": "11,50"
+         "prix": "12,00"
       },
       {
          "_id": 5,
@@ -143,7 +143,7 @@
          },
          "avecViande": true,
          "avecPoisson": false,
-         "afterCook": ["Jambon de Parme 24 mois", "Parmigiano", "Tomates Séchées", "Sauce basilic"],
+         "afterCook": ["Jambon de Parme 24 mois", "Parmigiano Reggiano", "Tomates Séchées", "Sauce basilic"],
          "url": "https://eat.portodimarecascais.com/wp-content/uploads/2020/09/parma-bufala.jpg",
          "prix": "13,50"
       },
@@ -176,8 +176,7 @@
          "ingredients": [
             "Mozzarella di Bufala",
             "Saucisse de Toulouse",
-            "Persillade",
-            "Olives Noires"
+            "Persillade"
          ],
          "base": {
             "label": "Tomate",
@@ -209,7 +208,7 @@
          "avecPoisson": true,
          "afterCook": null,
          "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-napolitaine_ok.jpg?fit=4898%2C3265&ssl=1",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 11,
@@ -227,12 +226,12 @@
          "avecPoisson": false,
          "afterCook": ["Speck", "Noix, Crème de Balsamique"],
          "url": "https://www.foodette.fr/files/products/pizza-coppa-mozzarella-bufala-roquette-tomate-rucola-italie.jpg",
-         "prix": "12,50"
+         "prix": "13,00"
       },
       {
          "_id": 12,
          "nom": "La 4 Formaggi",
-         "ingredients": ["Mozzarella Fior Di Latte", "Chèvre", "Gorgonzola", "Parmigiano"],
+         "ingredients": ["Mozzarella Fior Di Latte", "Chèvre", "Gorgonzola", "Parmigiano Reggiano"],
          "base": {
             "label": "Crème",
             "describe": "Crème Fraîche",
@@ -245,7 +244,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/2981.jpg",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 13,
@@ -281,7 +280,7 @@
          "avecPoisson": true,
          "afterCook": ["Saumon", "Crème de Balsamique"],
          "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-salmone2_ok.jpg?fit=4898%2C3265&ssl=1",
-         "prix": "12,00"
+         "prix": "13,00"
       },
       {
          "_id": 15,
@@ -300,11 +299,11 @@
          "afterCook": [
             "Jambon de Parme 24 mois",
             "Spianata Piccante",
-            "Parmigiano",
+            "Parmigiano Reggiano",
             "Sauce basilic"
          ],
          "url": "https://wdwnt.com/wp-content/uploads/2021/04/craftsman-bar-grill-charcuterie-pizza-4-1711939-1200x900.jpg",
-         "prix": "13,50"
+         "prix": "14,00"
       },
       {
          "_id": 16,
@@ -328,7 +327,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://recettes-gourmandes-de-joce.fr/wp-content/uploads/2019/10/PA190532.jpg",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 17,
@@ -346,7 +345,7 @@
          "avecPoisson": true,
          "afterCook": null,
          "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/10245.jpg",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 18,
@@ -418,7 +417,7 @@
          "avecPoisson": false,
          "afterCook": null,
          "url": "https://therecipecritic.com/wp-content/uploads/2020/07/zucchini-pizza-4-667x1000.jpg",
-         "prix": "12,00"
+         "prix": "12,50"
       },
       {
          "_id": 21,
@@ -530,18 +529,18 @@
    "supplements": [
       {
          "_id": 1,
-         "nom": "Légumes",
-         "prix": "0,50"
+         "nom": "Légumes, Oeuf",
+         "prix": "1,00"
       },
       {
          "_id": 3,
-         "nom": "Tomates Séchées, Oeuf",
-         "prix": "1,00"
+         "nom": "Tomates Séchées",
+         "prix": "1,50"
       },
       {
          "_id": 4,
          "nom": "Fromages, Charcuteries, Viandes, Thons, Saumon, Anchois",
-         "prix": "1,50"
+         "prix": "2,00"
       },
       {
          "_id": 5,
