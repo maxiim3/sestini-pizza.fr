@@ -14,7 +14,7 @@ export const Modal = () => {
 		}
 	}, [modal])
 
-	const [counter, setCounter] = useState(12)
+	const [counter, setCounter] = useState(50)
 	useEffect(() => {
 		if (modal === true) {
 			if (counter < 3) {

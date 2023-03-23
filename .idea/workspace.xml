@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/menuWinter.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuWinter.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +93,14 @@
     &quot;ts.external.directory.path&quot;: &quot;/Applications/JetBrains/Toolbox/apps/PhpStorm/ch-0/222.4167.33/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="true" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/img" />
@@ -111,9 +123,9 @@
       <command value="npm run bui" />
       <command value="npm i" />
       <command value="devnpm run " />
-      <command value="npm run dev" />
-      <command value="npm run build" />
       <command value="npm start" />
+      <command value="npm run build" />
+      <command value="npm run dev" />
     </option>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -142,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +230,8 @@
       <workItem from="1673287110101" duration="273000" />
       <workItem from="1673341028745" duration="1057000" />
       <workItem from="1674056621206" duration="11000" />
-      <workItem from="1674669075944" duration="624000" />
+      <workItem from="1674669075944" duration="883000" />
+      <workItem from="1679584497214" duration="1900000" />
     </task>
     <servers />
   </component>
