@@ -16,7 +16,7 @@ import "../../../node_modules/animate.css/animate.css"
 export const Hero = ({handleScroll, scrollToRef}) => {
 	return (
 		<>
-			<header className="animate__animated animate__fadeInUp col-span-full grid h-96 place-content-center xl:mt-48">
+			<header className="animate__animated animate__fadeInUp col-span-full grid h-96 place-content-center pl-4 xl:mt-48">
 				<MainLogo />
 				{/*<img*/}
 				{/*	src={"./img/main-logo.png"}*/}
@@ -100,24 +100,24 @@ export const Hero = ({handleScroll, scrollToRef}) => {
 					{/*   </div>*/}
 					{/*</Button>*/}
 				</div>
-				<img
-					tabIndex={-1}
-					alt={"basilic"}
-					className={
-						"col-start-4 col-end-6 row-start-1 translate-x-6 transform justify-self-end md:hidden"
-					}
-					src={"./img/basilic.png"}
-					aria-hidden={true}
-				/>
-				<img
-					className={
-						"left-0 col-start-1 col-end-4 row-start-3 row-end-6 -translate-x-12 transform md:hidden"
-					}
-					tabIndex={-1}
-					alt={"pizza image"}
-					src={"./img/pizza-half.png"}
-					aria-hidden={true}
-				/>
+				{/*<img*/}
+				{/*	tabIndex={-1}*/}
+				{/*	alt={"basilic"}*/}
+				{/*	className={*/}
+				{/*		"col-start-4 col-end-6 row-start-1 translate-x-6 transform justify-self-end md:hidden"*/}
+				{/*	}*/}
+				{/*	src={"./img/basilic.png"}*/}
+				{/*	aria-hidden={true}*/}
+				{/*/>*/}
+				{/*<img*/}
+				{/*	className={*/}
+				{/*		"left-0 col-start-1 col-end-4 row-start-3 row-end-6 -translate-x-12 transform md:hidden"*/}
+				{/*	}*/}
+				{/*	tabIndex={-1}*/}
+				{/*	alt={"pizza image"}*/}
+				{/*	src={"./img/pizza-half.png"}*/}
+				{/*	aria-hidden={true}*/}
+				{/*/>*/}
 			</section>
 		</>
 	)

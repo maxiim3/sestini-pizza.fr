@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useMemo, useState} from "react"
 import MenuWinterJson from "../../Data/menuWinter.json"
 import MenuSummerJson from "../../Data/menuSummer.json"
 import PizzaDeSaisonJson from "../../Data/pizzaDeSaison.json"
@@ -20,7 +20,7 @@ export const Products = () => {
 	 *
 	 * @type {"Printemps-Été" || "Automne-Hiver"}
 	 */
-	let carte
+	const [carteLabel, setCarteLabel] = useState("Automne-Hiver")
 
 	/**
 	 *## Menu de Saison
@@ -33,7 +33,7 @@ export const Products = () => {
 	 */
 	function menuDeSaison(saison) {
 		if (saison === "summer") {
-			carte = "Printemps-Été"
+			setCarteLabel("Printemps-Été")
 			return {
 				pizzaDeSaison: PizzaDeSaisonJson,
 				pizzas: [...MenuSummerJson["pizzas"]],
@@ -43,7 +43,7 @@ export const Products = () => {
 			}
 		}
 		if (saison === "winter") {
-			carte = "Automne-Hiver"
+			setCarteLabel("Automne-Hiver")
 			return {
 				pizzaDeSaison: PizzaDeSaisonJson,
 				pizzas: [...MenuWinterJson["pizzas"]],
@@ -58,7 +58,7 @@ export const Products = () => {
 	 *
 	 * @type {{desserts: *[], supplements: *[], pizzas: *[], boissons: *[], pizzaDeSaison: {_id: number, nom: string, pizzaDeSaison: boolean, ingredients: {}, base: {label: string, describe: string, title: string, key: string, state: string, setState: string}, avecViande: boolean, avecPoisson: boolean, afterCook: *, url: string, prix: string}}}
 	 */
-	const allProducts = menuDeSaison("winter")
+	const allProducts = useMemo(() => menuDeSaison("summer"), [])
 	/**
 	 * @type {allProducts}
 	 */
@@ -103,7 +103,7 @@ export const Products = () => {
 					className={
 						"animate__animated animate__fadeIn text-center font-['Cinzel'] text-3xl font-normal uppercase"
 					}>
-					Carte {carte}
+					Carte {carteLabel}
 				</p>
 				<div
 					className={

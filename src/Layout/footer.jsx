@@ -26,9 +26,6 @@ export const Footer = () => {
 				</div>
 				<div className={"col-start-2 row-start-2"}>
 					<p>
-						Sestini <sup>&copy;</sup> 2022
-					</p>
-					<p>
 						<Email />
 					</p>
 					<p>
@@ -39,11 +36,25 @@ export const Footer = () => {
 					<p>SARL 10558442XD</p>
 				</div>
 				<div className={"col-start-2 row-start-5"}>
-					<a>CGU</a>
+					<p>
+						Site créé et maintenu par{" "}
+						<a
+							href="https://github.com/maxiim3"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:text-yellow-300 text-gold">
+							Maxime Tamburrini (maxiim3)
+						</a>
+					</p>
 				</div>
+				<p className="mt-2">&copy; {new Date().getFullYear()} Tous droits réservés.</p>
 				<div className={"col-start-2 row-start-6"}>
-					Video by Denys Gromov:
-					https://www.pexels.com/video/a-person-cooking-pizza-6176588/
+					<a
+						href="https://www.pexels.com/video/aerial-view-of-a-beautiful-beach-2169880/"
+						target="_blank"
+						rel="noopener noreferrer">
+						Video by Denys Gromov
+					</a>
 				</div>
 			</div>
 		</footer>

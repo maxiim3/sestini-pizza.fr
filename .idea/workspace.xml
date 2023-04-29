@@ -4,13 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="">
+    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="AJout de la pizza du moment du mois de mars 23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Horloge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Logo Minify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Logo-rond.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/PDN--.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/PDN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/PDS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Scroll-Text-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Tomato.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/basilic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/christmas-candy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/christmas-hat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/emplacement-dimanche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/emplacement-jeudi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/emplacement-mercredi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/emplacement-vendredi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo-groupe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo-main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/main-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/map1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/map2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/maps icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza-de-janvier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza-de-noel.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza-half.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza-halloween.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizzaBlanche.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizzadumois.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pizzaiolo-devant-four.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/scroll-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/video/pexels-denys-gromov-6176588.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/menuSummer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuSummer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +66,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -58,6 +98,12 @@
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupnpm">
       <scroll-view-position x="0" y="0" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/package.json" />
+          <id value="start" />
+        </path>
+      </selected-paths>
     </layout>
   </component>
   <component name="MacroExpansionManager">
@@ -66,6 +112,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="MAMP 8.0" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -81,6 +128,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Max/deploy-mars2023&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maxi/Projets/PhpstormProjects/sestini-pizza/public/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -123,9 +171,9 @@
       <command value="npm run bui" />
       <command value="npm i" />
       <command value="devnpm run " />
+      <command value="npm run dev" />
       <command value="npm start" />
       <command value="npm run build" />
-      <command value="npm run dev" />
     </option>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -154,8 +202,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -231,8 +279,22 @@
       <workItem from="1673341028745" duration="1057000" />
       <workItem from="1674056621206" duration="11000" />
       <workItem from="1674669075944" duration="883000" />
-      <workItem from="1679584497214" duration="1900000" />
+      <workItem from="1679584497214" duration="2078000" />
+      <workItem from="1679634729684" duration="1642000" />
+      <workItem from="1679653795783" duration="2008000" />
+      <workItem from="1679667420732" duration="234000" />
+      <workItem from="1681809054775" duration="3151000" />
+      <workItem from="1681911848532" duration="1551000" />
+      <workItem from="1682763091153" duration="2314000" />
     </task>
+    <task id="LOCAL-00001" summary="AJout de la pizza du moment du mois de mars 23">
+      <created>1679587003787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679587003787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +338,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AJout de la pizza du moment du mois de mars 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="AJout de la pizza du moment du mois de mars 23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
