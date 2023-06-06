@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="MAJ pour congés">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/menuSummer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuSummer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" afterDir="false" />
+    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="MAJ PDM MAI 2023">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +250,7 @@
       <workItem from="1682949026799" duration="424000" />
       <workItem from="1683631051209" duration="562000" />
       <workItem from="1684235400028" duration="36000" />
-      <workItem from="1686062177120" duration="1254000" />
+      <workItem from="1686062177120" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="AJout de la pizza du moment du mois de mars 23">
       <created>1679587003787</created>
@@ -270,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682765418963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MAJ PDM MAI 2023">
+      <created>1686063474644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686063474644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +321,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AJout de la pizza du moment du mois de mars 23" />
     <MESSAGE value="MAJ pour congés" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAJ pour congés" />
+    <MESSAGE value="MAJ PDM MAI 2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ PDM MAI 2023" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

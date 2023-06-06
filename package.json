@@ -1,6 +1,6 @@
 {
   "name": "official-sestini-pizza",
-  "version": "2022.12.1",
+  "version": "2023.05.6",
   "homepage": "http://localhost:8888",
   "private": true,
   "description": "Template du site React sestini-pizza.fr",
