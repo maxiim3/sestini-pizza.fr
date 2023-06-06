@@ -4,46 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="AJout de la pizza du moment du mois de mars 23">
+    <list default="true" id="e04332f3-676a-422f-8433-bd81a7227816" name="Changes" comment="MAJ pour congés">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Horloge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Logo Minify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Logo-rond.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/PDN--.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/PDN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/PDS.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Scroll-Text-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Tomato.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/basilic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/christmas-candy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/christmas-hat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/emplacement-dimanche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/emplacement-jeudi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/emplacement-mercredi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/emplacement-vendredi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo-groupe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo-main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/main-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/map1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/map2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/maps icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizza-de-janvier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizza-de-noel.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizza-half.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizza-halloween.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizza.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizzaBlanche.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizzadumois.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pizzaiolo-devant-four.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/scroll-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/video/pexels-denys-gromov-6176588.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data/menuSummer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/menuSummer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/home-hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/pizzaDeSaison.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/accueil/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/la-carte/renderProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/nous-trouver/nousTrouver.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,23 +89,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Max/deploy-mars2023&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maxi/Projets/PhpstormProjects/sestini-pizza/public/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/maxi/Projets/PhpstormProjects/sestini-pizza/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/JetBrains/Toolbox/apps/PhpStorm/ch-0/222.4167.33/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Max/deploy-mars2023",
+    "last_opened_file_path": "/Users/maxi/Projets/PhpstormProjects/sestini-pizza/public/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/maxi/Projets/PhpstormProjects/sestini-pizza/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/Applications/JetBrains/Toolbox/apps/PhpStorm/ch-0/231.9011.38/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -158,8 +123,8 @@
       <recent name="$PROJECT_DIR$/public/video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/src/Pages/image" />
       <recent name="$PROJECT_DIR$/src/Routes" />
       <recent name="$PROJECT_DIR$/src/Routes/navigation" />
@@ -285,7 +250,11 @@
       <workItem from="1679667420732" duration="234000" />
       <workItem from="1681809054775" duration="3151000" />
       <workItem from="1681911848532" duration="1551000" />
-      <workItem from="1682763091153" duration="2314000" />
+      <workItem from="1682763091153" duration="4522000" />
+      <workItem from="1682949026799" duration="424000" />
+      <workItem from="1683631051209" duration="562000" />
+      <workItem from="1684235400028" duration="36000" />
+      <workItem from="1686062177120" duration="1254000" />
     </task>
     <task id="LOCAL-00001" summary="AJout de la pizza du moment du mois de mars 23">
       <created>1679587003787</created>
@@ -294,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679587003787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MAJ pour congés">
+      <created>1682765418963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682765418963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +317,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AJout de la pizza du moment du mois de mars 23" />
-    <option name="LAST_COMMIT_MESSAGE" value="AJout de la pizza du moment du mois de mars 23" />
+    <MESSAGE value="MAJ pour congés" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ pour congés" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

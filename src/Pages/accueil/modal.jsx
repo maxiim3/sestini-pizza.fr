@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from "react"
+import {NavLink} from "react-router-dom"
+import PizzaDeSaison from "../../Data/pizzaDeSaison.json"
 
 export const Modal = () => {
 	const [modal, setModal] = useState(true)
@@ -13,7 +15,7 @@ export const Modal = () => {
 		}
 	}, [modal])
 
-	const [counter, setCounter] = useState(12)
+	const [counter, setCounter] = useState(120)
 	useEffect(() => {
 		if (modal === true) {
 			if (counter < 3) {
@@ -71,75 +73,74 @@ export const Modal = () => {
 			 Fermeture
 */}
 
+			{/*<article*/}
+			{/*	className={*/}
+			{/*		"mx-auto mt-48 mb-2 grid h-fit place-content-center gap-12 text-center text-3xl text-beige"*/}
+			{/*	}>*/}
+			{/*	<h4 className={"block pb-4 font-bold text-beige "}>Congé exceptionnel</h4>*/}
+
+			{/*	<p>Du samedi 29 avril au mardi 9 mai 2023</p>*/}
+			{/*	<p className={"text-gold"}>Réouverture le mercredi 10 mai 2023</p>*/}
+			{/*	<p>Merci de votre compréhension et à bientôt !</p>*/}
+			{/*</article>*/}
+
+			{/*// Pizza du Moment*/}
 			<article
+				id={"pizza-du-mois"}
 				className={
-					"mx-auto mt-48 mb-2 grid h-fit place-content-center gap-12 text-center text-3xl text-beige"
+					"mx-auto mt-12 mb-2 flex flex-col items-center justify-evenly text-center text-3xl text-beige"
 				}>
-				<h4 className={"block pb-4 font-bold text-beige "}>Congé exceptionnel</h4>
+				<h2
+					className={
+						"text-uppercase text-center font-accent text-3xl font-normal leading-loose tracking-wider text-beige"
+					}>
+					Découvrez notre
+				</h2>
+				<h3
+					className={
+						"my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold"
+					}>
+					Pizza du Moment<i className="fa-regular fa-ghost"></i>
+				</h3>
 
-				<p>Du samedi 29 avril au mardi 9 mai 2023</p>
-				<p className={"text-gold"}>Réouverture le mercredi 10 mai 2023</p>
-				<p>Merci de votre compréhension et à bientôt !</p>
+				<dl
+					className={
+						"my-12 w-full bg-beige py-4 font-describe text-lg font-normal leading-relaxed tracking-widest text-dark-grey sm:text-xl md:text-2xl xl:text-3xl"
+					}>
+					<dt className={"hidden"}>Ingrédients</dt>
+					<dd>{PizzaDeSaison.base.describe}</dd>
+					{PizzaDeSaison.ingredients.map(ingredient => (
+						<dd key={ingredient}>{ingredient}</dd>
+					))}
+					{PizzaDeSaison.afterCook && (
+						<>
+							<h4
+								className={
+									"mt-6 font-normal text-light-grey underline underline-offset-2"
+								}>
+								Après Cuisson
+							</h4>
+							<dt className={"hidden"}>Ingrédients ajoutés après-cuisson</dt>
+							{PizzaDeSaison.afterCook.map(ingredient => (
+								<dd>{ingredient}</dd>
+							))}
+						</>
+					)}
+				</dl>
+
+				<NavLink
+					className={
+						"modalLink mb-12 text-center font-accent text-3xl text-gold underline underline-offset-4 md:text-4xl"
+					}
+					to={"/la-carte"}>
+					Je découvre la carte Printemps-Été
+				</NavLink>
+				<img
+					className={"w-96 object-contain object-center"}
+					src={PizzaDeSaison.url}
+					alt="La Pizza du moment"
+				/>
 			</article>
-
-			{/*	// Pizza du Moment
-			// <article
-			// 	id={"pizza-du-mois"}
-			// 	className={
-			// 		"mx-auto mt-12 mb-2 flex flex-col items-center justify-evenly text-center text-3xl text-beige"
-			// 	}>
-			// 	<h2
-			// 		className={
-			// 			"text-uppercase text-center font-accent text-3xl font-normal leading-loose tracking-wider text-beige"
-			// 		}>
-			// 		Découvrez notre
-			// 	</h2>
-			// 	<h3
-			// 		className={
-			// 			"my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold"
-			// 		}>
-			// 		Pizza du Moment<i className="fa-regular fa-ghost"></i>
-			// 	</h3>
-			//
-			// 	<dl
-			// 		className={
-			// 			"my-12 w-full bg-beige py-4 font-describe text-lg font-normal leading-relaxed tracking-widest text-dark-grey sm:text-xl md:text-2xl xl:text-3xl"
-			// 		}>
-			// 		<dt className={"hidden"}>Ingrédients</dt>
-			// 		<dd>{PizzaDeSaison.base.describe}</dd>
-			// 		{PizzaDeSaison.ingredients.map(ingredient => (
-			// 			<dd key={ingredient}>{ingredient}</dd>
-			// 		))}
-			// 		{PizzaDeSaison.afterCook && (
-			// 			<>
-			// 				<h4
-			// 					className={
-			// 						"mt-6 font-normal text-light-grey underline underline-offset-2"
-			// 					}>
-			// 					Après Cuisson
-			// 				</h4>
-			// 				<dt className={"hidden"}>Ingrédients ajoutés après-cuisson</dt>
-			// 				{PizzaDeSaison.afterCook.map(ingredient => (
-			// 					<dd>{ingredient}</dd>
-			// 				))}
-			// 			</>
-			// 		)}
-			// 	</dl>
-			//
-			// 	<NavLink
-			// 		className={
-			// 			"modalLink mb-12 text-center font-accent text-3xl text-gold underline underline-offset-4 md:text-4xl"
-			// 		}
-			// 		to={"/la-carte"}>
-			// 		Je découvre la carte Printemps-Été
-			// 	</NavLink>
-			// 	<img
-			// 		className={"modal__img"}
-			// 		src={PizzaDeSaison.url}
-			// 		alt="La Pizza d'Halloween"
-			// 	/>
-			// </article>
-			// */}
 		</dialog>
 	)
 }

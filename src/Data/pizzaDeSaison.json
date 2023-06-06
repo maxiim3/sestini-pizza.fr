@@ -1,21 +1,24 @@
 {
-   "_id": 100,
-   "nom": "Pizza du Moment",
-   "pizzaDeSaison": true,
-   "ingredients": [
-      "Mozzarella Fior Di Latte"
-   ],
-   "base": {
-      "label": "Crème d'asperge",
-      "describe": "Crème d'asperge",
-      "title": "Base Crème d'asperge",
-      "key": "baseAsperge",
-      "state": "baseAsperge",
-      "setState": "setBaseAsperge"
-   },
-   "avecViande": true,
-   "avecPoisson": false,
-   "afterCook": ["Coppa, Roquette, Noix, Filet d'huile d'olive"],
-   "url": "./img/pdm-mars-ai.png",
-   "prix": "15,00"
+	"_id": 100,
+	"nom": "Pizza du Moment",
+	"pizzaDeSaison": true,
+	"ingredients": [ "Courgette"],
+	"base": {
+		"label": "Base Mozzarella Fior Di Latte",
+		"describe": "Mozzarella Fior Di Latte",
+		"title": "Base Mozzarella Fior Di Latte",
+		"key": "baseFdl",
+		"state": "baseFdl",
+		"setState": "setBaseFdl"
+	},
+	"avecViande": true,
+	"avecPoisson": false,
+	"afterCook": [
+		"Jambon de Parme 24 mois",
+		"Tomates Cerises",
+		"Mozzarella di Bufala",
+		"Sauce basilic"
+	],
+	"url": "./pdm.png",
+	"prix": "15,50"
 }

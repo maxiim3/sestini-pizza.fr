@@ -29,7 +29,6 @@ export const NousTrouver = () => {
 	// consoleMessage()
 	return (
 		<Layout title={"Nos Emplacements"}>
-			<Modal />
 			<section className=" animate__animated animate__fadeIn grid h-auto  w-auto place-content-center gap-8">
 				<Header title={"Horaires"} />
 				<div
