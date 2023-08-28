@@ -86,7 +86,7 @@ export const Products = () => {
 	return (
 		<Layout title={"Notre Carte"}>
 			<section className="grid h-auto w-auto grid-flow-row place-content-center gap-4">
-				<Header title={"Horaires"}>
+				<Header title={"La Carte"}>
 					<IconHandClick />
 				</Header>
 				<RenderButtons

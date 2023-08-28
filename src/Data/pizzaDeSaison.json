@@ -2,7 +2,7 @@
 	"_id": 100,
 	"nom": "Pizza du Moment",
 	"pizzaDeSaison": true,
-	"ingredients": [ "Courgette"],
+	"ingredients": [ "Courgettes Rôties"],
 	"base": {
 		"label": "Base Mozzarella Fior Di Latte",
 		"describe": "Mozzarella Fior Di Latte",
