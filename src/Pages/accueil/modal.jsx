@@ -15,7 +15,7 @@ export const Modal = () => {
 		}
 	}, [modal])
 
-	const [counter, setCounter] = useState(120)
+	const [counter, setCounter] = useState(10)
 	useEffect(() => {
 		if (modal === true) {
 			if (counter < 3) {
@@ -69,20 +69,18 @@ export const Modal = () => {
 			{/*	src={"./img/christmas-candy.png"}*/}
 			{/*	alt="icon.."*/}
 			{/*/>*/}
-			{/*
-			 Fermeture
-*/}
+			{/* Fermeture */}
 
-			{/*<article*/}
-			{/*	className={*/}
-			{/*		"mx-auto mt-48 mb-2 grid h-fit place-content-center gap-12 text-center text-3xl text-beige"*/}
-			{/*	}>*/}
-			{/*	<h4 className={"block pb-4 font-bold text-beige "}>Congé exceptionnel</h4>*/}
+			{/* <article
+				className={
+					"mx-auto mt-48 mb-2 grid h-fit place-content-center gap-12 text-center text-3xl text-beige"
+				}>
+				<h4 className={"block pb-4 font-bold text-beige "}>Congé Estival</h4>
 
-			{/*	<p>Du samedi 29 avril au mardi 9 mai 2023</p>*/}
-			{/*	<p className={"text-gold"}>Réouverture le mercredi 10 mai 2023</p>*/}
-			{/*	<p>Merci de votre compréhension et à bientôt !</p>*/}
-			{/*</article>*/}
+				<p>Nous prenons des vacances, retrouvez-nous à la rentrée! </p>
+				<p className={"text-gold"}>Réouverture le mercredi 30 août </p>
+				<p>À bientôt !</p>
+			</article> */}
 
 			{/*// Pizza du Moment*/}
 			<article
@@ -96,10 +94,7 @@ export const Modal = () => {
 					}>
 					Découvrez notre
 				</h2>
-				<h3
-					className={
-						"my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold"
-					}>
+				<h3 className={"my-8 font-decorative text-5xl text-beige md:inline-block md:font-semibold"}>
 					Pizza du Moment<i className="fa-regular fa-ghost"></i>
 				</h3>
 
@@ -114,10 +109,7 @@ export const Modal = () => {
 					))}
 					{PizzaDeSaison.afterCook && (
 						<>
-							<h4
-								className={
-									"mt-6 font-normal text-light-grey underline underline-offset-2"
-								}>
+							<h4 className={"mt-6 font-normal text-light-grey underline underline-offset-2"}>
 								Après Cuisson
 							</h4>
 							<dt className={"hidden"}>Ingrédients ajoutés après-cuisson</dt>
