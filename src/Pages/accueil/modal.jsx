@@ -1,14 +1,17 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect, useRef, useState} from "react"
 import {NavLink} from "react-router-dom"
 import PizzaDeSaison from "../../Data/pizzaDeSaison.json"
 
 export const Modal = () => {
 	const [modal, setModal] = useState(true)
+	const $root = useRef( document.getElementById('root'))
 	useEffect(() => {
 		if (modal === true) {
 			setTimeout(() => {
 				const $modal = document.querySelector("dialog")
 				$modal.showModal()
+				$root.current.style.height = '100vh'
+				$root.current.style.overflowY = 'hidden'
 			}, 350)
 		} else if (modal === false) {
 			closeDialog()
@@ -22,19 +25,24 @@ export const Modal = () => {
 				setModal(false)
 			} else {
 				const timer = setTimeout(() => {
-					if (counter === 2) clearTimeout(timer)
+					if (counter === 2) {
+						clearTimeout(timer)
+					}
 					else {
 						setCounter(counter - 1)
 					}
 				}, 1000)
 			}
 		}
-		return () => {}
+		return () => {
+		}
 	}, [counter])
 
 	function closeDialog() {
 		const $modal = document.querySelector("#modal")
 		$modal.className = "animate__animated animate__fadeOut"
+		$root.current.style.height = 'auto'
+		$root.current.style.overflowY = 'auto'
 
 		const timerClose = setTimeout(() => {
 			$modal.close()
@@ -128,9 +136,9 @@ export const Modal = () => {
 					Je découvre la carte Printemps-Été
 				</NavLink>
 				<img
-					className={"w-96 object-contain object-center"}
-					src={PizzaDeSaison.url}
-					alt="La Pizza du moment"
+					 className={"w-96 object-contain  object-center"}
+					 src={PizzaDeSaison.url}
+					 alt="La Pizza du moment"
 				/>
 			</article>
 		</dialog>

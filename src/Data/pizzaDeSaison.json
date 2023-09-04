@@ -2,22 +2,19 @@
 	"_id": 100,
 	"nom": "Pizza du Moment",
 	"pizzaDeSaison": true,
-	"ingredients": [ "Courgettes Rôties"],
+	"ingredients": [ "Mozzarella Fior Di Latte"],
 	"base": {
-		"label": "Base Mozzarella Fior Di Latte",
-		"describe": "Mozzarella Fior Di Latte",
-		"title": "Base Mozzarella Fior Di Latte",
-		"key": "baseFdl",
-		"state": "baseFdl",
-		"setState": "setBaseFdl"
+		"label": "Crème de Potimarron",
+		"describe": "Crème de Potimarron",
+		"title": "Crème de Potimarron",
+		"key": "basePotimarron",
+		"state": "basePotimarron",
+		"setState": "setBasePotimarron"
 	},
 	"avecViande": true,
 	"avecPoisson": false,
 	"afterCook": [
-		"Jambon de Parme 24 mois",
-		"Tomates Cerises",
-		"Mozzarella di Bufala",
-		"Sauce basilic"
+		"Speck", "Noix", "Roquette", "Crème de Balsamique"
 	],
 	"url": "./pdm.png",
 	"prix": "15,50"

@@ -15,16 +15,19 @@ const Home = ({refPDM, refAbout, refTop, handleScroll}) => {
 				className={
 					"relative grid place-content-center gap-24 overflow-x-hidden bg-dark-grey md:gap-56 lg:gap-64 xl:gap-48"
 				}>
+				<Modal />
 				<header
 					className={
-						"animate__animated animate__slideInDown tablet:hidden hidden bg-dark-grey md:block md:grid md:max-h-[50vh] md:w-full md:place-content-center mobile:hidden"
+						"animate__animated animate__slideInDown tablet:hidden hidden bg-dark-grey  md:grid md:max-h-[50vh] md:w-full md:place-content-center mobile:hidden"
 					}>
 					<video
 						className={
 							"hidden hover:cursor-pointer active:cursor-grabbing md:block xl:rounded-3xl"
 						}
 						src={"./video/pexels-denys-gromov-6176588.mp4"}
-						controls={true}
+						controls={false}
+						autoPlay={true}
+						playsInline={true}
 						controlsList={"nodownload nofullscreen noremotreplayback"}
 						loop={true}
 						muted={true}
@@ -68,7 +71,7 @@ const Home = ({refPDM, refAbout, refTop, handleScroll}) => {
 					</svg>
 				</div>
 
-				<Modal />
+
 
 				<LayoutHomePage>
 					<Hero
